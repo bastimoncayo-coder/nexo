@@ -56,7 +56,10 @@ main { outline: none; }
   padding: 1.25rem var(--margen) clamp(2.5rem, 6vw, 4.5rem);
   display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(2.5rem, 6vw, 4rem);
 }
-.portada__curvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; pointer-events: none; }
+/* Fondo: Santiago al anochecer (foto de Flow) bajo un velo azul noche, y encima las curvas de nivel. */
+.portada__fondo { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: 72% 60%; z-index: -3; opacity: .62; pointer-events: none; }
+.portada::before { content: ''; position: absolute; inset: 0; z-index: -2; pointer-events: none; background: linear-gradient(100deg, oklch(0.21 0.045 272 / .97) 0%, oklch(0.21 0.045 272 / .86) 42%, oklch(0.21 0.045 272 / .35) 100%), linear-gradient(180deg, oklch(0.21 0.045 272 / .55) 0%, transparent 28%, transparent 70%, oklch(0.21 0.045 272 / .8) 100%); }
+.portada__curvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; opacity: .7; pointer-events: none; }
 .portada__nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 1.5rem; }
 .marca { display: inline-flex; align-items: center; gap: .6rem; font-weight: 750; font-size: 1.2rem; font-stretch: 90%; text-decoration: none; letter-spacing: -.01em; }
 .marca svg { width: 34px; height: 34px; }
@@ -88,6 +91,18 @@ main { outline: none; }
 
 .aviso-ficticio { background: var(--ruta); color: var(--noche); padding: .9rem var(--margen); }
 .aviso-ficticio p { margin: 0; max-width: 1100px; font-size: .98rem; }
+
+/* Qué hacemos: cuatro servicios con foto */
+.servicios { padding: clamp(3.5rem, 9vw, 7rem) var(--margen) 0; max-width: 1440px; margin: 0 auto; }
+.servicios__lista { list-style: none; margin: 0; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(1.25rem, 2.5vw, 2rem); }
+@media (min-width: 640px) { .servicios__lista { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+@media (min-width: 1100px) { .servicios__lista { grid-template-columns: repeat(4, minmax(0, 1fr)); } }
+.servicio { display: flex; flex-direction: column; gap: .45rem; }
+.servicio img { display: block; width: 100%; aspect-ratio: 4 / 5; object-fit: cover; border-radius: 10px; margin-bottom: .6rem; background: var(--carta-2); box-shadow: 0 18px 40px -26px rgb(18 22 43 / .55); }
+.servicio h3 { margin: 0; font-weight: 800; font-stretch: 84%; font-size: clamp(1.45rem, 1.1rem + .8vw, 1.8rem); line-height: 1.05; }
+.servicio p { margin: 0; color: var(--tinta-suave); }
+.servicio a { margin-top: auto; padding-top: .3rem; font-weight: 700; color: var(--ruta-texto); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; min-height: 44px; display: inline-flex; align-items: center; gap: .35rem; align-self: flex-start; }
+.servicio a:hover { color: var(--tinta); }
 
 /* Trabajos */
 .trabajos { padding: clamp(3.5rem, 9vw, 7rem) var(--margen) clamp(2rem, 5vw, 4rem); max-width: 1440px; margin: 0 auto; }
@@ -149,6 +164,22 @@ main { outline: none; }
 .rumbo__foto { margin: 0; }
 .rumbo__foto img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 30% 50%; border-radius: 6px; background: var(--carta-2); }
 @media (min-width: 960px) { .rumbo { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); } }
+
+/* En redes: el reel dentro de un teléfono (solo en la versión pública) */
+.redes { background: var(--noche); color: #fff; position: relative; overflow: clip; isolation: isolate; padding: clamp(3.5rem, 9vw, 6.5rem) var(--margen); }
+.redes .portada__curvas { z-index: -1; opacity: .5; }
+.redes__interior { max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr); gap: 2.5rem clamp(2rem, 6vw, 6rem); align-items: center; }
+.redes h2 { font-weight: 800; font-stretch: 80%; font-size: clamp(2.1rem, 1rem + 3.8vw, 3.9rem); line-height: .98; letter-spacing: -.012em; margin: 0 0 1rem; max-width: 14ch; }
+.redes h2 span { color: var(--ruta); }
+.redes p { color: var(--sobre-noche); max-width: 46ch; margin: 0 0 1.75rem; font-size: 1.1rem; }
+.redes__acciones { display: flex; flex-wrap: wrap; gap: .75rem; }
+.telefono { justify-self: center; width: min(78vw, 320px); aspect-ratio: 9 / 19.5; padding: 12px; border-radius: 44px; background: #0B0E1C; box-shadow: 0 0 0 2px oklch(1 0 0 / .14), 0 40px 90px -30px rgb(0 0 0 / .8); }
+.telefono video { display: block; width: 100%; height: 100%; object-fit: cover; border-radius: 34px; background: #000; }
+@media (min-width: 900px) { .redes__interior { grid-template-columns: minmax(0, 1fr) auto; } }
+@media (prefers-reduced-motion: no-preference) {
+  .servicio img { transition: transform .5s var(--curva), box-shadow .5s var(--curva); }
+  .servicio:hover img { transform: translateY(-6px); box-shadow: 0 28px 50px -26px rgb(18 22 43 / .6); }
+}
 
 .pie { padding: 2rem var(--margen) 6.5rem; border-top: 1px solid var(--linea); color: var(--tinta-suave); font-size: .95rem; display: grid; gap: .4rem; }
 .pie p { margin: 0; max-width: 75ch; }

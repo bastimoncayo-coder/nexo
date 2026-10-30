@@ -16,10 +16,12 @@
 <body>
   <a class="saltar" href="#trabajos">Saltar a los trabajos</a>
   <header class="portada">
+    <img class="portada__fondo" src="portal/fotos/en-santiago-noche.webp" alt="" aria-hidden="true" width="1376" height="768" fetchpriority="high">
     <img class="portada__curvas" src="portal/assets/curvas.svg" alt="" aria-hidden="true">
     <nav class="portada__nav" aria-label="Principal">
       <a class="marca" href="index.html" aria-label="Nexo, inicio"><svg viewBox="0 0 1080 1080" aria-hidden="true"><rect width="1080" height="1080" rx="540" fill="#12162B"/><g fill="none" stroke-linecap="round"><path d="M330 760V320M750 760V320" stroke="#F5F6FA" stroke-width="96"/><path d="M330 320L750 760" stroke="#FF6B2C" stroke-width="96"/></g></svg>Nexo</a>
       <ul>
+        <li><a href="#servicios">Servicios</a></li>
         <li><a href="#trabajos">Trabajos</a></li>
         <li><a href="#app">App de gestión</a></li>
         <li><a href="https://ig.me/m/agencia_nexocl" rel="noopener">Instagram</a></li>
@@ -53,6 +55,39 @@
   </div>
 
   <main id="trabajos" tabindex="-1">
+    <section class="servicios" id="servicios" aria-labelledby="t-servicios">
+      <div class="cabecera">
+        <h2 id="t-servicios">Qué hacemos</h2>
+        <p>Cuatro cosas, bien hechas, para que tu negocio se vea, se encuentre y se ordene.</p>
+      </div>
+      <ul class="servicios__lista">
+        <li class="servicio">
+          <img src="portal/fotos/serv-laptop.webp" alt="" width="720" height="964" loading="lazy">
+          <h3>Webs que trabajan</h3>
+          <p>Landing, sitio institucional o tienda: rápidas, claras y fáciles de editar.</p>
+          <a href="#obra-norte">Ver un ejemplo <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="servicio">
+          <img src="portal/fotos/serv-barberia.webp" alt="" width="720" height="964" loading="lazy">
+          <h3>Reservas y catálogos</h3>
+          <p>Que te agenden, consulten o elijan sin mandarte un mensaje a medianoche.</p>
+          <a href="#obra-distrito">Ver un ejemplo <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="servicio">
+          <img src="portal/fotos/serv-rodaje.webp" alt="" width="720" height="964" loading="lazy">
+          <h3>Contenido para redes</h3>
+          <p>Calendario mensual, fotos y videos cortos en tu local, textos con tu tono.</p>
+          <a href="#app">Cómo lo organizamos <span aria-hidden="true">→</span></a>
+        </li>
+        <li class="servicio">
+          <img src="portal/fotos/serv-identidad.webp" alt="" width="720" height="964" loading="lazy">
+          <h3>Identidad visual</h3>
+          <p>Logo, paleta y plantillas para que tu marca se reconozca de lejos.</p>
+          <a href="#obra-brasa">Ver un ejemplo <span aria-hidden="true">→</span></a>
+        </li>
+      </ul>
+    </section>
+
     <section class="trabajos" aria-labelledby="t-trabajos">
       <div class="cabecera">
         <h2 id="t-trabajos">Cinco negocios, cinco personalidades</h2>
@@ -180,6 +215,21 @@
           <img src="portal/miniaturas/app-panel.jpg" alt="Panel de inicio de la app: indicadores de clientes activos, tareas vencidas y contenidos por aprobar, con la lista de próximos vencimientos." width="1280" height="800" loading="lazy" data-miniatura>
           <figcaption>Panel de inicio con los datos de demostración.</figcaption>
         </figure>
+      </div>
+    </section>
+
+    <section class="redes" aria-labelledby="t-redes">
+      <img class="portada__curvas" src="portal/assets/curvas.svg" alt="" aria-hidden="true">
+      <div class="redes__interior">
+        <div>
+          <h2 id="t-redes">Míranos en <span>Instagram y TikTok</span>.</h2>
+          <p>Publicamos ideas cortas para negocios de barrio: cómo ordenar las reservas, qué poner en tu web y cómo planificar tus redes sin apuro.</p>
+          <div class="redes__acciones">
+            <a class="boton boton--ruta" href="https://www.instagram.com/agencia_nexocl/" rel="noopener">Instagram @agencia_nexocl</a>
+            <a class="boton boton--borde" href="https://www.tiktok.com/@agencia_nexocl" rel="noopener">TikTok</a>
+          </div>
+        </div>
+        <div class="telefono"><video src="portal/video/nexo-reel.mp4" poster="portal/video/nexo-reel.jpg" autoplay muted loop playsinline preload="metadata" aria-label="Reel de Nexo: tu negocio de barrio abre todos los días; hacemos webs que agendan solas."></video></div>
       </div>
     </section>
 
