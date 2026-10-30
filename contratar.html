@@ -1,0 +1,135 @@
+<!doctype html>
+<html lang="es" data-modo="publico">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Contrátanos · Nexo</title>
+  <meta name="description" content="Pide una propuesta a Nexo: cuéntanos de tu negocio y te respondemos por escrito.">
+  <meta name="theme-color" content="#12162B">
+  <link rel="icon" href="app/assets/icono.svg" type="image/svg+xml">
+  <link rel="preload" href="portal/assets/fonts/bricolage-grotesque-latin-standard.woff2" as="font" type="font/woff2" crossorigin>
+  <link rel="stylesheet" href="portal/portal.css">
+  <link rel="stylesheet" href="portal/contratar.css">
+</head>
+<body>
+  <a class="saltar" href="#formulario">Saltar al formulario</a>
+
+  <header class="cabecera-noche">
+    <img class="portada__curvas" src="portal/assets/curvas.svg" alt="" aria-hidden="true">
+    <nav class="portada__nav" aria-label="Principal">
+      <a class="marca" href="index.html" aria-label="Nexo, inicio"><svg viewBox="0 0 1080 1080" aria-hidden="true"><rect width="1080" height="1080" rx="540" fill="#12162B"/><g fill="none" stroke-linecap="round"><path d="M330 760V320M750 760V320" stroke="#F5F6FA" stroke-width="96"/><path d="M330 320L750 760" stroke="#FF6B2C" stroke-width="96"/></g></svg>Nexo</a>
+      <ul>
+        <li><a href="index.html#trabajos">Trabajos</a></li>
+        <li><a href="index.html#app">App de gestión</a></li>
+        <li class="nav-sesion"><a href="https://ig.me/m/agencia_nexocl" rel="noopener">Instagram</a></li>
+      </ul>
+    </nav>
+    <div class="cabecera-noche__cuerpo">
+      <h1>Contrátanos<span>.</span></h1>
+      <p>Elige por dónde quieres partir y cuéntanos de tu negocio. Te respondemos con una propuesta por escrito: alcance, plazos y precio.</p>
+    </div>
+  </header>
+
+  <main class="contratar" id="contenido">
+    <div class="contratar__cabeza">
+      <p class="contratar__demo" role="note"><strong>Cómo funciona:</strong> al enviar, copiamos tu solicitud y te llevamos a un mensaje directo de Instagram con @agencia_nexocl. Solo tienes que pegarla y enviarla.</p>
+    </div>
+
+    <form class="contratar__form" id="formulario" novalidate tabindex="-1">
+      <div class="resumen-error" id="errores" role="alert" tabindex="-1" hidden></div>
+
+      <fieldset class="tarifario">
+        <legend><span class="paso">1</span> ¿Qué necesitas?</legend>
+        <label class="tarifa"><input type="radio" name="plan" value="contenido"><span class="tarifa__nombre">Plan mensual de contenido<small>Estrategia, calendario, piezas y redacción para redes.</small></span></label>
+        <label class="tarifa"><input type="radio" name="plan" value="identidad"><span class="tarifa__nombre">Identidad visual básica<small>Logo, paleta, tipografías y una guía corta de uso.</small></span></label>
+        <label class="tarifa"><input type="radio" name="plan" value="landing"><span class="tarifa__nombre">Landing page<small>Una página para una campaña, un servicio o un lanzamiento.</small></span></label>
+        <label class="tarifa"><input type="radio" name="plan" value="web"><span class="tarifa__nombre">Sitio institucional<small>Varias secciones, editable, rápido y accesible.</small></span></label>
+        <label class="tarifa"><input type="radio" name="plan" value="reservas"><span class="tarifa__nombre">Sitio con reservas o catálogo<small>Como las demos de la barbería, el gimnasio o la inmobiliaria.</small></span></label>
+        <label class="tarifa"><input type="radio" name="plan" value="conversar"><span class="tarifa__nombre">Aún no lo sé<small>Lo conversamos y te recomendamos por dónde empezar.</small></span></label>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <legend><span class="paso">2</span> Tu negocio</legend>
+        <div class="campo">
+          <label for="negocio">Nombre del negocio</label>
+          <input id="negocio" name="negocio" autocomplete="organization" maxlength="80" required>
+        </div>
+        <div class="campos-dos">
+          <div class="campo">
+            <label for="rubro">Rubro</label>
+            <input id="rubro" name="rubro" list="rubros" maxlength="60" required>
+            <datalist id="rubros"><option value="Restaurante o cafetería"></option><option value="Barbería o peluquería"></option><option value="Gimnasio o estudio deportivo"></option><option value="Inmobiliaria"></option><option value="Tienda o almacén"></option><option value="Servicios profesionales"></option><option value="Salud o bienestar"></option></datalist>
+          </div>
+          <div class="campo">
+            <label for="comuna">Comuna <span class="opcional">(opcional)</span></label>
+            <input id="comuna" name="comuna" autocomplete="address-level2" maxlength="60">
+          </div>
+        </div>
+        <div class="campo">
+          <label for="inicio">¿Cuándo te gustaría partir?</label>
+          <select id="inicio" name="inicio"><option value="">Aún no lo sé</option></select>
+        </div>
+        <div class="campo">
+          <label for="mensaje">Cuéntanos qué te gustaría lograr <span class="opcional">(opcional)</span></label>
+          <textarea id="mensaje" name="mensaje" rows="4" maxlength="2000" aria-describedby="mensaje-ayuda"></textarea>
+          <p class="campo__ayuda" id="mensaje-ayuda">Por ejemplo: «que los clientes reserven sin llamar» o «que la carta se vea bien en el celular».</p>
+        </div>
+      </fieldset>
+
+      <fieldset class="grupo">
+        <legend><span class="paso">3</span> ¿Cómo te respondemos?</legend>
+        <div class="campo">
+          <label for="nombre">Tu nombre</label>
+          <input id="nombre" name="nombre" autocomplete="name" maxlength="80" required>
+        </div>
+        <div class="campos-dos">
+          <div class="campo">
+            <label for="email">Correo</label>
+            <input id="email" name="email" type="email" autocomplete="email" maxlength="120" aria-describedby="contacto-ayuda">
+          </div>
+          <div class="campo">
+            <label for="telefono">Teléfono</label>
+            <input id="telefono" name="telefono" type="tel" autocomplete="tel" maxlength="30" placeholder="+56 9 1234 5678" aria-describedby="contacto-ayuda">
+          </div>
+        </div>
+        <p class="campo__ayuda" id="contacto-ayuda">Basta con uno de los dos.</p>
+      </fieldset>
+
+      <div class="contratar__enviar">
+        <button class="boton boton--ruta" type="submit">Enviar solicitud</button>
+        <p>Pedir una propuesta no tiene costo.</p>
+      </div>
+    </form>
+
+    <aside class="contratar__lateral" aria-labelledby="t-pasos">
+      <figure class="contratar__foto">
+        <img src="portal/fotos/en-barrio.webp" alt="" width="1376" height="768" loading="lazy">
+        <figcaption>Generada con IA para esta demostración.</figcaption>
+      </figure>
+      <h2 id="t-pasos">Qué pasa después</h2>
+      <ol class="pasos-despues">
+        <li><strong>Leemos tu mensaje</strong> y revisamos tu negocio.</li>
+        <li><strong>Te escribimos con preguntas</strong> si falta algo, o proponemos una llamada de 20 minutos.</li>
+        <li><strong>Enviamos la propuesta</strong> con alcance, plazos y precio final. Sin compromiso.</li>
+      </ol>
+      <p class="contratar__nota">¿Prefieres conversar primero? <a href="https://ig.me/m/agencia_nexocl" rel="noopener">Escríbenos por Instagram</a>.</p>
+    </aside>
+
+    <section class="confirmacion" id="confirmacion" tabindex="-1" hidden aria-labelledby="t-confirmacion">
+      <h2 id="t-confirmacion">Solicitud recibida</h2>
+      <p id="confirmacion-texto"></p>
+      <pre class="confirmacion__resumen" id="confirmacion-resumen"></pre>
+      <div class="confirmacion__acciones">
+        <a class="boton boton--ruta" href="https://ig.me/m/agencia_nexocl" rel="noopener">Abrir mensaje directo</a>
+        <a class="boton boton--linea" href="contratar.html">Enviar otra</a>
+        <a class="boton boton--texto" href="index.html">Volver al inicio</a>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <p><strong>Nexo</strong> · Webs, contenido y apps para negocios de barrio en Chile. <a href="https://www.instagram.com/agencia_nexocl/" rel="noopener">@agencia_nexocl</a></p>
+  </footer>
+  <script src="portal/contratar.js" defer></script>
+</body>
+</html>

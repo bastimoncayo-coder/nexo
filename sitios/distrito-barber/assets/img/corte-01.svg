@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Fade alto a piel: ilustración original de perfil para Distrito Barber (demo de Estudio Norte). -->
+  <defs><clipPath id="cab"><path d="M150 400 C152 360 140 330 138 300 C120 250 120 170 160 125 C195 85 255 85 285 120 C300 138 302 160 300 178 L326 214 C328 220 322 224 304 228 C308 236 304 242 300 246 C306 252 304 260 298 266 C300 280 296 292 286 300 C270 310 252 312 246 318 L248 400 Z"/></clipPath></defs>
+  <rect width="400" height="400" fill="#111111"/><pattern id="p" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="2" fill="#F5C518" fill-opacity=".25"/></pattern><rect width="400" height="400" fill="url(#p)"/>
+  <circle cx="214" cy="214" r="150" fill="#F5C518"/>
+  <circle cx="214" cy="214" r="168" fill="none" stroke="#F5C518" stroke-width="2" stroke-dasharray="3 9"/>
+  
+  <path d="M150 400 C152 360 140 330 138 300 C120 250 120 170 160 125 C195 85 255 85 285 120 C300 138 302 160 300 178 L326 214 C328 220 322 224 304 228 C308 236 304 242 300 246 C306 252 304 260 298 266 C300 280 296 292 286 300 C270 310 252 312 246 318 L248 400 Z" fill="#D9A57E"/>
+  <path d="M286 122 C300 140 302 160 300 178 L326 214 C328 220 322 224 304 228 C308 236 304 242 300 246 C306 252 304 260 298 266 C300 280 296 292 286 300 C270 310 252 312 246 318 L248 400 L232 400 L232 320 C262 300 280 270 284 230 C288 190 290 150 286 122Z" fill="#B9845E" fill-opacity=".55"/>
+  <linearGradient id="f1" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#111111" stop-opacity=".95"/><stop offset=".45" stop-color="#111111" stop-opacity=".6"/><stop offset="1" stop-color="#111111" stop-opacity="0"/></linearGradient>
+  <path d="M100 146 L268 146 C262 170 246 190 238 216 L232 266 L100 266 Z" fill="url(#f1)" clip-path="url(#cab)"/>
+  <path d="M146 168 C138 124 170 90 220 88 C262 88 294 106 300 142 C301 152 297 158 290 160 C262 150 220 148 190 150 C170 152 156 158 146 168Z" fill="#111111"/>
+  <path d="M176 104 C206 94 246 94 276 110" fill="none" stroke="#3B3B3B" stroke-width="4" stroke-linecap="round"/>
+  
+  <ellipse cx="206" cy="216" rx="15" ry="24" fill="#B9845E"/>
+  <path d="M202 202 C214 204 216 226 204 230" fill="none" stroke="#8A5A3A" stroke-width="3" stroke-linecap="round"/>
+  <path d="M276 168 L298 165" stroke="#111111" stroke-width="5" stroke-linecap="round"/>
+  <path d="M282 184 Q288 180 294 184" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+  <path d="M300 256 L292 257" stroke="#8A5A3A" stroke-width="3" stroke-linecap="round"/>
+</svg>

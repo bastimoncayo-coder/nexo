@@ -1,0 +1,623 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Distrito Barber · Barbería en Barrio Lastarria (sitio de demostración)</title>
+  <meta name="description" content="Distrito Barber es una barbería ficticia de Barrio Lastarria, Santiago Centro. Sitio de demostración de Estudio Norte: servicios, equipo, galería y reserva por pasos que se guarda solo en tu navegador.">
+  <meta name="theme-color" content="#111111">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="skip" href="#contenido">Saltar al contenido</a>
+
+  <div class="demo-bar" role="note" aria-label="Aviso de sitio de demostración">
+    <div class="wrap demo-bar__in">
+      <span class="demo-bar__tag">Demo</span>
+      <p><strong>Negocio ficticio · Sitio de demostración creado por Estudio Norte.</strong> <span class="demo-bar__more">Las reservas se guardan solo en este navegador y no se envían a nadie.</span></p>
+    </div>
+  </div>
+
+  <header class="site-header">
+    <div class="wrap header-in">
+      <a class="brand" href="#inicio">
+        <svg class="brand__pole" viewBox="0 0 20 40" aria-hidden="true" focusable="false">
+          <rect x="3" y="4" width="14" height="32" rx="2" fill="#F2EFE8"/>
+          <path d="M3 9 L17 3 L17 8 L3 14Z M3 21 L17 15 L17 20 L3 26Z M3 33 L17 27 L17 32 L3 38Z" fill="#D7263D"/>
+          <rect x="1" y="1" width="18" height="4" rx="1.5" fill="#F5C518"/>
+          <rect x="1" y="35" width="18" height="4" rx="1.5" fill="#F5C518"/>
+        </svg>
+        <span class="brand__word">Distrito <span>Barber</span></span>
+      </a>
+      <a class="btn btn--signal btn--sm header-cta" href="#reservar">Reservar</a>
+      <button class="menu-btn" type="button" aria-expanded="false" aria-controls="menu">
+        <span class="menu-btn__label">Menú</span>
+        <span class="menu-btn__icon" aria-hidden="true"><span></span><span></span><span></span></span>
+      </button>
+      <nav class="nav" id="menu" aria-label="Principal">
+        <ul class="nav__list">
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li><a href="#visitanos">Visítanos</a></li>
+          <li><a href="#mis-reservas">Mis reservas</a></li>
+        </ul>
+        <a class="btn btn--signal nav__cta" href="#reservar">Reservar hora</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- PORTADA -->
+    <section class="hero" id="inicio" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="kicker"><span class="kicker__dot" aria-hidden="true"></span>Barbería de barrio · Lastarria, Santiago Centro</p>
+          <h1 class="hero__title" id="hero-title">
+            <span class="hero__line">Fade.</span>
+            <span class="hero__line">Navaja.</span>
+            <span class="hero__line hero__line--signal">Barrio.</span>
+          </h1>
+          <p class="hero__lead">Cortes con oficio a dos cuadras del Metro Bellas Artes. Eliges servicio, barbero y bloque; llegas, te sientas y sales afilado.</p>
+          <div class="hero__actions">
+            <a class="btn btn--signal btn--lg" href="#reservar">Reservar hora <span aria-hidden="true">→</span></a>
+            <a class="btn btn--ghost btn--lg" href="#servicios">Servicios y precios</a>
+          </div>
+        </div>
+
+        <div class="hero__art" aria-hidden="true">
+          <svg class="pole-art" viewBox="0 0 520 620" focusable="false">
+            <defs>
+              <clipPath id="poleGlass"><rect x="200" y="128" width="120" height="364" rx="4"/></clipPath>
+              <path id="sealPath" d="M 322,118 a 78,78 0 1,1 156,0 a 78,78 0 1,1 -156,0"/>
+              <pattern id="heroDots" width="12" height="12" patternUnits="userSpaceOnUse">
+                <circle cx="6" cy="6" r="2.2" fill="#F2EFE8" fill-opacity=".16"/>
+              </pattern>
+              <linearGradient id="glassShade" x1="0" x2="1" y1="0" y2="0">
+                <stop offset="0" stop-color="#000" stop-opacity=".35"/>
+                <stop offset=".18" stop-color="#fff" stop-opacity=".45"/>
+                <stop offset=".32" stop-color="#fff" stop-opacity="0"/>
+                <stop offset=".72" stop-color="#000" stop-opacity="0"/>
+                <stop offset="1" stop-color="#000" stop-opacity=".5"/>
+              </linearGradient>
+            </defs>
+            <circle cx="260" cy="330" r="236" fill="url(#heroDots)"/>
+            <circle cx="260" cy="330" r="206" fill="none" stroke="#F5C518" stroke-width="2" stroke-dasharray="3 11"/>
+            <!-- soporte de muro -->
+            <path d="M120 300 L196 300 M120 360 L196 360" stroke="#F2EFE8" stroke-width="8" stroke-linecap="round"/>
+            <rect x="104" y="280" width="20" height="100" rx="4" fill="#F2EFE8"/>
+            <!-- poste -->
+            <path d="M212 112 C212 64 308 64 308 112Z" fill="#F5C518"/>
+            <circle cx="260" cy="58" r="11" fill="#F5C518"/>
+            <rect x="186" y="110" width="148" height="20" rx="4" fill="#F2EFE8"/>
+            <g clip-path="url(#poleGlass)">
+              <rect x="200" y="128" width="120" height="364" fill="#F2EFE8"/>
+              <g class="pole-stripes">
+                <path fill="#D7263D" d="M200 40 L320 -20 L320 2 L200 62Z M200 120 L320 60 L320 82 L200 142Z M200 200 L320 140 L320 162 L200 222Z M200 280 L320 220 L320 242 L200 302Z M200 360 L320 300 L320 322 L200 382Z M200 440 L320 380 L320 402 L200 462Z M200 520 L320 460 L320 482 L200 542Z M200 600 L320 540 L320 562 L200 622Z"/>
+                <path fill="#111111" d="M200 80 L320 20 L320 42 L200 102Z M200 160 L320 100 L320 122 L200 182Z M200 240 L320 180 L320 202 L200 262Z M200 320 L320 260 L320 282 L200 342Z M200 400 L320 340 L320 362 L200 422Z M200 480 L320 420 L320 442 L200 502Z M200 560 L320 500 L320 522 L200 582Z M200 640 L320 580 L320 602 L200 662Z"/>
+              </g>
+              <rect x="200" y="128" width="120" height="364" fill="url(#glassShade)"/>
+            </g>
+            <rect x="186" y="490" width="148" height="20" rx="4" fill="#F2EFE8"/>
+            <path d="M212 508 C212 552 308 552 308 508Z" fill="#F5C518"/>
+            <!-- sello giratorio -->
+            <g class="seal">
+              <circle cx="400" cy="118" r="98" fill="#F5C518"/>
+              <circle cx="400" cy="118" r="60" fill="none" stroke="#111111" stroke-width="2"/>
+              <text font-family="'Space Grotesk', sans-serif" font-size="15" font-weight="700" letter-spacing="3.2" fill="#111111"><textPath href="#sealPath">RESERVA EN LÍNEA · LUN A SÁB · 10 A 20 H ·</textPath></text>
+            </g>
+            <text x="400" y="138" text-anchor="middle" font-family="Anton, Impact, sans-serif" font-size="54" fill="#111111">DB</text>
+            <!-- tijeras -->
+            <g transform="translate(18 404) rotate(-16)">
+              <path d="M96 52 L206 40 C209 42 209 47 206 49 L100 68 Z" fill="#F2EFE8" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+              <path d="M96 68 L206 80 C209 78 209 73 206 71 L100 52 Z" fill="#F2EFE8" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+              <path d="M96 54 C78 48 70 36 56 32 M96 66 C78 72 70 84 56 88" fill="none" stroke="#F5C518" stroke-width="12" stroke-linecap="round"/>
+              <circle cx="34" cy="26" r="22" fill="none" stroke="#F5C518" stroke-width="11"/>
+              <circle cx="34" cy="94" r="22" fill="none" stroke="#F5C518" stroke-width="11"/>
+              <circle cx="98" cy="60" r="7" fill="#111111" stroke="#F5C518" stroke-width="3"/>
+            </g>
+          </svg>
+        </div>
+      </div>
+
+      <div class="wrap">
+        <dl class="hero__facts">
+          <div><dt>Horario</dt><dd>Lun a sáb · 10:00–20:00</dd></div>
+          <div><dt>Domingo</dt><dd>Cerrado</dd></div>
+          <div><dt>Dirección</dt><dd>Pasaje Los Faroles 318, Santiago</dd></div>
+          <div><dt>Agenda</dt><dd>Bloques de 30 min</dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <div class="ticker" aria-hidden="true">
+      <div class="ticker__track">
+        <span>Corte clásico</span><span>Fade a piel</span><span>Barba a navaja</span><span>Toalla caliente</span><span>Diseño</span><span>Corte infantil</span>
+        <span>Corte clásico</span><span>Fade a piel</span><span>Barba a navaja</span><span>Toalla caliente</span><span>Diseño</span><span>Corte infantil</span>
+      </div>
+    </div>
+
+    <!-- SERVICIOS -->
+    <section class="sec sec--paper" id="servicios" aria-labelledby="servicios-t">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="sec-head__num" aria-hidden="true">01</p>
+          <div>
+            <h2 class="sec-head__title" id="servicios-t">Servicios <span>y precios</span></h2>
+            <p class="sec-head__intro">Precios de ejemplo en pesos chilenos, con lavado, terminación y producto incluidos. La duración es el tiempo que bloqueamos en la agenda para ti.</p>
+          </div>
+        </header>
+
+        <ol class="svc-list">
+          <li class="svc reveal">
+            <span class="svc__n" aria-hidden="true">01</span>
+            <div class="svc__body">
+              <h3 class="svc__name">Corte clásico</h3>
+              <p>Tijera y máquina, terminación a navaja en patillas y nuca. Lavado y peinado incluidos.</p>
+            </div>
+            <dl class="svc__meta"><div><dt>Duración</dt><dd>30 min</dd></div><div><dt>Precio</dt><dd>$12.990</dd></div></dl>
+            <button class="btn btn--ink btn--sm" type="button" data-book-service="corte-clasico">Reservar <span class="sr-only">corte clásico</span></button>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__n" aria-hidden="true">02</span>
+            <div class="svc__body">
+              <h3 class="svc__name">Fade</h3>
+              <p>Degradado bajo, medio o alto, a cero o a piel. Lo marcamos contigo frente al espejo antes de partir.</p>
+            </div>
+            <dl class="svc__meta"><div><dt>Duración</dt><dd>45 min</dd></div><div><dt>Precio</dt><dd>$14.990</dd></div></dl>
+            <button class="btn btn--ink btn--sm" type="button" data-book-service="fade">Reservar <span class="sr-only">fade</span></button>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__n" aria-hidden="true">03</span>
+            <div class="svc__body">
+              <h3 class="svc__name">Barba</h3>
+              <p>Rebaje a máquina, perfilado con navaja y aceite. Para barba corta o larga, según cómo te crece.</p>
+            </div>
+            <dl class="svc__meta"><div><dt>Duración</dt><dd>30 min</dd></div><div><dt>Precio</dt><dd>$9.990</dd></div></dl>
+            <button class="btn btn--ink btn--sm" type="button" data-book-service="barba">Reservar <span class="sr-only">barba</span></button>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__n" aria-hidden="true">04</span>
+            <div class="svc__body">
+              <h3 class="svc__name">Corte + barba</h3>
+              <p>El combo de la casa: corte a elección y barba completa en la misma silla, sin pararte entremedio.</p>
+            </div>
+            <dl class="svc__meta"><div><dt>Duración</dt><dd>60 min</dd></div><div><dt>Precio</dt><dd>$21.990</dd></div></dl>
+            <button class="btn btn--ink btn--sm" type="button" data-book-service="corte-barba">Reservar <span class="sr-only">corte más barba</span></button>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__n" aria-hidden="true">05</span>
+            <div class="svc__body">
+              <h3 class="svc__name">Afeitado con toalla caliente</h3>
+              <p>Dos toallas calientes, espuma a brocha, navaja en dos pasadas y bálsamo frío. <span class="svc__only">Solo con Mauro o Tito.</span></p>
+            </div>
+            <dl class="svc__meta"><div><dt>Duración</dt><dd>45 min</dd></div><div><dt>Precio</dt><dd>$15.990</dd></div></dl>
+            <button class="btn btn--ink btn--sm" type="button" data-book-service="toalla">Reservar <span class="sr-only">afeitado con toalla caliente</span></button>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__n" aria-hidden="true">06</span>
+            <div class="svc__body">
+              <h3 class="svc__name">Corte + diseño</h3>
+              <p>Líneas, figuras o un detalle a mano alzada sobre fade. Trae tu referencia en el teléfono. <span class="svc__only">Solo con Javi o Nico.</span></p>
+            </div>
+            <dl class="svc__meta"><div><dt>Duración</dt><dd>60 min</dd></div><div><dt>Precio</dt><dd>$18.990</dd></div></dl>
+            <button class="btn btn--ink btn--sm" type="button" data-book-service="diseno">Reservar <span class="sr-only">corte más diseño</span></button>
+          </li>
+          <li class="svc reveal">
+            <span class="svc__n" aria-hidden="true">07</span>
+            <div class="svc__body">
+              <h3 class="svc__name">Corte infantil</h3>
+              <p>Hasta 12 años. Silla alta, paciencia y sin apuro; el adulto acompañante se queda al lado.</p>
+            </div>
+            <dl class="svc__meta"><div><dt>Duración</dt><dd>30 min</dd></div><div><dt>Precio</dt><dd>$9.990</dd></div></dl>
+            <button class="btn btn--ink btn--sm" type="button" data-book-service="infantil">Reservar <span class="sr-only">corte infantil</span></button>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- OFICIO -->
+    <section class="sec sec--ink" id="oficio" aria-labelledby="oficio-t">
+      <div class="wrap">
+        <header class="sec-head sec-head--light reveal">
+          <p class="sec-head__num" aria-hidden="true">02</p>
+          <div>
+            <h2 class="sec-head__title" id="oficio-t">El oficio, <span>en tres herramientas</span></h2>
+            <p class="sec-head__intro">Nada de magia: buena luz, herramientas afiladas y el tiempo justo por cliente.</p>
+          </div>
+        </header>
+        <ul class="tools">
+          <li class="tool reveal">
+            <img src="assets/img/navaja.svg" alt="Ilustración de una navaja de barbero abierta, con mango negro y hoja clara." width="240" height="240" loading="lazy">
+            <h3>La navaja</h3>
+            <p>Hoja nueva en cada servicio. Patillas, nuca y contorno de barba se terminan a mano, no a máquina.</p>
+          </li>
+          <li class="tool reveal">
+            <img src="assets/img/tijeras.svg" alt="Ilustración de unas tijeras de corte abiertas, con anillos negros y tornillo amarillo." width="240" height="240" loading="lazy">
+            <h3>Las tijeras</h3>
+            <p>Para lo que la máquina no entiende: capas, puntas, rulos y volumen arriba sin perder la forma.</p>
+          </li>
+          <li class="tool reveal">
+            <img src="assets/img/maquina.svg" alt="Ilustración de una máquina de cortar pelo negra con franja amarilla y cabezal de dientes." width="240" height="240" loading="lazy">
+            <h3>La máquina</h3>
+            <p>Peines del 0,5 al 8 y cuchilla en T para degradados limpios y líneas de diseño bien marcadas.</p>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- EQUIPO -->
+    <section class="sec sec--signal" id="equipo" aria-labelledby="equipo-t">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="sec-head__num" aria-hidden="true">03</p>
+          <div>
+            <h2 class="sec-head__title" id="equipo-t">Equipo <span>de silla</span></h2>
+            <p class="sec-head__intro">Cuatro barberos, cada uno con su terreno. Personas y perfiles ficticios, dibujados para esta demostración.</p>
+          </div>
+        </header>
+        <ul class="team">
+          <li class="member reveal">
+            <img class="member__img" src="assets/img/equipo-mauro.svg" alt="Retrato ilustrado de Mauro: pelo canoso peinado hacia atrás, lentes redondos, bigote manubrio y delantal negro." width="400" height="500" loading="lazy">
+            <div class="member__body">
+              <p class="member__role">Navaja y clásicos</p>
+              <h3 class="member__name">Mauro</h3>
+              <p>Cortes a tijera, peinados hacia atrás y afeitado con toalla caliente. El que te explica qué productos usar en la casa.</p>
+              <p class="sr-only">Atiende de lunes a viernes.</p>
+              <ol class="days" aria-hidden="true"><li class="on">L</li><li class="on">M</li><li class="on">M</li><li class="on">J</li><li class="on">V</li><li>S</li><li>D</li></ol>
+              <button class="btn btn--ink btn--sm" type="button" data-book-barber="mauro">Reservar con Mauro</button>
+            </div>
+          </li>
+          <li class="member reveal">
+            <img class="member__img" src="assets/img/equipo-javi.svg" alt="Retrato ilustrado de Javi: moño alto, costados rapados, aros dorados y polera negra." width="400" height="500" loading="lazy">
+            <div class="member__body">
+              <p class="member__role">Fades y diseño</p>
+              <h3 class="member__name">Javi</h3>
+              <p>Degradados a piel y líneas a mano alzada con cuchilla en T. Si traes una referencia, la adapta a tu forma de cabeza.</p>
+              <p class="sr-only">Atiende de martes a sábado.</p>
+              <ol class="days" aria-hidden="true"><li>L</li><li class="on">M</li><li class="on">M</li><li class="on">J</li><li class="on">V</li><li class="on">S</li><li>D</li></ol>
+              <button class="btn btn--ink btn--sm" type="button" data-book-barber="javi">Reservar con Javi</button>
+            </div>
+          </li>
+          <li class="member reveal">
+            <img class="member__img" src="assets/img/equipo-nico.svg" alt="Retrato ilustrado de Nico: pelo crespo oscuro, barba de pocos días y polera negra." width="400" height="500" loading="lazy">
+            <div class="member__body">
+              <p class="member__role">Texturas e infantil</p>
+              <h3 class="member__name">Nico</h3>
+              <p>Crops texturizados, rulos y cortes a tijera. Es quien atiende a los más chicos: calma, silla alta y conversa.</p>
+              <p class="sr-only">Atiende lunes, miércoles, viernes y sábado.</p>
+              <ol class="days" aria-hidden="true"><li class="on">L</li><li>M</li><li class="on">M</li><li>J</li><li class="on">V</li><li class="on">S</li><li>D</li></ol>
+              <button class="btn btn--ink btn--sm" type="button" data-book-barber="nico">Reservar con Nico</button>
+            </div>
+          </li>
+          <li class="member reveal">
+            <img class="member__img" src="assets/img/equipo-tito.svg" alt="Retrato ilustrado de Tito: cabeza rapada, barba negra tupida con una mecha gris y camisa clara." width="400" height="500" loading="lazy">
+            <div class="member__body">
+              <p class="member__role">Barba y toalla caliente</p>
+              <h3 class="member__name">Tito</h3>
+              <p>Perfilado, rebajes y afeitado tradicional en dos pasadas. Trabaja la barba según cómo crece, no contra ella.</p>
+              <p class="sr-only">Atiende lunes, martes, jueves y sábado.</p>
+              <ol class="days" aria-hidden="true"><li class="on">L</li><li class="on">M</li><li>M</li><li class="on">J</li><li>V</li><li class="on">S</li><li>D</li></ol>
+              <button class="btn btn--ink btn--sm" type="button" data-book-barber="tito">Reservar con Tito</button>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="sec sec--ink" id="galeria" aria-labelledby="galeria-t">
+      <div class="wrap">
+        <header class="sec-head sec-head--light reveal">
+          <p class="sec-head__num" aria-hidden="true">04</p>
+          <div>
+            <h2 class="sec-head__title" id="galeria-t">Galería <span>de cortes</span></h2>
+            <p class="sec-head__intro">Seis cortes que salen seguido de nuestras sillas, en versión ilustrada. Toca uno para verlo en grande.</p>
+          </div>
+        </header>
+        <ul class="gallery">
+          <li class="reveal"><button class="gallery__item" type="button" data-lb="0" data-src="assets/img/corte-01.svg" data-alt="Perfil ilustrado con fade alto: costados que se degradan a piel y largo concentrado arriba." data-cap="Fade alto a piel — el degradado sube hasta la sien y el largo queda arriba.">
+            <img src="assets/img/corte-01.svg" alt="" width="400" height="400" loading="lazy"><span class="gallery__cap"><span class="gallery__n">01</span> Fade alto a piel</span><span class="sr-only">, ver en grande</span></button></li>
+          <li class="reveal"><button class="gallery__item" type="button" data-lb="1" data-src="assets/img/corte-02.svg" data-alt="Perfil ilustrado con pompadour: gran volumen al frente peinado hacia atrás y costados cortos." data-cap="Pompadour clásico — volumen al frente peinado hacia atrás, costados cortos a tijera.">
+            <img src="assets/img/corte-02.svg" alt="" width="400" height="400" loading="lazy"><span class="gallery__cap"><span class="gallery__n">02</span> Pompadour clásico</span><span class="sr-only">, ver en grande</span></button></li>
+          <li class="reveal"><button class="gallery__item" type="button" data-lb="2" data-src="assets/img/corte-03.svg" data-alt="Perfil ilustrado con buzz cut: rapado parejo a máquina sobre toda la cabeza." data-cap="Buzz cut — rapado parejo a máquina, nuca y patillas definidas a navaja.">
+            <img src="assets/img/corte-03.svg" alt="" width="400" height="400" loading="lazy"><span class="gallery__cap"><span class="gallery__n">03</span> Buzz cut</span><span class="sr-only">, ver en grande</span></button></li>
+          <li class="reveal"><button class="gallery__item" type="button" data-lb="3" data-src="assets/img/corte-04.svg" data-alt="Perfil ilustrado con barba negra perfilada, línea de mejilla marcada y pelo corto arriba." data-cap="Barba perfilada — línea de mejilla marcada a navaja y contorno de cuello limpio.">
+            <img src="assets/img/corte-04.svg" alt="" width="400" height="400" loading="lazy"><span class="gallery__cap"><span class="gallery__n">04</span> Barba perfilada</span><span class="sr-only">, ver en grande</span></button></li>
+          <li class="reveal"><button class="gallery__item" type="button" data-lb="4" data-src="assets/img/corte-05.svg" data-alt="Perfil ilustrado con fade medio y dos líneas de diseño amarillas sobre el costado." data-cap="Diseño de líneas — dos trazos paralelos y un zigzag sobre fade medio, con cuchilla en T.">
+            <img src="assets/img/corte-05.svg" alt="" width="400" height="400" loading="lazy"><span class="gallery__cap"><span class="gallery__n">05</span> Diseño de líneas</span><span class="sr-only">, ver en grande</span></button></li>
+          <li class="reveal"><button class="gallery__item" type="button" data-lb="5" data-src="assets/img/corte-06.svg" data-alt="Perfil ilustrado con crop texturizado: flequillo corto hacia adelante con puntas irregulares." data-cap="Crop texturizado — flequillo corto hacia adelante, puntas irregulares y fade bajo.">
+            <img src="assets/img/corte-06.svg" alt="" width="400" height="400" loading="lazy"><span class="gallery__cap"><span class="gallery__n">06</span> Crop texturizado</span><span class="sr-only">, ver en grande</span></button></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="pole-band" aria-hidden="true"></div>
+
+    <!-- RESERVA -->
+    <section class="sec sec--paper sec--book" id="reservar" aria-labelledby="reservar-t">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="sec-head__num" aria-hidden="true">05</p>
+          <div>
+            <h2 class="sec-head__title" id="reservar-t">Reserva <span>tu hora</span></h2>
+            <p class="sec-head__intro">Cinco pasos, un minuto. Los bloques ocupados aparecen tachados y te decimos por qué.</p>
+          </div>
+        </header>
+
+        <div class="demo-note" role="note">
+          <span class="demo-note__stamp" aria-hidden="true">Demo</span>
+          <p><strong>Reserva de demostración.</strong> Lo que reserves aquí se guarda solo en este navegador y no se envía a nadie: ni a la barbería (que es ficticia) ni a ningún servidor. Algunos bloques aparecen ocupados con reservas de ejemplo.</p>
+        </div>
+        <p class="storage-warn" id="storage-warn" hidden>Tu navegador está bloqueando el almacenamiento local: puedes probar la reserva, pero se perderá al recargar la página.</p>
+
+        <noscript><p class="noscript">La reserva en línea necesita JavaScript. Mientras tanto, revisa servicios y horario más arriba.</p></noscript>
+
+        <div class="booking" id="booking">
+          <ol class="steps" id="steps" aria-label="Progreso de la reserva"></ol>
+
+          <div class="booking__grid">
+            <form class="book-form" id="book-form" novalidate>
+              <!-- Paso 1 -->
+              <section class="panel" data-panel="1" aria-labelledby="p1-t">
+                <h3 class="panel__title" id="p1-t" tabindex="-1"><span class="panel__step">Paso 1 de 5</span> Elige el servicio</h3>
+                <fieldset class="opts-fs" aria-describedby="p1-err">
+                  <legend class="sr-only">Servicio</legend>
+                  <div class="opts opts--svc" id="opts-servicio"></div>
+                </fieldset>
+                <p class="step-err" id="p1-err" hidden></p>
+              </section>
+
+              <!-- Paso 2 -->
+              <section class="panel" data-panel="2" aria-labelledby="p2-t" hidden>
+                <h3 class="panel__title" id="p2-t" tabindex="-1"><span class="panel__step">Paso 2 de 5</span> ¿Con quién?</h3>
+                <fieldset class="opts-fs" aria-describedby="p2-help p2-err">
+                  <legend class="sr-only">Profesional</legend>
+                  <p class="panel__help" id="p2-help"></p>
+                  <div class="opts opts--barber" id="opts-barbero"></div>
+                </fieldset>
+                <p class="step-err" id="p2-err" hidden></p>
+              </section>
+
+              <!-- Paso 3 -->
+              <section class="panel" data-panel="3" aria-labelledby="p3-t" hidden>
+                <h3 class="panel__title" id="p3-t" tabindex="-1"><span class="panel__step">Paso 3 de 5</span> Elige el día</h3>
+                <fieldset class="opts-fs" aria-describedby="p3-help p3-err">
+                  <legend class="sr-only">Fecha</legend>
+                  <p class="panel__help" id="p3-help"></p>
+                  <div class="opts opts--date" id="opts-fecha"></div>
+                </fieldset>
+                <p class="step-err" id="p3-err" hidden></p>
+              </section>
+
+              <!-- Paso 4 -->
+              <section class="panel" data-panel="4" aria-labelledby="p4-t" hidden>
+                <h3 class="panel__title" id="p4-t" tabindex="-1"><span class="panel__step">Paso 4 de 5</span> Elige el horario</h3>
+                <div class="slot-alert" id="slot-alert" role="alert" hidden></div>
+                <fieldset class="opts-fs" aria-describedby="p4-help p4-err">
+                  <legend class="sr-only" id="p4-legend">Horario</legend>
+                  <p class="panel__help" id="p4-help"></p>
+                  <div id="opts-hora"></div>
+                </fieldset>
+                <p class="step-err" id="p4-err" hidden></p>
+                <ul class="slot-legend" aria-label="Qué significa cada estado">
+                  <li><span class="sw sw--free" aria-hidden="true"></span><strong>Libre:</strong> puedes tomarlo.</li>
+                  <li><span class="sw sw--busy" aria-hidden="true"></span><strong>Ocupado:</strong> ese bloque ya tiene una reserva (de ejemplo o hecha en este navegador).</li>
+                  <li><span class="sw sw--short" aria-hidden="true"></span><strong>No alcanza:</strong> el bloque está libre, pero tu servicio se cruzaría con la reserva siguiente.</li>
+                </ul>
+              </section>
+
+              <!-- Paso 5 -->
+              <section class="panel" data-panel="5" aria-labelledby="p5-t" hidden>
+                <h3 class="panel__title" id="p5-t" tabindex="-1"><span class="panel__step">Paso 5 de 5</span> Tus datos</h3>
+                <div class="err-summary" id="err-summary" role="alert" hidden>
+                  <p class="err-summary__t">Revisa estos datos antes de confirmar:</p>
+                  <ul id="err-list"></ul>
+                </div>
+                <div class="fields">
+                  <div class="field">
+                    <label for="f-nombre">Nombre y apellido <span class="field__req">obligatorio</span></label>
+                    <input id="f-nombre" name="nombre" type="text" autocomplete="name" maxlength="60" required aria-describedby="f-nombre-err">
+                    <p class="field__err" id="f-nombre-err" hidden></p>
+                  </div>
+                  <div class="field">
+                    <label for="f-tel">Teléfono celular <span class="field__req">obligatorio</span></label>
+                    <input id="f-tel" name="telefono" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" required aria-describedby="f-tel-hint f-tel-err">
+                    <p class="field__hint" id="f-tel-hint">Celular chileno, por ejemplo +56 9 1234 5678.</p>
+                    <p class="field__err" id="f-tel-err" hidden></p>
+                  </div>
+                  <div class="field">
+                    <label for="f-correo">Correo <span class="field__opt">opcional</span></label>
+                    <input id="f-correo" name="correo" type="email" autocomplete="email" maxlength="80" aria-describedby="f-correo-hint f-correo-err">
+                    <p class="field__hint" id="f-correo-hint">No te escribiremos: es una demostración. Solo queda anotado en tu ticket.</p>
+                    <p class="field__err" id="f-correo-err" hidden></p>
+                  </div>
+                </div>
+                <p class="panel__fine">Al confirmar, la reserva se guarda <strong>solo en este navegador</strong>. No se envía a la barbería ni a ningún servidor.</p>
+              </section>
+
+              <!-- Paso 6 -->
+              <section class="panel panel--done" data-panel="6" aria-labelledby="p6-t" hidden>
+                <h3 class="panel__title" id="p6-t" tabindex="-1"><span class="panel__step">Listo</span> Reserva de demostración guardada</h3>
+                <div id="confirmacion"></div>
+              </section>
+
+              <div class="book-nav" id="book-nav">
+                <button class="btn btn--ghost-ink" type="button" id="btn-back">← Atrás</button>
+                <button class="btn btn--ink btn--lg" type="submit" id="btn-next">Siguiente →</button>
+              </div>
+            </form>
+
+            <aside class="ticket" aria-labelledby="ticket-t">
+             <div class="ticket__inner">
+              <div class="ticket__head">
+                <p class="ticket__brand" aria-hidden="true">Distrito Barber</p>
+                <h3 class="ticket__title" id="ticket-t">Tu ticket</h3>
+              </div>
+              <dl class="ticket__rows" id="ticket-rows"></dl>
+              <div class="ticket__foot">
+                <p class="ticket__total"><span>Total de ejemplo</span> <strong id="ticket-total">—</strong></p>
+                <p class="ticket__note">Se paga en el local. Esta demo no cobra ni guarda medios de pago.</p>
+              </div>
+             </div>
+            </aside>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- MIS RESERVAS -->
+    <section class="sec sec--ink" id="mis-reservas" aria-labelledby="mis-t">
+      <div class="wrap">
+        <header class="sec-head sec-head--light reveal">
+          <p class="sec-head__num" aria-hidden="true">06</p>
+          <div>
+            <h2 class="sec-head__title" id="mis-t">Mis reservas <span>en este navegador</span></h2>
+            <p class="sec-head__intro">Solo existen aquí, en este navegador. Si anulas una, el bloque vuelve a quedar libre en la agenda.</p>
+          </div>
+        </header>
+        <p class="mine-status" id="mine-status" role="status" tabindex="-1"></p>
+        <div id="mine-list" class="mine"></div>
+      </div>
+    </section>
+
+    <!-- VISÍTANOS -->
+    <section class="sec sec--paper" id="visitanos" aria-labelledby="visitanos-t">
+      <div class="wrap">
+        <header class="sec-head reveal">
+          <p class="sec-head__num" aria-hidden="true">07</p>
+          <div>
+            <h2 class="sec-head__title" id="visitanos-t">Visítanos <span>en el barrio</span></h2>
+            <p class="sec-head__intro">Dirección y teléfono inventados para la demostración; el barrio sí existe.</p>
+          </div>
+        </header>
+        <div class="visit">
+          <figure class="visit__map reveal">
+            <svg viewBox="0 0 600 420" role="img" aria-labelledby="mapa-t mapa-d" focusable="false">
+              <title id="mapa-t">Plano esquemático de la ubicación</title>
+              <desc id="mapa-d">Distrito Barber marcado en el Pasaje Los Faroles, entre Merced y el Parque Forestal, cerca del Metro Bellas Artes y del Cerro Santa Lucía. Plano no a escala.</desc>
+              <defs>
+                <pattern id="mapHatch" width="10" height="10" patternUnits="userSpaceOnUse" patternTransform="rotate(45)">
+                  <rect width="4" height="10" fill="#111111" fill-opacity=".18"/>
+                </pattern>
+              </defs>
+              <rect width="600" height="420" fill="#E4DED1"/>
+              <path d="M0 26 C150 6 300 46 600 16 L600 58 C300 88 150 48 0 68Z" fill="#111111"/>
+              <text x="40" y="52" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="3" fill="#F2EFE8">RÍO MAPOCHO</text>
+              <path d="M0 80 C150 60 300 100 600 70 L600 132 L0 142Z" fill="url(#mapHatch)"/>
+              <text x="360" y="118" font-family="'Space Grotesk', sans-serif" font-size="13" font-weight="700" letter-spacing="2" fill="#111111">PARQUE FORESTAL</text>
+              <g stroke="#F2EFE8" stroke-width="16" stroke-linecap="square">
+                <path d="M0 150 L600 140"/>
+                <path d="M0 300 L600 288"/>
+                <path d="M0 392 L600 380"/>
+                <path d="M120 140 L112 420"/>
+                <path d="M262 140 L258 420"/>
+                <path d="M430 140 L436 420"/>
+                <path d="M548 140 L556 420"/>
+              </g>
+              <path d="M262 224 L430 220" stroke="#F2EFE8" stroke-width="9"/>
+              <path d="M262 224 L430 220" stroke="#111111" stroke-width="2" stroke-dasharray="4 6"/>
+              <path d="M20 318 C60 300 96 310 100 340 C104 372 70 380 40 376 C14 372 6 336 20 318Z" fill="url(#mapHatch)"/>
+              <text x="22" y="408" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#111111">CERRO SANTA LUCÍA</text>
+              <text x="276" y="292" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#4D4A45">MERCED</text>
+              <text x="246" y="270" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" letter-spacing="1" fill="#4D4A45" transform="rotate(-89 246 270)">LASTARRIA</text>
+              <text x="272" y="248" font-family="'Space Grotesk', sans-serif" font-size="11" font-weight="700" fill="#111111">PJE. LOS FAROLES</text>
+              <g transform="translate(170 170)">
+                <circle r="17" fill="#111111"/>
+                <text y="6" text-anchor="middle" font-family="'Space Grotesk', sans-serif" font-size="17" font-weight="700" fill="#F2EFE8">M</text>
+                <text x="24" y="5" font-family="'Space Grotesk', sans-serif" font-size="12" font-weight="700" fill="#111111">BELLAS ARTES</text>
+              </g>
+              <g transform="translate(372 222)">
+                <path d="M0 0 C-16 -22 -22 -32 -22 -42 C-22 -56 -12 -64 0 -64 C12 -64 22 -56 22 -42 C22 -32 16 -22 0 0Z" fill="#F5C518" stroke="#111111" stroke-width="3"/>
+                <circle cy="-42" r="8" fill="#111111"/>
+              </g>
+              <g transform="translate(398 168)">
+                <rect width="178" height="40" fill="#111111"/>
+                <text x="12" y="26" font-family="Anton, Impact, sans-serif" font-size="20" letter-spacing="1" fill="#F5C518">DISTRITO BARBER</text>
+              </g>
+            </svg>
+            <figcaption>Plano esquemático, no a escala.</figcaption>
+          </figure>
+          <div class="visit__info reveal">
+            <dl class="visit__dl">
+              <div><dt>Dirección</dt><dd>Pasaje Los Faroles 318<br>Barrio Lastarria, Santiago</dd></div>
+              <div><dt>Cómo llegar</dt><dd>A dos cuadras del Metro Bellas Artes (Línea 5), saliendo hacia el Parque Forestal.</dd></div>
+              <div><dt>Teléfono</dt><dd>+56 9 2741 0318 <span class="muted">(ficticio)</span></dd></div>
+              <div><dt>Correo</dt><dd>hola@distritobarber.example</dd></div>
+            </dl>
+            <table class="hours">
+              <caption>Horario de atención</caption>
+              <tbody>
+                <tr><th scope="row">Lunes a viernes</th><td>10:00–20:00</td></tr>
+                <tr><th scope="row">Sábado</th><td>10:00–20:00</td></tr>
+                <tr class="hours__off"><th scope="row">Domingo</th><td>Cerrado</td></tr>
+              </tbody>
+            </table>
+            <a class="btn btn--ink btn--lg" href="#reservar">Reservar hora <span aria-hidden="true">→</span></a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="pole-band" aria-hidden="true"></div>
+    <div class="wrap footer__grid">
+      <div class="footer__brand">
+        <p class="footer__word" aria-hidden="true">Distrito<br><span>Barber</span></p>
+        <p>Pasaje Los Faroles 318, Barrio Lastarria, Santiago.<br>Lunes a sábado, 10:00 a 20:00. Domingo cerrado.</p>
+      </div>
+      <div class="footer__demo">
+        <p class="footer__stamp">Negocio ficticio · Sitio de demostración creado por Estudio Norte</p>
+        <p>Distrito Barber no existe. Dirección, teléfono, correo, equipo y precios son inventados. Las reservas de esta página se guardan solo en tu navegador y no se envían a nadie.</p>
+      </div>
+      <div class="footer__links">
+        <nav aria-label="Pie de página">
+          <ul>
+            <li><a href="#servicios">Servicios</a></li>
+            <li><a href="#equipo">Equipo</a></li>
+            <li><a href="#reservar">Reservar</a></li>
+            <li><a href="#mis-reservas">Mis reservas</a></li>
+          </ul>
+        </nav>
+        <p class="footer__credits">Tipografías Anton y Space Grotesk (SIL Open Font License 1.1). Ilustraciones SVG originales.</p>
+        <p><a class="footer__portfolio" href="../../index.html">Ver portafolio de Estudio Norte</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Lightbox de galería -->
+  <dialog class="lightbox" id="lightbox" aria-labelledby="lb-title">
+    <div class="lightbox__in">
+      <div class="lightbox__bar">
+        <h2 class="lightbox__title" id="lb-title">Galería de cortes</h2>
+        <button class="lightbox__close" type="button" data-lb-close>Cerrar <span aria-hidden="true">✕</span></button>
+      </div>
+      <figure class="lightbox__fig">
+        <img id="lb-img" src="assets/img/corte-01.svg" alt="" width="400" height="400">
+        <figcaption id="lb-cap"></figcaption>
+      </figure>
+      <div class="lightbox__ctrl">
+        <button class="btn btn--ghost btn--sm" type="button" data-lb-prev>← Anterior</button>
+        <p class="lightbox__count" id="lb-count" aria-live="polite"></p>
+        <button class="btn btn--ghost btn--sm" type="button" data-lb-next>Siguiente →</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- Confirmación para anular -->
+  <dialog class="confirm" id="dlg-anular" aria-labelledby="anular-t" aria-describedby="anular-d">
+    <form method="dialog" class="confirm__in">
+      <h2 class="confirm__title" id="anular-t">¿Anular esta reserva?</h2>
+      <p id="anular-d"></p>
+      <div class="confirm__actions">
+        <button class="btn btn--ghost-ink" type="submit" value="mantener" autofocus>Mantener reserva</button>
+        <button class="btn btn--danger" type="submit" value="anular">Sí, anular</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

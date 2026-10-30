@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <!-- Retrato gráfico ficticio: Mauro. Ilustración original para Distrito Barber (demo de Estudio Norte). -->
+  <defs>
+    <pattern id="puntos" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="2.1" fill="#111111" fill-opacity=".16"/>
+    </pattern>
+    <radialGradient id="luz" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="#F5C518"/>
+  <rect width="400" height="500" fill="url(#puntos)"/>
+  <circle cx="200" cy="236" r="152" fill="#F2EFE8"/>
+  <circle cx="200" cy="236" r="152" fill="none" stroke="#111111" stroke-width="3" stroke-dasharray="2 9"/>
+  <!-- camisa y delantal -->
+  <path d="M28 500 C36 420 104 384 168 378 L232 378 C296 384 364 420 372 500Z" fill="#F2EFE8" stroke="#111111" stroke-width="4"/>
+  <path d="M146 500 L146 414 C146 402 156 396 168 396 L232 396 C244 396 254 402 254 414 L254 500Z" fill="#111111"/>
+  <path d="M168 398 L176 374 M232 398 L224 374" stroke="#111111" stroke-width="9" stroke-linecap="round"/>
+  <rect x="178" y="436" width="44" height="30" rx="3" fill="none" stroke="#F5C518" stroke-width="3"/>
+  <!-- cuello -->
+  <path d="M166 300 L166 372 C180 392 220 392 234 372 L234 300Z" fill="#A9714D"/>
+  <path d="M166 378 L190 404 L200 384 Z M234 378 L210 404 L200 384 Z" fill="#FFFFFF" stroke="#111111" stroke-width="3" stroke-linejoin="round"/>
+  <!-- orejas -->
+  <ellipse cx="118" cy="240" rx="15" ry="25" fill="#C98E66"/>
+  <ellipse cx="282" cy="240" rx="15" ry="25" fill="#A9714D"/>
+  <!-- cabeza -->
+  <ellipse cx="200" cy="228" rx="82" ry="102" fill="#C98E66"/>
+  <path d="M206 126 C252 130 282 172 282 228 C282 288 248 330 200 330 C230 298 240 262 238 226 C236 186 226 150 206 126Z" fill="#A9714D"/>
+  <ellipse cx="200" cy="228" rx="82" ry="102" fill="url(#luz)"/>
+  <!-- pelo peinado hacia atrás -->
+  <path d="M116 222 C108 150 148 110 204 110 C258 110 296 148 284 222 C278 192 270 170 254 160 C232 148 170 148 148 160 C132 170 122 194 116 222Z" fill="#A39D94"/>
+  <path d="M150 138 C180 124 232 124 262 142 M138 158 C172 140 236 140 272 162 M128 184 C150 166 172 160 190 158" fill="none" stroke="#6E6862" stroke-width="4" stroke-linecap="round"/>
+  <path d="M172 122 C190 117 214 117 232 121" fill="none" stroke="#E4DFD6" stroke-width="3" stroke-linecap="round"/>
+  <!-- cejas -->
+  <path d="M154 200 L188 196 M212 196 L246 200" stroke="#6E6862" stroke-width="9" stroke-linecap="round"/>
+  <!-- ojos y lentes -->
+  <ellipse cx="172" cy="224" rx="7" ry="5" fill="#111111"/>
+  <ellipse cx="228" cy="224" rx="7" ry="5" fill="#111111"/>
+  <circle cx="172" cy="224" r="20" fill="#FFFFFF" fill-opacity=".12" stroke="#111111" stroke-width="4"/>
+  <circle cx="228" cy="224" r="20" fill="#FFFFFF" fill-opacity=".12" stroke="#111111" stroke-width="4"/>
+  <path d="M192 222 Q200 216 208 222 M152 220 L122 214 M248 220 L278 214" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+  <!-- nariz -->
+  <path d="M202 234 L194 266 C198 271 206 271 212 266" fill="none" stroke="#7E4F33" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- bigote manubrio -->
+  <path d="M168 282 C180 270 194 272 200 279 C206 272 220 270 232 282 C240 290 250 288 254 278 C252 296 234 302 220 294 C212 290 206 288 200 290 C194 288 188 290 180 294 C166 302 148 296 146 278 C150 288 160 290 168 282Z" fill="#D8D3CA" stroke="#6E6862" stroke-width="2.5" stroke-linejoin="round"/>
+  <path d="M186 306 Q200 312 214 306" fill="none" stroke="#6B3527" stroke-width="4.5" stroke-linecap="round"/>
+</svg>

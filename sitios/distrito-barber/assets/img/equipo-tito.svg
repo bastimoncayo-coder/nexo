@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <!-- Retrato gráfico ficticio: Tito. Ilustración original para Distrito Barber (demo de Estudio Norte). -->
+  <defs>
+    <pattern id="puntos" width="12" height="12" patternUnits="userSpaceOnUse">
+      <circle cx="6" cy="6" r="2.1" fill="#F5C518" fill-opacity=".22"/>
+    </pattern>
+    <radialGradient id="luz" cx=".35" cy=".25" r=".8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".24"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="#111111"/>
+  <rect width="400" height="500" fill="url(#puntos)"/>
+  <circle cx="200" cy="236" r="152" fill="#F5C518"/>
+  <!-- camisa -->
+  <path d="M28 500 C36 420 104 384 168 378 L232 378 C296 384 364 420 372 500Z" fill="#F2EFE8" stroke="#111111" stroke-width="4"/>
+  <path d="M200 392 L200 500" stroke="#111111" stroke-width="3"/>
+  <circle cx="200" cy="420" r="4" fill="#111111"/><circle cx="200" cy="452" r="4" fill="#111111"/><circle cx="200" cy="484" r="4" fill="#111111"/>
+  <!-- cuello -->
+  <path d="M166 300 L166 372 C180 392 220 392 234 372 L234 300Z" fill="#533320"/>
+  <path d="M164 376 L188 404 L200 388 Z M236 376 L212 404 L200 388 Z" fill="#F2EFE8" stroke="#111111" stroke-width="3" stroke-linejoin="round"/>
+  <!-- orejas -->
+  <ellipse cx="118" cy="236" rx="15" ry="24" fill="#6B4430"/>
+  <ellipse cx="282" cy="236" rx="15" ry="24" fill="#533320"/>
+  <!-- cabeza rapada -->
+  <ellipse cx="200" cy="224" rx="84" ry="104" fill="#6B4430"/>
+  <path d="M206 120 C254 124 284 168 284 224 C284 286 250 328 200 328 C232 296 242 260 240 222 C238 182 228 146 206 120Z" fill="#533320"/>
+  <ellipse cx="200" cy="224" rx="84" ry="104" fill="url(#luz)"/>
+  <ellipse cx="176" cy="150" rx="30" ry="12" fill="#FFFFFF" fill-opacity=".2" transform="rotate(-18 176 150)"/>
+  <!-- barba completa -->
+  <path d="M116 230 C116 306 150 364 200 372 C250 364 284 306 284 230 C276 262 262 276 244 282 C232 296 168 296 156 282 C138 276 124 262 116 230Z" fill="#1A1A1A"/>
+  <path d="M200 304 C197 324 199 342 204 362 M188 312 C186 326 188 338 192 350" fill="none" stroke="#A39D94" stroke-width="5" stroke-linecap="round"/>
+  <path d="M140 300 L150 310 M252 306 L262 296 M162 330 L170 338 M232 336 L240 328" stroke="#3A3A3A" stroke-width="3" stroke-linecap="round"/>
+  <!-- bigote y boca -->
+  <path d="M166 284 C180 272 196 274 200 281 C204 274 220 272 234 284 C224 294 210 292 200 290 C190 292 176 294 166 284Z" fill="#1A1A1A"/>
+  <path d="M188 296 Q200 302 212 296" fill="none" stroke="#9A6046" stroke-width="4" stroke-linecap="round"/>
+  <!-- cejas -->
+  <path d="M152 198 L190 194 M210 194 L248 198" stroke="#111111" stroke-width="10" stroke-linecap="round"/>
+  <!-- ojos -->
+  <ellipse cx="172" cy="220" rx="7" ry="5" fill="#111111"/>
+  <ellipse cx="228" cy="220" rx="7" ry="5" fill="#111111"/>
+  <circle cx="174" cy="218" r="1.8" fill="#F2EFE8"/><circle cx="230" cy="218" r="1.8" fill="#F2EFE8"/>
+  <!-- nariz -->
+  <path d="M202 228 L193 262 C198 268 208 268 214 262" fill="none" stroke="#3A2214" stroke-width="4.5" stroke-linecap="round" stroke-linejoin="round"/>
+</svg>

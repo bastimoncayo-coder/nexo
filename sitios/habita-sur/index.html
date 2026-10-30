@@ -1,0 +1,229 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Habita Sur · Propiedades en el sur de Chile (sitio de demostración)</title>
+  <meta name="description" content="Habita Sur es una corredora de propiedades ficticia del sur de Chile. Sitio de demostración creado por Estudio Norte: las propiedades son ejemplos, no ofertas reales.">
+  <meta name="theme-color" content="#1F4A4A">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <p class="aviso-demo"><strong>Negocio ficticio · Sitio de demostración creado por Estudio Norte.</strong> <span class="largo">Todas las propiedades son ejemplos ficticios: no son ofertas reales.</span><span class="corto">Propiedades de ejemplo, no reales.</span></p>
+    <div class="contenedor barra">
+      <a class="marca" href="index.html">
+        <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="8" fill="#1F4A4A"/><path d="M9 20.5 20 11l11 9.5" fill="none" stroke="#FAFAF7" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 18.5V26h14v-7.5" fill="none" stroke="#FAFAF7" stroke-width="2.2"/><path d="M8 30.5c3-2 5-2 8 0s5 2 8 0 5-2 8 0" fill="none" stroke="#D9A274" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span class="marca__nombre">Habita <em>Sur</em></span>
+      </a>
+      <nav class="nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="propiedades.html">Propiedades</a></li>
+          <li><a href="index.html#publicar">Publicar con nosotros</a></li>
+          <li><a href="index.html#oficina">La oficina</a></li>
+          <li><a href="consultas.html">Mis consultas</a></li>
+        </ul>
+      </nav>
+      <a class="enlace-fav" href="propiedades.html?favoritos=1" data-fav-enlace aria-label="Mis favoritos">
+        <svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        <span class="enlace-fav__texto">Favoritos</span>
+        <span class="contador" data-fav-contador>0</span>
+      </a>
+      <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-boton><span class="boton-menu__lineas" aria-hidden="true"></span>Menú</button>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <section class="portada" aria-labelledby="titulo-portada">
+      <div class="contenedor portada__grilla">
+        <div>
+          <p class="antetitulo">Corredora de propiedades · Sur de Chile</p>
+          <h1 id="titulo-portada">Casas, departamentos y parcelas entre <em>lagos y volcanes</em></h1>
+          <p class="entrada">Desde nuestra oficina en Puerto Varas acompañamos compras, ventas y arriendos en seis comunas, de Concepción a Puerto Montt. Fichas claras, visitas coordinadas y precios sin letra chica.</p>
+          <form class="buscador" action="propiedades.html" method="get" aria-label="Buscar propiedades">
+            <div class="campo">
+              <label for="b-operacion">Operación</label>
+              <select id="b-operacion" name="operacion">
+                <option value="">Venta o arriendo</option>
+                <option value="venta">Venta</option>
+                <option value="arriendo">Arriendo</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="b-tipo">Tipo</label>
+              <select id="b-tipo" name="tipo">
+                <option value="">Todos los tipos</option>
+                <option value="casa">Casa</option>
+                <option value="departamento">Departamento</option>
+                <option value="terreno">Parcela o terreno</option>
+                <option value="comercial">Oficina o local</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="b-comuna">Ubicación</label>
+              <select id="b-comuna" name="comuna">
+                <option value="">Todas las comunas</option>
+                <option value="concepcion">Concepción</option>
+                <option value="temuco">Temuco</option>
+                <option value="valdivia">Valdivia</option>
+                <option value="frutillar">Frutillar</option>
+                <option value="puerto-varas">Puerto Varas</option>
+                <option value="puerto-montt">Puerto Montt</option>
+              </select>
+            </div>
+            <button class="boton" type="submit">
+              <svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><circle cx="11" cy="11" r="6.5"/><path d="m16 16 4 4"/></svg>
+              Buscar
+            </button>
+          </form>
+        </div>
+        <figure class="portada__imagen" data-portada></figure>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="titulo-destacadas">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <div>
+            <p class="antetitulo">Selección de la semana</p>
+            <h2 id="titulo-destacadas">Propiedades destacadas</h2>
+          </div>
+          <a class="enlace-flecha" href="propiedades.html" data-total-enlace>Ver todas las propiedades
+            <svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+        </div>
+        <div class="grilla" data-destacadas></div>
+        <p class="nota-uf">* Valor en UF solo referencial, calculado con una UF fija de $40.000 para esta demostración.</p>
+        <noscript><p>Para ver las propiedades activa JavaScript en tu navegador.</p></noscript>
+      </div>
+    </section>
+
+    <section class="seccion seccion--arena" aria-labelledby="titulo-comunas">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <div>
+            <p class="antetitulo">Dónde trabajamos</p>
+            <h2 id="titulo-comunas">Seis comunas, del Biobío al Reloncaví</h2>
+            <p class="entrada">Conocemos cada barrio por haberlo recorrido con lluvia y con sol. Elige una comuna para ver lo que tenemos ahí.</p>
+          </div>
+        </div>
+        <div class="comunas" data-comunas></div>
+      </div>
+    </section>
+
+    <section class="seccion" aria-labelledby="titulo-pasos">
+      <div class="contenedor">
+        <div class="seccion__cabeza">
+          <div>
+            <p class="antetitulo">Cómo trabajamos</p>
+            <h2 id="titulo-pasos">Del primer mensaje a la entrega de llaves</h2>
+          </div>
+        </div>
+        <ol class="pasos">
+          <li>
+            <h3>Conversamos</h3>
+            <p>Nos cuentas qué buscas, en qué comuna y con qué presupuesto. Si no conoces la zona, te explicamos cómo es el invierno en cada sector.</p>
+          </li>
+          <li>
+            <h3>Visitamos</h3>
+            <p>Coordinamos visitas agrupadas por sector para que no pierdas el día en la carretera. Vamos contigo y respondemos en terreno.</p>
+          </li>
+          <li>
+            <h3>Revisamos papeles</h3>
+            <p>Pedimos certificado de dominio vigente, hipotecas y gravámenes y, en parcelas, rol y factibilidades antes de que firmes nada.</p>
+          </li>
+          <li>
+            <h3>Firmamos y entregamos</h3>
+            <p>Acompañamos la promesa, la escritura o el contrato de arriendo, y hacemos la entrega con inventario y fotos.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <section class="seccion seccion--arena" id="publicar" aria-labelledby="titulo-publicar">
+      <div class="contenedor publicar">
+        <div>
+          <p class="antetitulo">Para propietarios</p>
+          <h2 id="titulo-publicar">¿Quieres vender o arrendar tu propiedad?</h2>
+          <p class="entrada">Hacemos una visita de tasación, fotografías y una ficha completa antes de publicar. Para empezar necesitamos:</p>
+        </div>
+        <div>
+          <ul class="lista-check">
+            <li><svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Rol de la propiedad y certificado de dominio vigente.</li>
+            <li><svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Planos o, si no los tienes, las medidas aproximadas de cada recinto.</li>
+            <li><svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>Últimas boletas de contribuciones, luz y agua (o gastos comunes).</li>
+            <li><svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M5 12.5l4.5 4.5L19 7.5"/></svg>En parcelas: factibilidad eléctrica y fuente de agua.</li>
+          </ul>
+          <a class="boton" href="index.html?motivo=publicar#contacto">Escribir para publicar</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="seccion" id="oficina" aria-labelledby="titulo-oficina">
+      <div class="contenedor oficina">
+        <div>
+          <p class="antetitulo">La oficina</p>
+          <h2 id="titulo-oficina">Puerto Varas, a dos cuadras del lago</h2>
+          <p>Atendemos en una casa de tejuelas reacondicionada como oficina. Si vienes a ver propiedades fuera de Puerto Varas, partimos desde aquí.</p>
+          <dl class="datos-oficina">
+            <dt>Dirección</dt><dd>Pasaje Las Tejuelas 214, Puerto Varas</dd>
+            <dt>Horario</dt><dd>Lunes a viernes, 09:30 a 18:30<br>Sábados, 10:00 a 13:30</dd>
+            <dt>Teléfono</dt><dd>+56 9 6123 4517</dd>
+            <dt>Correo</dt><dd>contacto@habitasur.example</dd>
+          </dl>
+          <figure class="mini-mapa" data-mapa-oficina></figure>
+          <p class="leyenda">Esquema ilustrado, no a escala. La dirección y los datos de contacto son ficticios.</p>
+        </div>
+        <div class="panel" id="contacto" tabindex="-1">
+          <h2>Escríbenos</h2>
+          <p class="ayuda">Todos los campos son obligatorios salvo los marcados como opcionales.</p>
+          <div data-formulario-contacto></div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__grilla">
+        <div>
+          <a class="marca" href="index.html">
+            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="8" fill="#FAFAF7"/><path d="M9 20.5 20 11l11 9.5" fill="none" stroke="#1F4A4A" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 18.5V26h14v-7.5" fill="none" stroke="#1F4A4A" stroke-width="2.2"/><path d="M8 30.5c3-2 5-2 8 0s5 2 8 0 5-2 8 0" fill="none" stroke="#B8794B" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span class="marca__nombre">Habita <em>Sur</em></span>
+          </a>
+          <p>Corredora de propiedades ficticia con oficina en Puerto Varas. Este sitio es una demostración: propiedades, precios, direcciones y datos de contacto son inventados.</p>
+        </div>
+        <div>
+          <h2>Explorar</h2>
+          <ul>
+            <li><a href="propiedades.html">Todas las propiedades</a></li>
+            <li><a href="propiedades.html?operacion=venta">En venta</a></li>
+            <li><a href="propiedades.html?operacion=arriendo">En arriendo</a></li>
+            <li><a href="propiedades.html?favoritos=1">Mis favoritos</a></li>
+            <li><a href="consultas.html">Mis consultas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Oficina (ficticia)</h2>
+          <ul>
+            <li>Pasaje Las Tejuelas 214, Puerto Varas</li>
+            <li>+56 9 6123 4517</li>
+            <li>contacto@habitasur.example</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>Negocio ficticio · Sitio de demostración creado por Estudio Norte. Tipografías Manrope y DM Serif Display (SIL OFL 1.1). Ilustraciones SVG originales.</p>
+        <a class="pie__portafolio" href="../../index.html">Ver portafolio de Estudio Norte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/escenas.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/inicio.js"></script>
+</body>
+</html>

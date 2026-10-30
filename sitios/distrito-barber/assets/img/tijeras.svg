@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Tijeras de corte. Ilustración original para Distrito Barber (demo de Estudio Norte). -->
+  <defs>
+    <linearGradient id="acero" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".6" stop-color="#F2EFE8"/>
+      <stop offset="1" stop-color="#BDB6A8"/>
+    </linearGradient>
+    <pattern id="trama" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1.4" fill="#111111" fill-opacity=".22"/>
+    </pattern>
+  </defs>
+  <circle cx="120" cy="120" r="98" fill="url(#trama)"/>
+  <g transform="rotate(-38 120 120)">
+    <!-- hojas -->
+    <path d="M118 112 L228 100 C231 102 231 107 228 109 L122 128 Z" fill="url(#acero)" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M118 128 L228 140 C231 138 231 133 228 131 L122 112 Z" fill="url(#acero)" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M140 116 L214 106" stroke="#F5C518" stroke-width="3" stroke-linecap="round"/>
+    <!-- brazos -->
+    <path d="M118 114 C100 108 92 96 78 92" fill="none" stroke="#111111" stroke-width="12" stroke-linecap="round"/>
+    <path d="M118 126 C100 132 92 144 78 148" fill="none" stroke="#111111" stroke-width="12" stroke-linecap="round"/>
+    <!-- anillos -->
+    <circle cx="56" cy="86" r="24" fill="none" stroke="#111111" stroke-width="12"/>
+    <circle cx="56" cy="154" r="24" fill="none" stroke="#111111" stroke-width="12"/>
+    <circle cx="56" cy="86" r="17" fill="none" stroke="#F5C518" stroke-width="3"/>
+    <!-- descanso dedo -->
+    <path d="M40 176 C30 190 28 200 36 204" fill="none" stroke="#111111" stroke-width="7" stroke-linecap="round"/>
+    <!-- tornillo -->
+    <circle cx="120" cy="120" r="8" fill="#F5C518" stroke="#111111" stroke-width="3"/>
+    <path d="M116 120 L124 120" stroke="#111111" stroke-width="2.5" stroke-linecap="round"/>
+  </g>
+</svg>

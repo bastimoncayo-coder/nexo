@@ -1,0 +1,89 @@
+/* Alex · botón flotante y diálogo. Usa sus propias variables para verse igual en el portafolio y en la web. */
+.alex-lanzador, .alex-dialogo {
+  --alex-tinta: #12162B;
+  --alex-tinta-2: #262C4D;
+  --alex-claro: #F6F7FB;
+  --alex-linea: #D5D9E6;
+  --alex-gris: #4D5368;
+  --alex-naranja: #FF6B2C;
+  --alex-naranja-oscuro: #B23C0B;
+  font-family: inherit;
+}
+.alex-oculto { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+
+.alex-lanzador {
+  position: fixed; right: 20px; bottom: 20px; z-index: 40;
+  display: inline-flex; align-items: center; gap: .7rem;
+  min-height: 56px; padding: .45rem 1.1rem .45rem .45rem;
+  border: 0; border-radius: 999px; cursor: pointer;
+  background: var(--alex-tinta); color: #fff; text-align: left; line-height: 1.2; font-size: .95rem; font-weight: 600;
+  box-shadow: 0 10px 30px rgba(18, 22, 43, .28);
+}
+.alex-lanzador:hover { background: var(--alex-tinta-2); }
+.alex-lanzador:focus-visible { outline: 3px solid var(--alex-naranja); outline-offset: 3px; }
+.alex-lanzador small { display: block; font-size: .75rem; font-weight: 400; color: #C9CDDC; }
+.alex-monograma {
+  width: 44px; height: 44px; flex-shrink: 0; border-radius: 50%; display: grid; place-items: center;
+  background: var(--alex-naranja); color: var(--alex-tinta); font-weight: 800; font-size: 1.3rem;
+}
+
+.alex-dialogo {
+  width: min(420px, calc(100% - 24px)); height: min(640px, calc(100dvh - 24px)); max-height: calc(100dvh - 24px);
+  margin: auto 20px 20px auto; padding: 0; overflow: hidden;
+  border: 1px solid var(--alex-linea); border-radius: 20px;
+  background: #fff; color: var(--alex-tinta);
+  box-shadow: 0 24px 60px rgba(18, 22, 43, .3);
+}
+.alex-dialogo[open] { display: flex; flex-direction: column; }
+.alex-dialogo::backdrop { background: rgba(18, 22, 43, .35); }
+.alex-cabecera { position: relative; display: flex; align-items: center; gap: .8rem; padding: 1rem 3.5rem 1rem 1.1rem; background: var(--alex-tinta); color: #fff; }
+.alex-cabecera h2 { margin: 0; font-size: 1.1rem; line-height: 1.2; }
+.alex-cabecera p { margin: .2rem 0 0; font-size: .8rem; color: #C9CDDC; }
+.alex-cerrar {
+  position: absolute; right: .6rem; top: 50%; transform: translateY(-50%);
+  width: 44px; height: 44px; border: 0; border-radius: 50%; background: transparent; color: #fff; font-size: 1.6rem; line-height: 1; cursor: pointer;
+}
+.alex-cerrar:hover { background: rgba(255, 255, 255, .12); }
+.alex-cerrar:focus-visible, .alex-dialogo button:focus-visible, .alex-dialogo a:focus-visible, .alex-dialogo input:focus-visible { outline: 3px solid var(--alex-naranja); outline-offset: 2px; }
+.alex-aviso { margin: 0; padding: .7rem 1.1rem; font-size: .8rem; line-height: 1.5; color: var(--alex-gris); background: var(--alex-claro); border-bottom: 1px solid var(--alex-linea); }
+
+.alex-mensajes { flex: 1; min-height: 80px; overflow-y: auto; overscroll-behavior: contain; padding: 1rem 1.1rem; display: flex; flex-direction: column; gap: .9rem; }
+.alex-mensaje { max-width: 92%; align-self: flex-start; }
+.alex-mensaje--usuario { align-self: flex-end; }
+.alex-mensaje__autor { display: block; margin: 0 0 .25rem .2rem; font-size: .75rem; font-weight: 600; color: var(--alex-gris); }
+.alex-mensaje--usuario .alex-mensaje__autor { text-align: right; margin-right: .2rem; }
+.alex-mensaje p { margin: 0; padding: .7rem .9rem; border-radius: 14px 14px 14px 4px; background: var(--alex-claro); font-size: .95rem; line-height: 1.55; white-space: pre-wrap; overflow-wrap: anywhere; }
+.alex-mensaje--usuario p { background: var(--alex-tinta); color: #fff; border-radius: 14px 14px 4px 14px; }
+.alex-mensaje a { display: inline-block; margin: .5rem .2rem 0; color: var(--alex-naranja-oscuro); font-weight: 600; font-size: .9rem; text-underline-offset: 3px; }
+
+.alex-atajos { display: flex; flex-wrap: wrap; gap: .4rem; padding: .5rem 1.1rem; border-top: 1px solid var(--alex-linea); }
+.alex-atajos button {
+  min-height: 36px; padding: .35rem .75rem; border: 1px solid var(--alex-linea); border-radius: 999px;
+  background: #fff; color: var(--alex-tinta); font: inherit; font-size: .8rem; cursor: pointer;
+}
+.alex-atajos button:hover:not(:disabled) { border-color: var(--alex-tinta); }
+.alex-atajos button:disabled { color: #6B7085; cursor: not-allowed; }
+.alex-formulario { display: flex; gap: .5rem; padding: .3rem 1.1rem 1.1rem; }
+.alex-formulario input {
+  flex: 1; min-width: 0; min-height: 46px; padding: .6rem .8rem; border: 1px solid #A9AEC2; border-radius: 12px;
+  font: inherit; font-size: 1rem; color: var(--alex-tinta); background: #fff;
+}
+.alex-formulario input::placeholder { color: #626880; opacity: 1; }
+.alex-enviar {
+  min-height: 46px; padding: .6rem 1rem; border: 0; border-radius: 12px; cursor: pointer;
+  background: var(--alex-naranja); color: var(--alex-tinta); font: inherit; font-weight: 700;
+}
+.alex-enviar:hover { background: #FF8550; }
+
+@media (max-width: 560px) {
+  .alex-lanzador { right: 14px; bottom: 14px; padding: .45rem; }
+  .alex-lanzador__texto { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; }
+  .alex-dialogo { margin: auto 12px 12px; width: calc(100% - 24px); }
+}
+@media (prefers-reduced-motion: no-preference) {
+  .alex-lanzador { transition: transform .2s cubic-bezier(.22, 1, .36, 1), background-color .2s; }
+  .alex-lanzador:hover { transform: translateY(-2px); }
+  .alex-dialogo[open] { animation: alex-entrar .28s cubic-bezier(.22, 1, .36, 1); }
+  @keyframes alex-entrar { from { transform: translateY(12px); opacity: .6; } }
+}
+@media print { .alex-lanzador, .alex-dialogo { display: none !important; } }

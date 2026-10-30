@@ -1,0 +1,18 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400" width="400" height="400">
+  <!-- Buzz cut: ilustración original de perfil para Distrito Barber (demo de Estudio Norte). -->
+  <defs><clipPath id="cab"><path d="M150 400 C152 360 140 330 138 300 C120 250 120 170 160 125 C195 85 255 85 285 120 C300 138 302 160 300 178 L326 214 C328 220 322 224 304 228 C308 236 304 242 300 246 C306 252 304 260 298 266 C300 280 296 292 286 300 C270 310 252 312 246 318 L248 400 Z"/></clipPath></defs>
+  <rect width="400" height="400" fill="#F5C518"/><pattern id="p" width="12" height="12" patternUnits="userSpaceOnUse"><circle cx="6" cy="6" r="2" fill="#111111" fill-opacity=".18"/></pattern><rect width="400" height="400" fill="url(#p)"/>
+  <circle cx="214" cy="214" r="150" fill="#111111"/>
+  <circle cx="214" cy="214" r="168" fill="none" stroke="#111111" stroke-width="2" stroke-dasharray="3 9"/>
+  
+  <path d="M150 400 C152 360 140 330 138 300 C120 250 120 170 160 125 C195 85 255 85 285 120 C300 138 302 160 300 178 L326 214 C328 220 322 224 304 228 C308 236 304 242 300 246 C306 252 304 260 298 266 C300 280 296 292 286 300 C270 310 252 312 246 318 L248 400 Z" fill="#E2B48C"/>
+  <path d="M286 122 C300 140 302 160 300 178 L326 214 C328 220 322 224 304 228 C308 236 304 242 300 246 C306 252 304 260 298 266 C300 280 296 292 286 300 C270 310 252 312 246 318 L248 400 L232 400 L232 320 C262 300 280 270 284 230 C288 190 290 150 286 122Z" fill="#C8936A" fill-opacity=".55"/>
+  <pattern id="buzz" width="5" height="5" patternUnits="userSpaceOnUse"><rect width="5" height="5" fill="#111111" fill-opacity=".35"/><circle cx="2.5" cy="2.5" r="1.5" fill="#111111" fill-opacity=".9"/></pattern>
+  <polygon points="100,60 300,60 290,130 262,146 232,176 226,226 214,238 200,252 170,270 140,300 100,300" fill="url(#buzz)" clip-path="url(#cab)"/>
+  
+  <ellipse cx="206" cy="216" rx="15" ry="24" fill="#C8936A"/>
+  <path d="M202 202 C214 204 216 226 204 230" fill="none" stroke="#9A6744" stroke-width="3" stroke-linecap="round"/>
+  <path d="M276 168 L298 165" stroke="#111111" stroke-width="5" stroke-linecap="round"/>
+  <path d="M282 184 Q288 180 294 184" fill="none" stroke="#111111" stroke-width="4" stroke-linecap="round"/>
+  <path d="M300 256 L292 257" stroke="#9A6744" stroke-width="3" stroke-linecap="round"/>
+</svg>

@@ -1,0 +1,107 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Ficha de propiedad · Habita Sur (sitio de demostración)</title>
+  <meta name="description" content="Ficha de una propiedad de ejemplo de Habita Sur, corredora ficticia del sur de Chile. No es una oferta real.">
+  <meta name="theme-color" content="#1F4A4A">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <p class="aviso-demo"><strong>Negocio ficticio · Sitio de demostración creado por Estudio Norte.</strong> <span class="largo">Todas las propiedades son ejemplos ficticios: no son ofertas reales.</span><span class="corto">Propiedades de ejemplo, no reales.</span></p>
+    <div class="contenedor barra">
+      <a class="marca" href="index.html">
+        <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="8" fill="#1F4A4A"/><path d="M9 20.5 20 11l11 9.5" fill="none" stroke="#FAFAF7" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 18.5V26h14v-7.5" fill="none" stroke="#FAFAF7" stroke-width="2.2"/><path d="M8 30.5c3-2 5-2 8 0s5 2 8 0 5-2 8 0" fill="none" stroke="#D9A274" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span class="marca__nombre">Habita <em>Sur</em></span>
+      </a>
+      <nav class="nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="propiedades.html" aria-current="page">Propiedades</a></li>
+          <li><a href="index.html#publicar">Publicar con nosotros</a></li>
+          <li><a href="index.html#oficina">La oficina</a></li>
+          <li><a href="consultas.html">Mis consultas</a></li>
+        </ul>
+      </nav>
+      <a class="enlace-fav" href="propiedades.html?favoritos=1" data-fav-enlace aria-label="Mis favoritos">
+        <svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        <span class="enlace-fav__texto">Favoritos</span>
+        <span class="contador" data-fav-contador>0</span>
+      </a>
+      <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-boton><span class="boton-menu__lineas" aria-hidden="true"></span>Menú</button>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <div class="contenedor" data-ficha>
+      <noscript><p class="no-encontrada">Para ver la ficha de la propiedad activa JavaScript en tu navegador. <a href="propiedades.html">Volver al catálogo</a>.</p></noscript>
+    </div>
+  </main>
+
+  <dialog class="visor" aria-labelledby="visor-titulo" data-visor>
+    <div class="visor__barra">
+      <p class="visor__titulo" id="visor-titulo" data-visor-titulo>Foto</p>
+      <button type="button" data-visor-cerrar>
+        <svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18"/></svg>
+        Cerrar
+      </button>
+    </div>
+    <div class="visor__imagen" data-visor-fondo>
+      <figure data-visor-figura></figure>
+    </div>
+    <div class="visor__pie">
+      <button type="button" data-visor-ant aria-label="Foto anterior">
+        <svg class="icono" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7"/></svg>
+      </button>
+      <span data-visor-contador aria-hidden="true">1 / 1</span>
+      <button type="button" data-visor-sig aria-label="Foto siguiente">
+        <svg class="icono" viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7"/></svg>
+      </button>
+    </div>
+  </dialog>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__grilla">
+        <div>
+          <a class="marca" href="index.html">
+            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="8" fill="#FAFAF7"/><path d="M9 20.5 20 11l11 9.5" fill="none" stroke="#1F4A4A" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 18.5V26h14v-7.5" fill="none" stroke="#1F4A4A" stroke-width="2.2"/><path d="M8 30.5c3-2 5-2 8 0s5 2 8 0 5-2 8 0" fill="none" stroke="#B8794B" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span class="marca__nombre">Habita <em>Sur</em></span>
+          </a>
+          <p>Corredora de propiedades ficticia con oficina en Puerto Varas. Este sitio es una demostración: propiedades, precios, direcciones y datos de contacto son inventados.</p>
+        </div>
+        <div>
+          <h2>Explorar</h2>
+          <ul>
+            <li><a href="propiedades.html">Todas las propiedades</a></li>
+            <li><a href="propiedades.html?operacion=venta">En venta</a></li>
+            <li><a href="propiedades.html?operacion=arriendo">En arriendo</a></li>
+            <li><a href="propiedades.html?favoritos=1">Mis favoritos</a></li>
+            <li><a href="consultas.html">Mis consultas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Oficina (ficticia)</h2>
+          <ul>
+            <li>Pasaje Las Tejuelas 214, Puerto Varas</li>
+            <li>+56 9 6123 4517</li>
+            <li>contacto@habitasur.example</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>Negocio ficticio · Sitio de demostración creado por Estudio Norte. Tipografías Manrope y DM Serif Display (SIL OFL 1.1). Ilustraciones SVG originales.</p>
+        <a class="pie__portafolio" href="../../index.html">Ver portafolio de Estudio Norte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/escenas.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/ficha.js"></script>
+</body>
+</html>

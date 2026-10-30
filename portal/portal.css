@@ -1,0 +1,191 @@
+/* Portafolio de Estudio Norte · hoja topográfica: tinta azul noche, carta fría y una ruta naranja. */
+@font-face {
+  font-family: 'Bricolage Grotesque';
+  src: url('assets/fonts/bricolage-grotesque-latin-standard.woff2') format('woff2-variations'), url('assets/fonts/bricolage-grotesque-latin-standard.woff2') format('woff2');
+  font-weight: 200 800; font-stretch: 75% 100%; font-display: swap;
+}
+
+:root {
+  --noche: oklch(0.21 0.045 272);
+  --noche-2: oklch(0.29 0.055 272);
+  --carta: oklch(0.975 0.005 262);
+  --carta-2: oklch(0.945 0.008 262);
+  --superficie: oklch(1 0 0);
+  --tinta: oklch(0.21 0.045 272);
+  --tinta-suave: oklch(0.43 0.03 272);
+  --linea: oklch(0.88 0.012 265);
+  --sobre-noche: oklch(0.85 0.02 272);
+  --ruta: #FF6B2C;
+  --ruta-texto: #B23C0B;
+  --fuente: 'Bricolage Grotesque', 'Segoe UI', system-ui, -apple-system, Roboto, sans-serif;
+  --margen: clamp(1rem, 5vw, 4.5rem);
+  --ancho: 1440px;
+  --curva: cubic-bezier(.22, 1, .36, 1);
+}
+*, *::before, *::after { box-sizing: border-box; }
+html { scroll-behavior: smooth; }
+body { margin: 0; font-family: var(--fuente); color: var(--tinta); background: var(--carta); line-height: 1.6; font-size: 1.0625rem; -webkit-font-smoothing: antialiased; }
+img { max-width: 100%; height: auto; }
+a { color: inherit; }
+h1, h2, h3 { text-wrap: balance; overflow-wrap: break-word; }
+p { text-wrap: pretty; }
+:focus-visible { outline: 3px solid var(--ruta); outline-offset: 3px; border-radius: 4px; }
+[hidden] { display: none !important; }
+.sr-only { position: absolute; width: 1px; height: 1px; padding: 0; margin: -1px; overflow: hidden; clip: rect(0 0 0 0); white-space: nowrap; border: 0; }
+.saltar { position: absolute; left: 12px; top: -60px; background: var(--superficie); color: var(--tinta); padding: .6rem 1rem; z-index: 50; border-radius: 6px; }
+.saltar:focus { top: 12px; }
+main { outline: none; }
+
+/* Botones */
+.boton { display: inline-flex; align-items: center; justify-content: center; min-height: 48px; padding: .75rem 1.4rem; border-radius: 999px; font: inherit; font-weight: 650; text-decoration: none; border: 2px solid transparent; cursor: pointer; }
+.boton--ruta { background: var(--ruta); color: var(--noche); }
+.boton--ruta:hover { background: #FF8550; }
+.boton--borde { border-color: oklch(1 0 0 / .5); color: #fff; background: transparent; }
+.boton--borde:hover { border-color: #fff; background: oklch(1 0 0 / .08); }
+.boton--noche { background: var(--noche); color: #fff; }
+.boton--noche:hover { background: var(--noche-2); }
+.boton--linea { border-color: var(--noche); color: var(--noche); background: transparent; }
+.boton--linea:hover { background: var(--noche); color: #fff; }
+.boton--texto { background: none; color: var(--tinta); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; text-decoration-color: var(--ruta); }
+.boton--nav { min-height: 44px; padding: .5rem 1.15rem; }
+
+/* Portada: mapa de curvas de nivel */
+.portada {
+  position: relative; overflow: clip; isolation: isolate;
+  background: var(--noche); color: #fff;
+  padding: 1.25rem var(--margen) clamp(2.5rem, 6vw, 4.5rem);
+  display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(2.5rem, 6vw, 4rem);
+}
+.portada__curvas { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; z-index: -1; pointer-events: none; }
+.portada__nav { display: flex; flex-wrap: wrap; align-items: center; justify-content: space-between; gap: .75rem 1.5rem; }
+.marca { display: inline-flex; align-items: center; gap: .6rem; font-weight: 750; font-size: 1.2rem; font-stretch: 90%; text-decoration: none; letter-spacing: -.01em; }
+.marca svg { width: 34px; height: 34px; }
+.portada__nav ul { list-style: none; display: flex; flex-wrap: wrap; align-items: center; gap: .25rem 1.25rem; margin: 0; padding: 0; font-size: .98rem; }
+.portada__nav ul a:not(.boton) { text-decoration: none; color: var(--sobre-noche); padding: .35rem 0; display: inline-block; }
+.portada__nav ul a:not(.boton):hover { color: #fff; text-decoration: underline; text-decoration-color: var(--ruta); text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.portada__nav .nav-sesion a:not(.boton) { color: #fff; font-weight: 650; }
+.portada__cuerpo { max-width: 56rem; margin-top: clamp(2rem, 9vw, 7.5rem); }
+.portada h1 { font-weight: 800; font-stretch: 82%; font-size: clamp(2.9rem, 1.2rem + 7vw, 6rem); line-height: .92; letter-spacing: -.012em; margin: 0 0 1.75rem; }
+.portada h1 span { display: inline-block; }
+.portada h1 span:last-child { color: var(--ruta); }
+.portada__bajada { font-size: clamp(1.08rem, 1rem + .35vw, 1.3rem); max-width: 54ch; color: var(--sobre-noche); margin: 0 0 2rem; }
+.portada__bajada strong { color: #fff; }
+.portada__acciones { display: flex; flex-wrap: wrap; gap: .75rem; }
+
+.leyenda { align-self: end; justify-self: start; width: min(100%, 22rem); padding: 1rem 1.1rem 1.1rem; border: 1px solid oklch(1 0 0 / .22); border-radius: 14px; background: oklch(0.21 0.045 272 / .82); }
+.leyenda__titulo { margin: 0 0 .6rem; font-size: .9rem; font-weight: 700; color: #fff; }
+.leyenda ol { list-style: none; margin: 0; padding: 0; display: grid; gap: .15rem; }
+.leyenda a { display: flex; align-items: center; gap: .7rem; padding: .35rem .25rem; border-radius: 8px; text-decoration: none; color: #fff; font-weight: 600; }
+.leyenda a:hover { background: oklch(1 0 0 / .08); }
+.leyenda small { margin-left: auto; font-size: .85rem; font-weight: 400; color: var(--sobre-noche); }
+.leyenda__clave { width: 28px; height: 28px; flex-shrink: 0; display: grid; place-items: center; border-radius: 50%; background: var(--c); color: var(--noche); font-weight: 800; font-size: .9rem; }
+@media (min-width: 1000px) {
+  .portada { grid-template-columns: minmax(0, 1fr) 20rem; grid-template-rows: auto 1fr; min-height: min(100svh, 920px); }
+  .portada__nav { grid-column: 1 / -1; }
+  .portada__cuerpo { align-self: end; }
+  .leyenda { justify-self: end; }
+}
+
+.aviso-ficticio { background: var(--ruta); color: var(--noche); padding: .9rem var(--margen); }
+.aviso-ficticio p { margin: 0; max-width: 1100px; font-size: .98rem; }
+
+/* Trabajos */
+.trabajos { padding: clamp(3.5rem, 9vw, 7rem) var(--margen) clamp(2rem, 5vw, 4rem); max-width: 1440px; margin: 0 auto; }
+.cabecera { max-width: 46rem; margin-bottom: clamp(2rem, 5vw, 3.5rem); }
+.cabecera h2, .app h2, .rumbo h2, .titulo-404 { font-weight: 800; font-stretch: 80%; font-size: clamp(2.1rem, 1rem + 3.8vw, 3.9rem); line-height: .98; letter-spacing: -.012em; margin: 0 0 1rem; }
+.cabecera p { color: var(--tinta-suave); font-size: 1.12rem; margin: 0; max-width: 60ch; }
+
+.obras { list-style: none; margin: 0; padding: 0; }
+.obra { display: grid; grid-template-columns: minmax(0, 1fr); gap: 1.5rem; padding: clamp(2rem, 5vw, 4rem) 0; border-top: 1px solid var(--linea); scroll-margin-top: 1rem; }
+.obra__lamina { position: relative; isolation: isolate; display: block; padding: clamp(.9rem, 3.5vw, 3rem); background: var(--lamina); border-radius: 6px; overflow: hidden; }
+.obra__lamina img { position: relative; z-index: 1; display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top center; border-radius: 8px; box-shadow: 0 1px 2px rgb(0 0 0 / .2), 0 22px 50px -18px rgb(0 0 0 / .55); background: var(--noche); }
+/* Foto de ambiente teñida con el color de cada web: la lámina conserva su color y gana textura. */
+.obra__lamina .obra__fondo { position: absolute; inset: 0; z-index: 0; width: 100%; height: 100%; aspect-ratio: auto; border-radius: 0; box-shadow: none; background: none; mix-blend-mode: luminosity; opacity: .42; }
+.obra__respaldo { position: absolute; inset: 0; display: grid; place-items: center; font-weight: 800; font-stretch: 75%; font-size: clamp(2rem, 6vw, 3.5rem); color: var(--carta); }
+.obra__texto { display: flex; flex-direction: column; align-items: flex-start; gap: .6rem; }
+.obra__clave { display: flex; align-items: center; gap: .7rem; margin: 0; font-size: .98rem; font-weight: 600; color: var(--tinta-suave); }
+.obra__clave span { width: 38px; height: 38px; display: grid; place-items: center; border-radius: 50%; border: 2px solid var(--clave); color: var(--clave); font-weight: 800; font-size: 1.05rem; }
+.obra__nombre { margin: .2rem 0 0; font-weight: 800; font-stretch: 82%; font-size: clamp(2.2rem, 1.3rem + 2.6vw, 3.4rem); line-height: .95; letter-spacing: -.02em; }
+.obra__desc { margin: 0; color: var(--tinta-suave); max-width: 46ch; }
+.obra__probar { list-style: none; margin: .4rem 0 .2rem; padding: 0; display: grid; gap: .35rem; width: 100%; }
+.obra__probar li { position: relative; padding-left: 1.4rem; font-size: .98rem; }
+.obra__probar li::before { content: ''; position: absolute; left: 0; top: .62em; width: .7rem; height: 2px; background: var(--clave); }
+.obra__ir { margin-top: .4rem; display: inline-flex; align-items: center; gap: .4rem; min-height: 44px; font-weight: 700; color: var(--clave); text-decoration: underline; text-decoration-thickness: 2px; text-underline-offset: 6px; }
+.obra__ir:hover { color: var(--tinta); }
+@media (min-width: 960px) {
+  .obra { grid-template-columns: repeat(12, minmax(0, 1fr)); gap: 0 clamp(1.5rem, 3vw, 3rem); align-items: center; }
+  .obra__lamina { grid-column: 1 / span 7; grid-row: 1; }
+  .obra__texto { grid-column: 9 / span 4; grid-row: 1; }
+  .obra:nth-child(even) .obra__lamina { grid-column: 6 / span 7; }
+  .obra:nth-child(even) .obra__texto { grid-column: 1 / span 4; }
+}
+
+/* App de gestión: banda nocturna con la captura del panel */
+.app { background: var(--noche); color: #fff; padding: clamp(3.5rem, 9vw, 7rem) var(--margen); scroll-margin-top: 0; }
+.app__interior { max-width: 1440px; margin: 0 auto; display: grid; grid-template-columns: minmax(0, 1fr); gap: clamp(2rem, 5vw, 4rem); align-items: center; }
+.app__texto > p { color: var(--sobre-noche); max-width: 52ch; margin: 0 0 1.75rem; }
+.funciones { list-style: none; margin: 0 0 2rem; padding: 0; display: grid; grid-template-columns: minmax(0, 1fr); border-top: 1px solid oklch(1 0 0 / .18); }
+.funciones li { border-bottom: 1px solid oklch(1 0 0 / .18); }
+.funciones a { display: grid; gap: .1rem; padding: .8rem .25rem; text-decoration: none; }
+.funciones strong { font-weight: 700; }
+.funciones span { color: var(--sobre-noche); font-size: .95rem; }
+.funciones a:hover strong { color: var(--ruta); }
+@media (min-width: 640px) { .funciones { grid-template-columns: repeat(2, minmax(0, 1fr)); column-gap: 1.5rem; } }
+.app__accion { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; }
+.app__texto > .app__nota { margin: 1rem 0 0; color: var(--sobre-noche); font-size: .95rem; }
+.app code { white-space: nowrap; background: oklch(1 0 0 / .12); padding: .1rem .4rem; border-radius: 4px; color: #fff; font-size: .9em; }
+.estado-servidor { margin: 1rem 0 0; font-size: .95rem; color: var(--sobre-noche); }
+.estado-servidor:empty { display: none; }
+.app__captura { margin: 0; }
+.app__captura img { display: block; width: 100%; aspect-ratio: 16 / 10; object-fit: cover; object-position: top left; border-radius: 10px; border: 1px solid oklch(1 0 0 / .2); box-shadow: 0 30px 70px -25px rgb(0 0 0 / .7); background: var(--noche-2); }
+.app__captura figcaption { margin-top: .75rem; font-size: .9rem; color: var(--sobre-noche); }
+@media (min-width: 1100px) { .app__interior { grid-template-columns: minmax(0, 5fr) minmax(0, 7fr); } }
+
+/* Rumbo: siguiente paso */
+.rumbo { max-width: 1440px; margin: 0 auto; padding: clamp(3.5rem, 9vw, 6.5rem) var(--margen); display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem clamp(2rem, 5vw, 4.5rem); align-items: center; }
+.rumbo h2 { max-width: 18ch; }
+.rumbo p { color: var(--tinta-suave); max-width: 56ch; margin: 0 0 1.75rem; font-size: 1.12rem; }
+.rumbo__acciones { display: flex; flex-wrap: wrap; gap: .75rem; }
+.rumbo__foto { margin: 0; }
+.rumbo__foto img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 30% 50%; border-radius: 6px; background: var(--carta-2); }
+@media (min-width: 960px) { .rumbo { grid-template-columns: minmax(0, 7fr) minmax(0, 5fr); } }
+
+.pie { padding: 2rem var(--margen) 6.5rem; border-top: 1px solid var(--linea); color: var(--tinta-suave); font-size: .95rem; display: grid; gap: .4rem; }
+.pie p { margin: 0; max-width: 75ch; }
+.pie strong { color: var(--tinta); }
+
+/* Cabecera nocturna de las páginas internas («Contrátanos»): la misma hoja topográfica, más baja. */
+.cabecera-noche { position: relative; overflow: clip; isolation: isolate; background: var(--noche); color: #fff; padding: 1.25rem var(--margen) clamp(2.5rem, 6vw, 4rem); }
+.cabecera-noche .portada__curvas { object-position: 70% 30%; }
+.cabecera-noche__cuerpo { max-width: var(--ancho); margin: clamp(2rem, 6vw, 4.5rem) auto 0; }
+.cabecera-noche h1 { font-weight: 800; font-stretch: 82%; font-size: clamp(2.6rem, 1.2rem + 5vw, 5rem); line-height: .94; letter-spacing: -.012em; margin: 0 0 1rem; }
+.cabecera-noche h1 span { color: var(--ruta); }
+.cabecera-noche p { color: var(--sobre-noche); max-width: 58ch; margin: 0; font-size: clamp(1.05rem, 1rem + .3vw, 1.2rem); }
+
+/* Movimiento: una entrada orquestada en la portada y respuestas suaves al pasar el puntero. */
+@media (prefers-reduced-motion: no-preference) {
+  .portada__curvas { animation: curvas-entrar 1.6s var(--curva) both; }
+  .portada h1 span { animation: subir .9s var(--curva) both; }
+  .portada h1 span:nth-child(2) { animation-delay: .08s; }
+  .portada h1 span:nth-child(3) { animation-delay: .16s; }
+  .portada__bajada, .portada__acciones { animation: subir .9s .24s var(--curva) both; }
+  .leyenda { animation: subir .9s .36s var(--curva) both; }
+  @keyframes subir { from { transform: translateY(18px); } }
+  @keyframes curvas-entrar { from { transform: scale(1.06); opacity: .45; } }
+  .boton { transition: background-color .2s, border-color .2s, color .2s, transform .2s var(--curva); }
+  .boton:hover { transform: translateY(-2px); }
+  .obra__lamina img:not(.obra__fondo) { transition: transform .5s var(--curva), box-shadow .5s var(--curva); }
+  .obra:hover .obra__lamina img:not(.obra__fondo) { transform: translateY(-6px); box-shadow: 0 1px 2px rgb(0 0 0 / .2), 0 32px 60px -20px rgb(0 0 0 / .6); }
+  .obra__lamina .obra__fondo { transition: transform 1.2s var(--curva); }
+  .obra:hover .obra__lamina .obra__fondo { transform: scale(1.04); }
+  .obra__ir span { transition: transform .25s var(--curva); }
+  .obra__ir:hover span { transform: translateX(4px); }
+}
+@media (prefers-reduced-motion: reduce) {
+  html { scroll-behavior: auto; }
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+}
+
+/* Versión pública: funciones sin enlace a la app y resumen para copiar en «Contrátanos». */
+.funciones .funcion { display: grid; gap: .1rem; padding: .8rem .25rem; }
+.portada__nav .marca svg, .cabecera-noche .marca svg { border-radius: 50%; }

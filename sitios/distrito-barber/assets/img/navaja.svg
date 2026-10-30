@@ -1,0 +1,30 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 240 240" width="240" height="240">
+  <!-- Navaja de barbero abierta. Ilustración original para Distrito Barber (demo de Estudio Norte). -->
+  <defs>
+    <linearGradient id="hoja" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset=".55" stop-color="#F2EFE8"/>
+      <stop offset="1" stop-color="#C9C3B6"/>
+    </linearGradient>
+    <pattern id="trama" width="8" height="8" patternUnits="userSpaceOnUse">
+      <circle cx="4" cy="4" r="1.4" fill="#111111" fill-opacity=".22"/>
+    </pattern>
+  </defs>
+  <circle cx="120" cy="120" r="98" fill="url(#trama)"/>
+  <g transform="rotate(-24 120 120)">
+    <!-- sombra dura -->
+    <path d="M28 138 C28 126 38 120 52 120 L140 120 C148 120 154 126 154 134 L154 138 C154 146 148 150 140 150 L52 150 C38 150 28 146 28 138Z" fill="#111111" opacity=".25" transform="translate(6 8)"/>
+    <!-- mango -->
+    <path d="M22 130 C22 118 32 112 46 112 L134 112 C142 112 148 118 148 126 L148 130 C148 138 142 142 134 142 L46 142 C32 142 22 138 22 130Z" fill="#111111"/>
+    <path d="M44 119 L130 119" stroke="#F2EFE8" stroke-opacity=".35" stroke-width="3" stroke-linecap="round"/>
+    <circle cx="38" cy="127" r="5" fill="#F5C518"/>
+    <!-- hoja -->
+    <path d="M136 114 L216 104 C224 103 229 109 227 117 L221 138 C219 145 213 147 206 145 L142 134 Z" fill="url(#hoja)" stroke="#111111" stroke-width="4" stroke-linejoin="round"/>
+    <path d="M146 116 L214 108" stroke="#111111" stroke-width="3" stroke-opacity=".4" stroke-linecap="round"/>
+    <path d="M154 135 L207 142" stroke="#F5C518" stroke-width="3.5" stroke-linecap="round"/>
+    <!-- espiga -->
+    <path d="M144 113 L158 101 C162 98 167 101 166 106 L162 113 Z" fill="#111111"/>
+    <!-- eje -->
+    <circle cx="138" cy="126" r="7" fill="#F5C518" stroke="#111111" stroke-width="3"/>
+  </g>
+</svg>

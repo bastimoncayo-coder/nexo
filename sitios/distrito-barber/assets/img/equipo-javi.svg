@@ -1,0 +1,52 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <!-- Retrato gráfico ficticio: Javi. Ilustración original para Distrito Barber (demo de Estudio Norte). -->
+  <defs>
+    <pattern id="rayas" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+      <rect width="9" height="28" fill="#111111" fill-opacity=".14"/>
+    </pattern>
+    <pattern id="rapado" width="5" height="5" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="2.5" r="1.3" fill="#111111" fill-opacity=".75"/>
+    </pattern>
+    <radialGradient id="luz" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".2"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="#D7263D"/>
+  <rect width="400" height="500" fill="url(#rayas)"/>
+  <circle cx="200" cy="236" r="152" fill="#F2EFE8"/>
+  <!-- polera -->
+  <path d="M28 500 C36 420 104 384 168 378 L232 378 C296 384 364 420 372 500Z" fill="#111111"/>
+  <path d="M168 380 C176 404 224 404 232 380" fill="none" stroke="#F5C518" stroke-width="5"/>
+  <path d="M300 430 L330 470 M286 446 L306 474" stroke="#F2EFE8" stroke-opacity=".5" stroke-width="4" stroke-linecap="round"/>
+  <!-- cuello -->
+  <path d="M168 300 L168 374 C182 392 218 392 232 374 L232 300Z" fill="#6E4329"/>
+  <!-- orejas y aros -->
+  <ellipse cx="119" cy="240" rx="14" ry="23" fill="#8D5A3B"/>
+  <ellipse cx="281" cy="240" rx="14" ry="23" fill="#6E4329"/>
+  <circle cx="117" cy="272" r="10" fill="none" stroke="#F5C518" stroke-width="4"/>
+  <circle cx="283" cy="272" r="10" fill="none" stroke="#F5C518" stroke-width="4"/>
+  <!-- cabeza -->
+  <ellipse cx="200" cy="230" rx="80" ry="100" fill="#8D5A3B"/>
+  <path d="M206 130 C250 134 280 174 280 230 C280 290 246 330 200 330 C230 298 238 262 236 228 C234 188 224 154 206 130Z" fill="#6E4329"/>
+  <ellipse cx="200" cy="230" rx="80" ry="100" fill="url(#luz)"/>
+  <!-- costados rapados -->
+  <path d="M121 238 C116 210 120 188 132 172 C140 166 146 170 144 178 C136 196 134 214 136 238Z" fill="url(#rapado)"/>
+  <path d="M279 238 C284 210 280 188 268 172 C260 166 254 170 256 178 C264 196 266 214 264 238Z" fill="url(#rapado)"/>
+  <path d="M126 206 L140 198 M124 218 L138 212" stroke="#F2EFE8" stroke-width="2.5" stroke-linecap="round"/>
+  <!-- pelo arriba y moño -->
+  <path d="M128 196 C122 146 158 118 202 118 C248 118 282 146 276 198 C264 168 238 150 200 152 C166 154 140 170 128 196Z" fill="#111111"/>
+  <path d="M160 132 C180 124 214 122 240 132" fill="none" stroke="#3B3B3B" stroke-width="3" stroke-linecap="round"/>
+  <circle cx="204" cy="100" r="32" fill="#111111"/>
+  <path d="M188 88 C198 80 214 82 220 92" fill="none" stroke="#3B3B3B" stroke-width="3" stroke-linecap="round"/>
+  <path d="M178 124 Q204 133 230 124" fill="none" stroke="#F5C518" stroke-width="6" stroke-linecap="round"/>
+  <!-- cejas -->
+  <path d="M156 202 C166 194 180 194 190 198 M210 198 C220 194 234 194 244 202" fill="none" stroke="#111111" stroke-width="7" stroke-linecap="round"/>
+  <!-- ojos -->
+  <path d="M162 224 Q172 216 182 224 Q172 230 162 224Z M218 224 Q228 216 238 224 Q228 230 218 224Z" fill="#111111"/>
+  <path d="M160 220 L156 216 M240 220 L244 216" stroke="#111111" stroke-width="3" stroke-linecap="round"/>
+  <!-- nariz -->
+  <path d="M202 232 L196 264 C200 268 206 268 211 264" fill="none" stroke="#4A2B18" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- boca -->
+  <path d="M182 290 Q200 284 218 290 Q200 304 182 290Z" fill="#4A2B18"/>
+</svg>

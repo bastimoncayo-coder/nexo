@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <!-- Retrato ilustrado original · Pulso (gimnasio ficticio) · Estudio Norte -->
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FF7A55"/>
+      <stop offset="1" stop-color="#F0461F"/>
+    </linearGradient>
+    <pattern id="rayas" width="22" height="22" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+      <rect width="8" height="22" fill="#0E0F12" opacity=".08"/>
+    </pattern>
+    <linearGradient id="piel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#D19670"/>
+      <stop offset="1" stop-color="#B57A53"/>
+    </linearGradient>
+    <linearGradient id="polera" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#1D1F25"/>
+      <stop offset="1" stop-color="#0E0F12"/>
+    </linearGradient>
+    <clipPath id="cabeza"><ellipse cx="200" cy="200" rx="64" ry="78"/></clipPath>
+    <filter id="grano"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .5 0"/></filter>
+  </defs>
+  <rect width="400" height="480" fill="url(#fondo)"/>
+  <rect width="400" height="480" fill="url(#rayas)"/>
+  <polygon points="0,330 400,250 400,480 0,480" fill="#0E0F12" opacity=".12"/>
+  <circle cx="200" cy="205" r="130" fill="none" stroke="#0E0F12" stroke-opacity=".14" stroke-width="3"/>
+  <path d="M30 120 h60 l14 -30 20 60 14 -40 8 10 h40" fill="none" stroke="#C6F432" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+
+  <!-- cola de caballo -->
+  <path d="M236 112 C 300 96, 330 150, 310 220 C 300 255, 318 280, 336 296 C 296 300, 270 260, 276 214 C 280 180, 268 150, 236 140 Z" fill="#1E1611"/>
+  <!-- cuello y torso -->
+  <path d="M174 262 h52 v64 c-10 12 -42 12 -52 0 z" fill="#A86F4A"/>
+  <path d="M48 480 C 56 380, 120 330, 200 326 C 280 330, 344 380, 352 480 Z" fill="url(#polera)"/>
+  <path d="M150 334 C 170 368, 230 368, 250 334" fill="none" stroke="#FF5A36" stroke-width="10" stroke-linecap="round"/>
+  <path d="M96 400 l20 80 M304 400 l-20 80" stroke="#FF5A36" stroke-width="6" stroke-linecap="round" opacity=".9"/>
+  <!-- orejas -->
+  <ellipse cx="137" cy="208" rx="12" ry="18" fill="#B57A53"/>
+  <ellipse cx="263" cy="208" rx="12" ry="18" fill="#A86F4A"/>
+  <circle cx="137" cy="226" r="4" fill="#C6F432"/>
+  <!-- cabeza -->
+  <ellipse cx="200" cy="200" rx="64" ry="78" fill="url(#piel)"/>
+  <g clip-path="url(#cabeza)">
+    <rect x="214" y="110" width="80" height="190" fill="#8E5B3A" opacity=".22"/>
+  </g>
+  <!-- pelo -->
+  <path d="M134 196 C 128 130, 168 112, 204 114 C 246 116, 272 140, 266 196 C 258 168, 242 150, 212 146 C 186 148, 160 150, 134 196 Z" fill="#1E1611"/>
+  <path d="M232 118 C 246 108, 258 108, 266 116 L 254 128 Z" fill="#1E1611"/>
+  <rect x="244" y="110" width="22" height="12" rx="4" transform="rotate(-20 255 116)" fill="#C6F432"/>
+  <!-- rostro -->
+  <path d="M164 186 q14 -8 28 -2 M210 184 q14 -6 28 2" fill="none" stroke="#1E1611" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="178" cy="204" rx="5.5" ry="6.5" fill="#1E1611"/>
+  <ellipse cx="224" cy="204" rx="5.5" ry="6.5" fill="#1E1611"/>
+  <circle cx="180" cy="202" r="1.6" fill="#FFFFFF"/>
+  <circle cx="226" cy="202" r="1.6" fill="#FFFFFF"/>
+  <path d="M202 208 q-6 18 -2 26 q6 3 12 0" fill="none" stroke="#8E5B3A" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M184 248 q18 14 36 0" fill="none" stroke="#6E3A26" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="166" cy="232" rx="12" ry="7" fill="#E07A5F" opacity=".35"/>
+  <ellipse cx="238" cy="232" rx="12" ry="7" fill="#E07A5F" opacity=".3"/>
+
+  <!-- kettlebell -->
+  <g transform="translate(318 400) rotate(10)">
+    <path d="M-20 -26 a20 20 0 0 1 40 0" fill="none" stroke="#C6F432" stroke-width="9" stroke-linecap="round"/>
+    <path d="M-38 6 c0 -22 16 -34 38 -34 s38 12 38 34 -14 38 -38 38 -38 -16 -38 -38z" fill="#C6F432"/>
+    <circle cx="-12" cy="0" r="8" fill="#0E0F12" opacity=".25"/>
+  </g>
+  <rect width="400" height="480" filter="url(#grano)" opacity=".16"/>
+</svg>

@@ -1,0 +1,654 @@
+<!doctype html>
+<html lang="es-CL" class="no-js">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Brasa Sur · Cocina a las brasas en Barrio Italia (negocio ficticio)</title>
+  <meta name="description" content="Brasa Sur es un restaurante ficticio de cocina a las brasas con leña de luma y ulmo y productos del sur de Chile. Sitio de demostración creado por Estudio Norte.">
+  <meta name="theme-color" content="#1C1512">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <script>document.documentElement.classList.replace('no-js', 'js');</script>
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="aviso-ficticio" role="note">
+    <p><span class="aviso-ficticio__punto" aria-hidden="true"></span><strong>Negocio ficticio</strong> · Sitio de demostración creado por Estudio Norte</p>
+  </div>
+
+  <header class="cabecera">
+    <div class="cabecera__in">
+      <a class="marca" href="#inicio" aria-label="Brasa Sur, ir al inicio">
+        <svg class="marca__icono" viewBox="0 0 40 48" aria-hidden="true" focusable="false"><path d="M4 46V20a16 16 0 0 1 32 0v26" fill="none" stroke="currentColor" stroke-width="3"/><path d="M20 41c-6 0-9-4-9-8.5 0-5 4-7.5 5-12.5 3 3 3.2 6.2 3.2 6.2s1.3-4.4 4.3-8.2c1.2 5.3 5.5 8.3 5.5 14.5 0 5-3 8.5-9 8.5z" fill="#E39B3B"/><path d="M20 41c-2.6 0-4-1.8-4-3.8 0-2.4 2-3.6 2.6-6 1.8 1.6 2 3.4 2 3.4s.8-1.4 2-2.8c.6 2 1.4 3.3 1.4 5.3 0 2.3-1.4 3.9-4 3.9z" fill="#F4EADB"/></svg>
+        <span class="marca__texto">Brasa <em>Sur</em></span>
+      </a>
+      <button class="cabecera__menu" type="button" id="btn-menu" aria-expanded="false" aria-controls="nav-principal">
+        <span class="cabecera__menu-barras" aria-hidden="true"><span></span><span></span></span>
+        <span class="cabecera__menu-texto">Menú</span>
+      </button>
+      <nav class="nav" id="nav-principal" aria-label="Principal">
+        <ul class="nav__lista">
+          <li><a href="#cocina">La cocina</a></li>
+          <li><a href="#carta">Carta</a></li>
+          <li><a href="#historia">Historia</a></li>
+          <li><a href="#galeria">Galería</a></li>
+          <li class="nav__cta"><a class="btn btn--brasa btn--peq" href="#reservar">Reservar</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <!-- PORTADA -->
+    <section class="portada" id="inicio" aria-labelledby="portada-titulo">
+      <div class="portada__in">
+        <div class="portada__texto">
+          <p class="antetitulo">Cocina a las brasas · Barrio Italia, Providencia</p>
+          <h1 class="portada__titulo" id="portada-titulo">Fuego <em>lento,</em> leña del&nbsp;<em>sur</em>.</h1>
+          <p class="portada__bajada">Asamos carnes de campo, pescados de la costa de Los Ríos y verduras de huerta sobre brasas de luma y ulmo. Una casa antigua, una cocina abierta y un fogón que se prende a las once de la mañana.</p>
+          <div class="portada__acciones">
+            <a class="btn btn--brasa" href="#reservar">Solicitar una mesa
+              <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--linea-clara" href="#carta">Ver la carta</a>
+          </div>
+          <dl class="portada__datos">
+            <div>
+              <dt>Hoy</dt>
+              <dd id="hoy-estado">Martes a sábado 13:00–16:00 y 19:30–23:30</dd>
+            </div>
+            <div>
+              <dt>Dónde</dt>
+              <dd>Calle Los Leñadores 1186, Providencia</dd>
+            </div>
+          </dl>
+        </div>
+        <figure class="portada__figura">
+          <div class="portada__arco">
+            <img src="assets/img/hero-tabla.svg" width="1000" height="1000" alt="Vista cenital de una tabla redonda de madera con lomo vetado cortado en tajadas, gajos de zapallo camote asado, cebollas a la brasa y un pocillo de chimichurri; en la esquina, la parrilla con brasas encendidas.">
+          </div>
+          <svg class="sello" viewBox="0 0 200 200" aria-hidden="true" focusable="false">
+            <defs><path id="sello-circulo" d="M100 100m-74 0a74 74 0 1 1 148 0a74 74 0 1 1-148 0"/></defs>
+            <circle cx="100" cy="100" r="96" fill="#B4441E"/>
+            <text><textPath href="#sello-circulo" startOffset="0" textLength="458" lengthAdjust="spacing">LEÑA DE LUMA · LEÑA DE ULMO · FUEGO LENTO ·</textPath></text>
+            <path d="M100 136c-14 0-21-9-21-19 0-12 9-17 12-28 7 7 7.5 14 7.5 14s3-10 10-19c2.8 12 13 19 13 33 0 11-7 19-21.5 19z" fill="#F4EADB"/>
+          </svg>
+          <figcaption class="lamina"><span class="lamina__num">Lámina 01</span> Lomo vetado de campo, zapallo camote y cebollas a la brasa, con chimichurri de la casa.</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <div class="cinta" aria-hidden="true">
+      <p class="cinta__texto"><span class="cinta__grupo"><span>Leña de luma</span><span>Leña de ulmo</span><span>Carnes de campo</span><span>Costa de Los Ríos</span><span>Huerta</span><span>Papas nativas</span><span>Murtas</span></span><span class="cinta__grupo"><span>Leña de luma</span><span>Leña de ulmo</span><span>Carnes de campo</span><span>Costa de Los Ríos</span><span>Huerta</span><span>Papas nativas</span><span>Murtas</span></span></p>
+    </div>
+
+    <!-- COCINA / MANIFIESTO -->
+    <section class="seccion cocina" id="cocina" aria-labelledby="cocina-titulo">
+      <div class="contenedor cocina__grid">
+        <header class="seccion__cabecera cocina__cabecera">
+          <p class="seccion__num"><span>01</span> La cocina</p>
+          <h2 class="seccion__titulo" id="cocina-titulo">Una cocina que se mide en <em>brasas</em>, no en llamas.</h2>
+        </header>
+        <p class="cocina__intro">La llama es para prender; lo que cocina es la brasa. Por eso el fogón de Brasa Sur arde toda la mañana antes del primer servicio, y cada plato tiene su zona: brasa viva para sellar, rescoldo para las papas y la betarraga, calor de costado para el cordero que pasa seis horas en la parrilla.</p>
+        <ol class="pilares">
+          <li class="pilar">
+            <span class="pilar__num" aria-hidden="true">i.</span>
+            <h3 class="pilar__titulo">Leña</h3>
+            <p>Luma para un calor parejo y largo, ulmo para el aroma. Leña seca de pequeños leñeros de Los Ríos; nada de gas ni carbón de bolsa.</p>
+          </li>
+          <li class="pilar">
+            <span class="pilar__num" aria-hidden="true">ii.</span>
+            <h3 class="pilar__titulo">Campo</h3>
+            <p>Vacuno y cordero criados a pasto en el sur. Compramos cortes enteros, los maduramos y los despostamos en casa.</p>
+          </li>
+          <li class="pilar">
+            <span class="pilar__num" aria-hidden="true">iii.</span>
+            <h3 class="pilar__titulo">Costa</h3>
+            <p>Reineta, congrio y choritos de la costa valdiviana, según lo que salga esa semana. Si el mar no da, el plato no está.</p>
+          </li>
+          <li class="pilar">
+            <span class="pilar__num" aria-hidden="true">iv.</span>
+            <h3 class="pilar__titulo">Huerta</h3>
+            <p>Zapallo, puerros, betarragas y papas nativas que van directo al rescoldo. Casi la mitad de la carta funciona sin carne.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- CARTA -->
+    <section class="seccion carta" id="carta" aria-labelledby="carta-titulo">
+      <div class="contenedor">
+        <header class="seccion__cabecera carta__cabecera">
+          <p class="seccion__num"><span>02</span> La carta</p>
+          <h2 class="seccion__titulo" id="carta-titulo">Carta de <em>primavera</em></h2>
+          <div class="carta__notas">
+            <p class="carta__precios"><strong>Precios de ejemplo</strong> en pesos chilenos (CLP). Brasa Sur es un negocio ficticio: esta carta es una muestra de diseño.</p>
+            <ul class="leyenda" aria-label="Leyenda de marcas">
+              <li><span class="marca-plato marca-plato--v" aria-hidden="true">V</span> Vegetariano</li>
+              <li><span class="marca-plato marca-plato--sg" aria-hidden="true">SG</span> Sin gluten en su receta (cocina compartida)</li>
+            </ul>
+          </div>
+        </header>
+
+        <div class="pestanas" role="tablist" aria-label="Categorías de la carta">
+          <button class="pestana" type="button" role="tab" id="tab-compartir" aria-controls="panel-compartir" aria-selected="true">Para compartir</button>
+          <button class="pestana" type="button" role="tab" id="tab-fuego" aria-controls="panel-fuego" aria-selected="false" tabindex="-1">Del fuego</button>
+          <button class="pestana" type="button" role="tab" id="tab-mar" aria-controls="panel-mar" aria-selected="false" tabindex="-1">Del mar</button>
+          <button class="pestana" type="button" role="tab" id="tab-huerta" aria-controls="panel-huerta" aria-selected="false" tabindex="-1">Huerta</button>
+          <button class="pestana" type="button" role="tab" id="tab-postres" aria-controls="panel-postres" aria-selected="false" tabindex="-1">Postres</button>
+          <button class="pestana" type="button" role="tab" id="tab-bebidas" aria-controls="panel-bebidas" aria-selected="false" tabindex="-1">Bebidas y vinos</button>
+        </div>
+
+        <div class="paneles">
+          <section class="panel" id="panel-compartir" role="tabpanel" aria-labelledby="tab-compartir" tabindex="0">
+            <h3 class="panel__titulo">Para compartir</h3>
+            <p class="panel__intro">Para abrir la mesa mientras el fogón trabaja.</p>
+            <ul class="platos">
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Pan amasado y pebre</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="4900">$4.900</data></div>
+                <p class="plato__desc">Pan de horno de barro, pebre cuchareado de tomate, cebolla y cilantro, y mantequilla con merkén.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Queso de campo a la brasa</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="8900">$8.900</data></div>
+                <p class="plato__desc">Queso de vaca de la zona de Paillaco, dorado en sartén de fierro, con miel de ulmo y nueces tostadas.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Empanadas de cordero</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="7900">$7.900</data></div>
+                <p class="plato__desc">Dos empanadas de horno con pino de cordero picado a cuchillo, cebolla dulce y ají cacho de cabra.</p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Longaniza y tortilla de rescoldo</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="7500">$7.500</data></div>
+                <p class="plato__desc">Longaniza artesanal de cerdo asada lento, tortilla cocida en la ceniza y chimichurri de cilantro.</p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="panel" id="panel-fuego" role="tabpanel" aria-labelledby="tab-fuego" tabindex="0">
+            <h3 class="panel__titulo">Del fuego</h3>
+            <p class="panel__intro">Carnes de campo sobre brasa de luma. Se sirven con una guarnición de la huerta.</p>
+            <ul class="platos">
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Lomo vetado madurado</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="21900">$21.900</data></div>
+                <p class="plato__desc">350 g de vacuno de pastoreo madurado 21 días, sal de mar de Cáhuil y chimichurri de la casa.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Tira de asado de seis horas</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="18500">$18.500</data></div>
+                <p class="plato__desc">Asado de tira de vacuno del sur, cocido de costado al calor del ulmo hasta que se separa del hueso.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Costillar ahumado con luma</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="16900">$16.900</data></div>
+                <p class="plato__desc">Costillar de cerdo glaseado con miel de ulmo y mostaza antigua, terminado sobre brasa viva.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Pierna de cordero al palo</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="19900">$19.900</data></div>
+                <p class="plato__desc">Cordero de crianza a pasto, puré de habas con menta y jugo de su cocción con romero.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Pollo de campo a la plancha de fierro</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="13900">$13.900</data></div>
+                <p class="plato__desc">Pollo deshuesado con piel crocante, limón asado y papas chilotas al rescoldo.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="panel" id="panel-mar" role="tabpanel" aria-labelledby="tab-mar" tabindex="0">
+            <h3 class="panel__titulo">Del mar</h3>
+            <p class="panel__intro">Pescados y mariscos de la costa de Los Ríos. La pesca del día cambia según lo que llegue.</p>
+            <ul class="platos">
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Reineta a la brasa</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="15900">$15.900</data></div>
+                <p class="plato__desc">Filete con piel en parrilla fina, papas chilotas moradas y amarillas, limón asado y salsa verde.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Choritos en paila de greda</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="11900">$11.900</data></div>
+                <p class="plato__desc">Choritos al vapor de chicha de manzana, cebolla morada y cilantro. Se sirven con pan amasado para el caldo.</p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Congrio colorado y cochayuyo</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="17500">$17.500</data></div>
+                <p class="plato__desc">Trozo de congrio asado sobre hoja de repollo, caldo de su cabeza y cochayuyo salteado con ajo.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Merluza austral con mantequilla de algas</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="16500">$16.500</data></div>
+                <p class="plato__desc">Envuelta en hoja y cocida al rescoldo, con mantequilla de luche y puerros carbonizados.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="panel" id="panel-huerta" role="tabpanel" aria-labelledby="tab-huerta" tabindex="0">
+            <h3 class="panel__titulo">Huerta</h3>
+            <p class="panel__intro">Verduras de temporada al rescoldo y a la brasa. Funcionan como plato o como acompañamiento.</p>
+            <ul class="platos">
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Zapallo camote asado</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="8900">$8.900</data></div>
+                <p class="plato__desc">Gajos asados en sartén de fierro, yogur de oveja, pepitas tostadas, merkén y un hilo de miel de ulmo.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Betarragas al rescoldo</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="8500">$8.500</data></div>
+                <p class="plato__desc">Cocidas enteras en la ceniza, con queso de cabra fresco, avellanas chilenas tostadas y hojas de la huerta.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Puerros carbonizados</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="7900">$7.900</data></div>
+                <p class="plato__desc">Puerros enteros quemados por fuera y tiernos por dentro, vinagreta de mostaza y huevo de campo rallado.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Papas nativas y chancho en piedra</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="6900">$6.900</data></div>
+                <p class="plato__desc">Papas chilotas de distintas variedades, asadas con su piel, y salsa de tomate y ají machacada en piedra.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Hojas de la huerta</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="6500">$6.500</data></div>
+                <p class="plato__desc">Lechugas, rabanitos y brotes de la semana con aliño de miel de ulmo y semillas de zapallo.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="panel" id="panel-postres" role="tabpanel" aria-labelledby="tab-postres" tabindex="0">
+            <h3 class="panel__titulo">Postres</h3>
+            <p class="panel__intro">Fruta del sur y la última brasa de la noche.</p>
+            <ul class="platos">
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Leche asada con murtas</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="5900">$5.900</data></div>
+                <p class="plato__desc">Leche asada de horno con manchas de caramelo y murtas del sur en almíbar suave.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Kuchen de murta</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="5500">$5.500</data></div>
+                <p class="plato__desc">Masa de mantequilla, murtas y crumble de avena, con crema de campo batida a mano.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Manzana asada en la brasa</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="5900">$5.900</data></div>
+                <p class="plato__desc">Manzana del sur asada entera, crema de avellana chilena y helado de leche de la casa.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+              <li class="plato">
+                <div class="plato__linea"><h4 class="plato__nombre">Queso de campo y membrillo</h4><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="4900">$4.900</data></div>
+                <p class="plato__desc">Queso mantecoso madurado con dulce de membrillo hecho en casa y nueces.</p>
+                <p class="plato__marcas"><span class="marca-plato marca-plato--v"><span aria-hidden="true">V</span><span class="sr">Vegetariano</span></span><span class="marca-plato marca-plato--sg"><span aria-hidden="true">SG</span><span class="sr">Sin gluten</span></span></p>
+              </li>
+            </ul>
+          </section>
+
+          <section class="panel" id="panel-bebidas" role="tabpanel" aria-labelledby="tab-bebidas" tabindex="0">
+            <h3 class="panel__titulo">Bebidas y vinos</h3>
+            <p class="panel__intro">Jugos y aguas de hierbas hechos en casa, y una carta corta de vinos de valles del sur. Bebe con moderación.</p>
+            <div class="bebidas">
+              <div>
+                <h4 class="bebidas__titulo">Sin alcohol</h4>
+                <ul class="platos platos--simple">
+                  <li class="plato">
+                    <div class="plato__linea"><h5 class="plato__nombre">Jugo de maqui y manzana</h5><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="3900">$3.900</data></div>
+                    <p class="plato__desc">Prensado en la mañana, sin azúcar agregada.</p>
+                  </li>
+                  <li class="plato">
+                    <div class="plato__linea"><h5 class="plato__nombre">Limonada de menta y jengibre</h5><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="3500">$3.500</data></div>
+                    <p class="plato__desc">Con menta de la huerta y un toque de miel de ulmo.</p>
+                  </li>
+                  <li class="plato">
+                    <div class="plato__linea"><h5 class="plato__nombre">Agua de cedrón y canela</h5><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="2500">$2.500</data></div>
+                    <p class="plato__desc">Infusión fría o caliente, según el día.</p>
+                  </li>
+                  <li class="plato">
+                    <div class="plato__linea"><h5 class="plato__nombre">Agua mineral</h5><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="2900">$2.900</data></div>
+                    <p class="plato__desc">Con o sin gas, botella de 500 ml.</p>
+                  </li>
+                </ul>
+              </div>
+              <div>
+                <h4 class="bebidas__titulo">Vinos</h4>
+                <ul class="platos platos--simple">
+                  <li class="plato">
+                    <div class="plato__linea"><h5 class="plato__nombre">Pinot noir, valle de Osorno · copa</h5><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="6900">$6.900</data></div>
+                    <p class="plato__desc">Fresco y ligero, para la reineta y el cordero.</p>
+                  </li>
+                  <li class="plato">
+                    <div class="plato__linea"><h5 class="plato__nombre">Chardonnay, valle de Malleco · copa</h5><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="6500">$6.500</data></div>
+                    <p class="plato__desc">De clima frío, buena acidez para los choritos.</p>
+                  </li>
+                  <li class="plato">
+                    <div class="plato__linea"><h5 class="plato__nombre">País de secano, valle del Itata · botella</h5><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="24000">$24.000</data></div>
+                    <p class="plato__desc">Tinto liviano de viñas viejas, ideal con la tira de asado.</p>
+                  </li>
+                  <li class="plato">
+                    <div class="plato__linea"><h5 class="plato__nombre">Carménère del Maule · botella</h5><span class="plato__guia" aria-hidden="true"></span><data class="plato__precio" value="26000">$26.000</data></div>
+                    <p class="plato__desc">Especiado y redondo, para el lomo vetado.</p>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+    <!-- HISTORIA -->
+    <section class="seccion historia" id="historia" aria-labelledby="historia-titulo">
+      <div class="contenedor historia__grid">
+        <figure class="historia__figura">
+          <div class="arco">
+            <img src="assets/img/historia-lena.svg" width="800" height="1000" loading="lazy" alt="Pila de leña vista desde los cortes: troncos de luma, de tono rojizo, y de ulmo, más claro, con sus anillos, iluminados por el resplandor del fuego delante de un muro de ladrillo.">
+          </div>
+          <figcaption class="lamina lamina--clara"><span class="lamina__num">Lámina 02</span> Luma y ulmo esperando su turno junto al fogón.</figcaption>
+        </figure>
+        <div class="historia__texto">
+          <header class="seccion__cabecera">
+            <p class="seccion__num"><span>03</span> Historia</p>
+            <h2 class="seccion__titulo" id="historia-titulo">Empezó en un <em>patio</em>, con un saco de leña.</h2>
+          </header>
+          <div class="historia__cuerpo">
+            <p class="capitular">Antes de ser restaurante, Brasa Sur fue un patio en Ñuñoa: una parrilla hecha con un tambor partido y un saco de leña que llegaba cada mes desde Panguipulli. Ahí Antonia Huenchumil, que aprendió a cocinar mirando el fogón de su abuela a orillas del lago, preparaba almuerzos de domingo para amigos que traían el vino y se quedaban hasta que se apagaba la última brasa.</p>
+            <p>En 2021 Antonia y Matías Ortúzar, carnicero de oficio, arrendaron una casa de fachada continua en Barrio Italia. Botaron un muro, levantaron un fogón de ladrillo a la vista y pusieron la cocina en el centro del salón, para que el fuego se vea desde todas las mesas.</p>
+            <p>Siguen comprando como en ese patio: leña seca a pequeños leñeros de Los Ríos, carne a crianceros del sur, pescado de las caletas de la costa valdiviana y verduras de una huerta que cada lunes avisa qué viene para la semana.</p>
+          </div>
+          <blockquote class="cita">
+            <p>«La luma da un calor parejo y largo; el ulmo, un aroma dulce. Con las dos se cocina sin apuro.»</p>
+            <footer>— Antonia, cocinera</footer>
+          </blockquote>
+          <ol class="linea-tiempo" aria-label="Momentos de Brasa Sur">
+            <li><span class="linea-tiempo__anio">2018</span> Primeros almuerzos de domingo en el patio de Ñuñoa.</li>
+            <li><span class="linea-tiempo__anio">2021</span> Abre la casa de Barrio Italia, con 38 puestos alrededor del fogón.</li>
+            <li><span class="linea-tiempo__anio">2026</span> Carta de primavera: más huerta y más costa.</li>
+          </ol>
+          <p class="nota-ficcion">Historia, personas y lugares de este relato son ficticios, creados para esta demostración.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- GALERÍA -->
+    <section class="seccion galeria" id="galeria" aria-labelledby="galeria-titulo">
+      <div class="contenedor">
+        <header class="seccion__cabecera galeria__cabecera">
+          <p class="seccion__num"><span>04</span> Galería</p>
+          <h2 class="seccion__titulo" id="galeria-titulo">Vista desde <em>arriba</em></h2>
+          <p class="galeria__bajada">Láminas ilustradas de la cocina. Ábrelas en grande y recórrelas con las flechas del teclado.</p>
+        </header>
+        <ul class="galeria__grid">
+          <li class="galeria__celda galeria__celda--a">
+            <button class="galeria__item" type="button" aria-label="Ver en grande: El fogón" data-src="assets/img/galeria-brasas.svg" data-titulo="El fogón" data-desc="Brasas de luma y ulmo: la luma da el calor parejo; el ulmo, el aroma." data-alt="Fogón con troncos de luma y ulmo cruzados sobre un lecho de brasas incandescentes, con llamas y chispas que suben en la oscuridad.">
+              <img src="assets/img/galeria-brasas.svg" width="1200" height="900" loading="lazy" alt="">
+              <span class="galeria__pie"><span class="galeria__num">03</span> El fogón</span>
+            </button>
+          </li>
+          <li class="galeria__celda galeria__celda--b">
+            <button class="galeria__item" type="button" aria-label="Ver en grande: Reineta a la brasa" data-src="assets/img/galeria-reineta.svg" data-titulo="Reineta a la brasa" data-desc="Con papas chilotas, limón asado y salsa verde." data-alt="Plato de gres visto desde arriba con un filete de reineta con marcas de parrilla, papas chilotas moradas y amarillas, medio limón asado y gotas de salsa verde.">
+              <img src="assets/img/galeria-reineta.svg" width="1200" height="900" loading="lazy" alt="">
+              <span class="galeria__pie"><span class="galeria__num">04</span> Reineta a la brasa</span>
+            </button>
+          </li>
+          <li class="galeria__celda galeria__celda--c">
+            <button class="galeria__item" type="button" aria-label="Ver en grande: Zapallo camote" data-src="assets/img/galeria-zapallo.svg" data-titulo="Zapallo camote" data-desc="Asado en sartén de fierro, con yogur de oveja, pepitas y merkén." data-alt="Sartén de fierro con seis gajos de zapallo camote asado alrededor de una cucharada de yogur, espolvoreados con merkén y pepitas verdes.">
+              <img src="assets/img/galeria-zapallo.svg" width="1200" height="900" loading="lazy" alt="">
+              <span class="galeria__pie"><span class="galeria__num">05</span> Zapallo camote</span>
+            </button>
+          </li>
+          <li class="galeria__celda galeria__celda--d">
+            <button class="galeria__item" type="button" aria-label="Ver en grande: Pan amasado y pebre" data-src="assets/img/galeria-pan-pebre.svg" data-titulo="Pan amasado y pebre" data-desc="Lo primero que llega a la mesa, con mantequilla y merkén." data-alt="Cuatro panes amasados sobre un paño de lino con franjas terracota, un pocillo de pebre rojo con cilantro y un platillo con mantequilla y merkén, sobre una mesa de madera clara.">
+              <img src="assets/img/galeria-pan-pebre.svg" width="1200" height="900" loading="lazy" alt="">
+              <span class="galeria__pie"><span class="galeria__num">06</span> Pan amasado y pebre</span>
+            </button>
+          </li>
+          <li class="galeria__celda galeria__celda--e">
+            <button class="galeria__item" type="button" aria-label="Ver en grande: Choritos en paila" data-src="assets/img/galeria-choritos.svg" data-titulo="Choritos en paila" data-desc="Al vapor de chicha de manzana, con cilantro y limón." data-alt="Paila de greda vista desde arriba llena de choritos negros, muchos abiertos mostrando su carne anaranjada, en un caldo dorado con hojas de cilantro; al lado, un gajo de limón.">
+              <img src="assets/img/galeria-choritos.svg" width="1200" height="900" loading="lazy" alt="">
+              <span class="galeria__pie"><span class="galeria__num">07</span> Choritos en paila</span>
+            </button>
+          </li>
+          <li class="galeria__celda galeria__celda--f">
+            <button class="galeria__item" type="button" aria-label="Ver en grande: Bandeja de huerta" data-src="assets/img/galeria-huerta.svg" data-titulo="Bandeja de huerta" data-desc="Puerros, zanahorias, betarragas y ajo al rescoldo." data-alt="Bandeja de fierro oscura con puerros carbonizados, zanahorias naranjas y moradas, betarragas cortadas por la mitad y dos cabezas de ajo asadas, con sal en escamas.">
+              <img src="assets/img/galeria-huerta.svg" width="1200" height="900" loading="lazy" alt="">
+              <span class="galeria__pie"><span class="galeria__num">08</span> Bandeja de huerta</span>
+            </button>
+          </li>
+          <li class="galeria__celda galeria__celda--g">
+            <button class="galeria__item" type="button" aria-label="Ver en grande: Leche asada con murtas" data-src="assets/img/galeria-leche-asada.svg" data-titulo="Leche asada con murtas" data-desc="El postre de siempre, con fruta del sur." data-alt="Fuente ovalada de greda con leche asada de superficie dorada y manchas de caramelo, coronada con murtas rojas y hojas de menta; al lado, una cuchara y un platillo con más murtas.">
+              <img src="assets/img/galeria-leche-asada.svg" width="1200" height="900" loading="lazy" alt="">
+              <span class="galeria__pie"><span class="galeria__num">09</span> Leche asada con murtas</span>
+            </button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- RESERVAS -->
+    <section class="seccion reservas" id="reservar" aria-labelledby="reservar-titulo">
+      <div class="contenedor reservas__grid">
+        <div class="reservas__info">
+          <header class="seccion__cabecera">
+            <p class="seccion__num"><span>05</span> Reservas</p>
+            <h2 class="seccion__titulo" id="reservar-titulo">Solicita tu <em>mesa</em></h2>
+          </header>
+          <p class="reservas__bajada">Elige día, turno y cuántos vienen. Recibimos solicitudes con hasta 60 días de anticipación.</p>
+          <div class="aviso-demo" role="note">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M12 7v6m0 3.5v.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+            <p><strong>Formulario de demostración.</strong> Lo que ingreses se guarda solo en este navegador y no se envía a ningún restaurante ni a ninguna persona.</p>
+          </div>
+          <h3 class="reservas__subtitulo">Horario</h3>
+          <table class="horario">
+            <caption class="sr">Horario de atención de ejemplo</caption>
+            <tbody>
+              <tr><th scope="row">Martes a sábado</th><td>13:00–16:00<br>19:30–23:30</td></tr>
+              <tr><th scope="row">Domingo</th><td>13:00–17:00</td></tr>
+              <tr><th scope="row">Lunes</th><td>Cerrado</td></tr>
+            </tbody>
+          </table>
+          <h3 class="reservas__subtitulo">Bueno saber</h3>
+          <ul class="reservas__notas">
+            <li>Guardamos la mesa 15 minutos después de la hora elegida.</li>
+            <li>Si tienes alergias, cuéntanos en los comentarios: la cocina comparte superficies con gluten y frutos secos.</li>
+            <li>Para más de 10 personas armamos un menú de fuego compartido.</li>
+          </ul>
+        </div>
+
+        <div class="reservas__formulario">
+          <form class="formulario" id="form-reserva" novalidate aria-labelledby="form-titulo">
+            <h3 class="formulario__titulo" id="form-titulo">Solicitud de reserva</h3>
+            <p class="formulario__requeridos">Todos los campos son obligatorios, salvo los comentarios.</p>
+
+            <div class="resumen-errores" id="resumen-errores" tabindex="-1" hidden>
+              <h4 class="resumen-errores__titulo" id="resumen-titulo">Revisa estos datos antes de continuar</h4>
+              <ul class="resumen-errores__lista" aria-labelledby="resumen-titulo"></ul>
+            </div>
+
+            <fieldset class="grupo">
+              <legend class="grupo__titulo"><span aria-hidden="true">1.</span> Tus datos</legend>
+              <div class="campo" data-campo="nombre">
+                <label class="campo__etiqueta" for="f-nombre">Nombre y apellido</label>
+                <input class="campo__control" id="f-nombre" name="nombre" type="text" autocomplete="name" maxlength="60" required aria-describedby="f-nombre-error">
+                <p class="campo__error" id="f-nombre-error"></p>
+              </div>
+              <div class="campos-dos">
+                <div class="campo" data-campo="telefono">
+                  <label class="campo__etiqueta" for="f-telefono">Teléfono</label>
+                  <p class="campo__ayuda" id="f-telefono-ayuda">Celular o fijo chileno, p. ej. +56 9 1234 5678</p>
+                  <input class="campo__control" id="f-telefono" name="telefono" type="tel" inputmode="tel" autocomplete="tel" maxlength="20" required aria-describedby="f-telefono-ayuda f-telefono-error">
+                  <p class="campo__error" id="f-telefono-error"></p>
+                </div>
+                <div class="campo" data-campo="correo">
+                  <label class="campo__etiqueta" for="f-correo">Correo electrónico</label>
+                  <p class="campo__ayuda" id="f-correo-ayuda">Por ejemplo, nombre@correo.cl</p>
+                  <input class="campo__control" id="f-correo" name="correo" type="email" inputmode="email" autocomplete="email" maxlength="80" required aria-describedby="f-correo-ayuda f-correo-error">
+                  <p class="campo__error" id="f-correo-error"></p>
+                </div>
+              </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+              <legend class="grupo__titulo"><span aria-hidden="true">2.</span> Tu mesa</legend>
+              <div class="campos-dos">
+                <div class="campo" data-campo="fecha">
+                  <label class="campo__etiqueta" for="f-fecha">Fecha</label>
+                  <p class="campo__ayuda" id="f-fecha-ayuda">Martes a domingo, hasta 60 días desde hoy. Lunes cerrado.</p>
+                  <input class="campo__control" id="f-fecha" name="fecha" type="date" required aria-describedby="f-fecha-ayuda f-fecha-texto f-fecha-error">
+                  <p class="campo__eco" id="f-fecha-texto" aria-live="polite"></p>
+                  <p class="campo__error" id="f-fecha-error"></p>
+                </div>
+                <div class="campo" data-campo="personas">
+                  <label class="campo__etiqueta" for="f-personas">Personas</label>
+                  <p class="campo__ayuda" id="f-personas-ayuda">De 1 a 10 por solicitud.</p>
+                  <div class="contador">
+                    <button class="contador__btn" type="button" data-paso="-1" aria-controls="f-personas" aria-label="Quitar una persona">
+                      <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 10h10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                    <input class="campo__control contador__valor" id="f-personas" name="personas" type="number" inputmode="numeric" min="1" max="10" step="1" value="2" required aria-describedby="f-personas-ayuda f-personas-error">
+                    <button class="contador__btn" type="button" data-paso="1" aria-controls="f-personas" aria-label="Agregar una persona">
+                      <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M5 10h10M10 5v10" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+                    </button>
+                  </div>
+                  <p class="campo__error" id="f-personas-error"></p>
+                </div>
+              </div>
+
+              <div class="aviso-grupos" id="aviso-grupos" hidden>
+                <h4 class="aviso-grupos__titulo">¿Vienen más de 10 personas?</h4>
+                <p>Para grupos grandes armamos un menú de fuego compartido y usamos el salón del fondo, así que no se piden por este formulario. Escribe a <strong>grupos@brasasur.example</strong> o llama al <strong>+56 2 2987 6543</strong> contando fecha y cantidad de personas.</p>
+                <p class="aviso-grupos__nota">Datos de contacto de ejemplo: Brasa Sur es un negocio ficticio.</p>
+              </div>
+
+              <fieldset class="campo campo--turno" data-campo="turno" id="f-turno" aria-describedby="f-turno-ayuda f-turno-error">
+                <legend class="campo__etiqueta">Turno</legend>
+                <p class="campo__ayuda" id="f-turno-ayuda">Elige primero una fecha válida para ver los turnos.</p>
+                <div class="turnos">
+                  <label class="turno">
+                    <input type="radio" name="turno" value="almuerzo" disabled aria-describedby="f-turno-error">
+                    <span class="turno__caja"><span class="turno__nombre">Almuerzo</span><span class="turno__horas" data-horas-almuerzo>13:00–16:00</span></span>
+                  </label>
+                  <label class="turno">
+                    <input type="radio" name="turno" value="cena" disabled aria-describedby="f-turno-error">
+                    <span class="turno__caja"><span class="turno__nombre">Cena</span><span class="turno__horas" data-horas-cena>19:30–23:30</span></span>
+                  </label>
+                </div>
+                <p class="campo__error" id="f-turno-error"></p>
+              </fieldset>
+
+              <div class="campo" data-campo="hora">
+                <label class="campo__etiqueta" for="f-hora">Hora de llegada</label>
+                <p class="campo__ayuda" id="f-hora-ayuda">La última mesa entra una hora antes del cierre del turno.</p>
+                <select class="campo__control" id="f-hora" name="hora" required aria-describedby="f-hora-ayuda f-hora-error">
+                  <option value="">Elige fecha y turno primero</option>
+                </select>
+                <p class="campo__error" id="f-hora-error"></p>
+              </div>
+
+              <div class="campo" data-campo="comentarios">
+                <label class="campo__etiqueta" for="f-comentarios">Comentarios <span class="campo__opcional">(opcional)</span></label>
+                <p class="campo__ayuda" id="f-comentarios-ayuda">Alergias o restricciones, una celebración, silla para guagua…</p>
+                <textarea class="campo__control" id="f-comentarios" name="comentarios" rows="3" maxlength="300" aria-describedby="f-comentarios-ayuda f-comentarios-cuenta f-comentarios-error"></textarea>
+                <p class="campo__cuenta" id="f-comentarios-cuenta"><span data-cuenta>0</span> de 300 caracteres</p>
+                <p class="campo__error" id="f-comentarios-error"></p>
+              </div>
+            </fieldset>
+
+            <div class="formulario__enviar">
+              <button class="btn btn--brasa btn--grande" type="submit" id="btn-enviar">
+                <span class="btn__texto">Guardar solicitud</span>
+                <span class="btn__giro" aria-hidden="true"></span>
+              </button>
+              <p class="formulario__legal">Se guardará solo en este navegador. Nada se envía.</p>
+            </div>
+            <p class="sr" id="estado-envio" role="status"></p>
+          </form>
+
+          <div class="confirmacion" id="confirmacion" hidden>
+            <p class="confirmacion__sello" aria-hidden="true">
+              <svg viewBox="0 0 48 48" focusable="false"><circle cx="24" cy="24" r="22" fill="none" stroke="currentColor" stroke-width="2"/><path d="M14 25l7 7 13-15" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </p>
+            <h3 class="confirmacion__titulo" id="confirmacion-titulo" tabindex="-1">Solicitud guardada en este navegador</h3>
+            <p class="confirmacion__codigo">Código de solicitud <strong id="conf-codigo">—</strong></p>
+            <dl class="resumen" id="conf-resumen"></dl>
+            <div class="aviso-demo aviso-demo--fuerte" role="note">
+              <p><strong>Esto es una demostración.</strong> La solicitud no se envió a Brasa Sur ni a nadie: Brasa Sur es un restaurante ficticio y esta información quedó guardada solo en este navegador.</p>
+            </div>
+            <p class="confirmacion__aviso-almacen" id="conf-sin-almacen" hidden>Tu navegador no permite guardar datos locales, así que esta solicitud desaparecerá al recargar la página.</p>
+            <div class="confirmacion__acciones">
+              <a class="btn btn--linea" href="#mis-solicitudes">Ver tus solicitudes</a>
+              <button class="btn btn--brasa" type="button" id="btn-otra">Hacer otra solicitud</button>
+            </div>
+          </div>
+        </div>
+
+        <section class="mis-solicitudes" id="mis-solicitudes" aria-labelledby="mis-titulo">
+          <div class="mis-solicitudes__cabecera">
+            <h3 class="mis-solicitudes__titulo" id="mis-titulo" tabindex="-1">Tus solicitudes en este navegador</h3>
+            <p class="mis-solicitudes__cuenta" id="mis-cuenta"></p>
+          </div>
+          <p class="mis-solicitudes__aviso" id="aviso-almacen" hidden>Este navegador bloquea el almacenamiento local: las solicitudes se verán mientras no recargues la página.</p>
+          <p class="sr" id="estado-lista" role="status"></p>
+          <div class="vacio" id="lista-vacia">
+            <svg class="vacio__icono" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><path d="M10 54h44" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M18 54l8-14m20 14l-8-14M22 47h20" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M32 36c-5 0-8-3-8-7 0-4.5 3.5-6.5 4.5-11 2.5 2.5 2.7 5.4 2.7 5.4s1.2-3.8 3.8-7.2c1 4.6 5 7.2 5 12.8 0 4.4-2.8 7-8 7z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/></svg>
+            <p class="vacio__titulo">Aún no hay solicitudes guardadas aquí.</p>
+            <p class="vacio__texto">Cuando completes el formulario, tu solicitud aparecerá en esta lista. Puedes anularla cuando quieras.</p>
+          </div>
+          <ul class="solicitudes" id="lista-solicitudes"></ul>
+        </section>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__grid">
+      <div class="pie__marca">
+        <p class="pie__logo">Brasa <em>Sur</em></p>
+        <p class="pie__lema">Cocina a las brasas con productos del sur de Chile.</p>
+      </div>
+      <div class="pie__col">
+        <h2 class="pie__titulo">Dirección</h2>
+        <address>Calle Los Leñadores 1186<br>Barrio Italia, Providencia<br>Santiago</address>
+      </div>
+      <div class="pie__col">
+        <h2 class="pie__titulo">Horario</h2>
+        <p>Martes a sábado<br>13:00–16:00 y 19:30–23:30</p>
+        <p>Domingo 13:00–17:00<br>Lunes cerrado</p>
+      </div>
+      <div class="pie__col">
+        <h2 class="pie__titulo">Contacto</h2>
+        <p>+56 2 2987 6543<br>reservas@brasasur.example</p>
+        <p class="pie__nota">Dirección, horario y contactos son de ejemplo.</p>
+      </div>
+    </div>
+    <div class="contenedor pie__base">
+      <p class="pie__aviso"><span class="aviso-ficticio__punto" aria-hidden="true"></span><strong>Negocio ficticio</strong> · Sitio de demostración creado por Estudio Norte</p>
+      <p class="pie__creditos">Ilustraciones SVG originales · Tipografías Fraunces y Karla (SIL Open Font License 1.1)</p>
+      <p><a class="pie__portafolio" href="../../index.html">Ver portafolio de Estudio Norte</a></p>
+    </div>
+  </footer>
+
+  <dialog class="visor" id="visor" aria-labelledby="visor-titulo" aria-describedby="visor-desc">
+    <div class="visor__marco">
+      <div class="visor__barra">
+        <p class="visor__contador" id="visor-contador" aria-live="polite"></p>
+        <button class="visor__btn visor__cerrar" type="button" id="visor-cerrar" aria-label="Cerrar galería">
+          <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M6 6l12 12M18 6L6 18" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
+        </button>
+      </div>
+      <figure class="visor__figura">
+        <img class="visor__img" id="visor-img" src="assets/img/galeria-brasas.svg" alt="" width="1200" height="900">
+        <figcaption class="visor__pie">
+          <h2 class="visor__titulo" id="visor-titulo">Galería</h2>
+          <p class="visor__desc" id="visor-desc"></p>
+        </figcaption>
+      </figure>
+      <button class="visor__btn visor__nav visor__nav--ant" type="button" id="visor-ant" aria-label="Imagen anterior">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M15 5l-7 7 7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+      <button class="visor__btn visor__nav visor__nav--sig" type="button" id="visor-sig" aria-label="Imagen siguiente">
+        <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M9 5l7 7-7 7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      </button>
+    </div>
+  </dialog>
+</body>
+</html>

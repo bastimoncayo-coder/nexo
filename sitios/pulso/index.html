@@ -1,0 +1,822 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Pulso · Gimnasio de barrio en Ñuñoa (sitio de demostración)</title>
+  <meta name="description" content="Pulso es un gimnasio ficticio de Ñuñoa: sala de musculación, clases de funcional, spinning, yoga, boxeo, HIIT y movilidad. Sitio de demostración de Estudio Norte.">
+  <meta name="theme-color" content="#0E0F12">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+
+  <div class="aviso-ficticio" role="note">
+    <div class="contenedor aviso-ficticio__in">
+      <span class="aviso-ficticio__sello" aria-hidden="true">Demo</span>
+      <p><strong>Negocio ficticio</strong> · Sitio de demostración creado por Estudio Norte. Precios, horarios y personas son de ejemplo.</p>
+    </div>
+  </div>
+
+  <header class="cabecera" id="cabecera">
+    <div class="contenedor cabecera__in">
+      <a class="marca" href="#inicio" aria-label="Pulso, ir al inicio">
+        <svg class="marca__icono" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <rect width="40" height="40" rx="9" fill="#C6F432"/>
+          <path d="M5 21h8l3-9 5 17 4-12 2 4h8" fill="none" stroke="#0E0F12" stroke-width="3.6" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="marca__texto">Pulso</span>
+      </a>
+      <button class="menu-boton" type="button" aria-expanded="false" aria-controls="nav-principal" id="menu-boton">
+        <span class="menu-boton__barras" aria-hidden="true"><span></span><span></span><span></span></span>
+        <span class="menu-boton__texto">Menú</span>
+      </button>
+      <nav class="nav" id="nav-principal" aria-label="Principal">
+        <ul class="nav__lista">
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#disciplinas">Disciplinas</a></li>
+          <li><a href="#equipo">Equipo</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+          <li class="nav__cta-item"><a class="btn btn--lima btn--chico" href="#prueba">Pedir clase de prueba</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- ============ PORTADA ============ -->
+    <section class="portada" id="inicio" aria-labelledby="portada-titulo">
+      <div class="contenedor portada__grid">
+        <div class="portada__texto">
+          <p class="portada__kicker"><span class="punto-vivo" aria-hidden="true"></span>Gimnasio de barrio · Ñuñoa</p>
+          <h1 id="portada-titulo" class="portada__titulo">
+            <span class="linea">Sube</span>
+            <span class="linea">el <mark>pulso</mark>.</span>
+            <span class="linea linea--contorno">A tu ritmo.</span>
+          </h1>
+          <p class="portada__bajada">Sala de musculación y seis disciplinas grupales a pocas cuadras de tu casa. Entrenadores que se saben tu nombre, clases desde las 07:00 y un plan para cada bolsillo.</p>
+          <div class="portada__acciones">
+            <a class="btn btn--lima btn--grande" href="#prueba">Pedir clase de prueba
+              <svg class="btn__flecha" viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 12h15m-6-7 7 7-7 7" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--contorno-claro btn--grande" href="#planes">Ver planes y precios</a>
+          </div>
+          <p class="portada__nota">La primera clase es gratis. Sin matrícula.</p>
+        </div>
+
+        <div class="portada__arte">
+          <svg class="arte-atleta" viewBox="0 0 560 620" role="img" aria-labelledby="arte-atleta-t">
+            <title id="arte-atleta-t">Ilustración geométrica: una atleta corre sobre una franja diagonal lima, cruzada por una onda de pulso y una mancuerna.</title>
+            <defs>
+              <linearGradient id="hx-lima" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#DBFF66"/>
+                <stop offset="1" stop-color="#A9D61C"/>
+              </linearGradient>
+              <linearGradient id="hx-coral" x1="0" y1="0" x2="0.4" y2="1">
+                <stop offset="0" stop-color="#FF7B55"/>
+                <stop offset="1" stop-color="#E5401B"/>
+              </linearGradient>
+              <linearGradient id="hx-tinta" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#2A2D35"/>
+                <stop offset="1" stop-color="#0E0F12"/>
+              </linearGradient>
+              <pattern id="hx-puntos" width="18" height="18" patternUnits="userSpaceOnUse">
+                <circle cx="2" cy="2" r="1.6" fill="#0E0F12" opacity=".14"/>
+              </pattern>
+              <pattern id="hx-rayas" width="14" height="14" patternUnits="userSpaceOnUse" patternTransform="rotate(-35)">
+                <rect width="5" height="14" fill="#FFFFFF" opacity=".07"/>
+              </pattern>
+              <filter id="hx-grano" x="0" y="0" width="100%" height="100%">
+                <feTurbulence type="fractalNoise" baseFrequency=".85" numOctaves="2" stitchTiles="stitch"/>
+                <feColorMatrix values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0  0 0 0 .55 0"/>
+              </filter>
+              <clipPath id="hx-losa"><polygon points="86,64 548,14 548,486 26,590"/></clipPath>
+            </defs>
+
+            <rect x="0" y="0" width="560" height="620" fill="url(#hx-rayas)"/>
+            <!-- losa diagonal -->
+            <polygon points="86,64 548,14 548,486 26,590" fill="url(#hx-lima)"/>
+            <g clip-path="url(#hx-losa)">
+              <rect width="560" height="620" fill="url(#hx-puntos)"/>
+              <g fill="none" stroke="#0E0F12" stroke-opacity=".16" stroke-width="3">
+                <circle cx="300" cy="300" r="120"/>
+                <circle cx="300" cy="300" r="180"/>
+                <circle cx="300" cy="300" r="240"/>
+                <circle cx="300" cy="300" r="300"/>
+              </g>
+              <text x="540" y="470" text-anchor="end" class="arte-numero" fill="#0E0F12" fill-opacity=".1">06:30</text>
+            </g>
+
+            <!-- estelas de velocidad -->
+            <g class="arte-estelas" stroke="#0E0F12" stroke-linecap="round">
+              <line x1="70" y1="220" x2="170" y2="220" stroke-width="12"/>
+              <line x1="40" y1="262" x2="150" y2="262" stroke-width="12" stroke-opacity=".7"/>
+              <line x1="92" y1="304" x2="170" y2="304" stroke-width="12" stroke-opacity=".45"/>
+            </g>
+
+            <!-- atleta: extremidades de fondo -->
+            <g stroke-linecap="round" stroke-linejoin="round" fill="none">
+              <polyline points="312,206 244,240 210,194" stroke="#3A3D47" stroke-width="30"/>
+              <polyline points="262,330 208,424 128,396" stroke="#3A3D47" stroke-width="38"/>
+              <line x1="128" y1="396" x2="104" y2="436" stroke="#FFFFFF" stroke-width="22"/>
+              <!-- torso -->
+              <line x1="322" y1="192" x2="268" y2="316" stroke="url(#hx-coral)" stroke-width="66"/>
+              <line x1="312" y1="196" x2="282" y2="262" stroke="#FFFFFF" stroke-opacity=".22" stroke-width="12"/>
+              <!-- short -->
+              <line x1="270" y1="322" x2="300" y2="340" stroke="#0E0F12" stroke-width="58"/>
+              <!-- pierna delantera -->
+              <polyline points="282,330 368,372 352,478" stroke="url(#hx-tinta)" stroke-width="40"/>
+              <line x1="340" y1="486" x2="398" y2="492" stroke="#FFFFFF" stroke-width="22"/>
+              <line x1="346" y1="497" x2="396" y2="502" stroke="#FF5A36" stroke-width="6"/>
+              <!-- brazo delantero -->
+              <polyline points="330,206 396,258 446,214" stroke="#0E0F12" stroke-width="30"/>
+              <circle cx="452" cy="208" r="16" fill="#0E0F12" stroke="none"/>
+            </g>
+            <!-- cabeza -->
+            <circle cx="348" cy="126" r="38" fill="#0E0F12"/>
+            <path d="M322 104 q30 -30 60 -4" fill="none" stroke="#FF5A36" stroke-width="10" stroke-linecap="round"/>
+            <path d="M318 112 q-34 6 -52 30" fill="none" stroke="#0E0F12" stroke-width="16" stroke-linecap="round"/>
+
+            <!-- onda de pulso -->
+            <path class="arte-pulso" d="M0 548 H150 L176 506 L204 604 L236 452 L262 560 L280 530 H560" fill="none" stroke="#FF5A36" stroke-width="7" stroke-linecap="round" stroke-linejoin="round"/>
+
+            <!-- mancuerna -->
+            <g transform="translate(452 572) rotate(-16)">
+              <rect x="-66" y="-5" width="132" height="10" rx="5" fill="#FFFFFF"/>
+              <rect x="-56" y="-34" width="20" height="68" rx="6" fill="url(#hx-coral)"/>
+              <rect x="36" y="-34" width="20" height="68" rx="6" fill="url(#hx-coral)"/>
+              <rect x="-74" y="-24" width="14" height="48" rx="5" fill="#FFFFFF"/>
+              <rect x="60" y="-24" width="14" height="48" rx="5" fill="#FFFFFF"/>
+            </g>
+
+            <!-- chispas -->
+            <g fill="#FFFFFF">
+              <path d="M486 92 l6 16 16 6 -16 6 -6 16 -6 -16 -16 -6 16 -6z"/>
+              <path d="M58 470 l4 10 10 4 -10 4 -4 10 -4 -10 -10 -4 10 -4z" opacity=".7"/>
+            </g>
+            <rect width="560" height="620" filter="url(#hx-grano)" opacity=".18" style="mix-blend-mode:overlay" pointer-events="none"/>
+          </svg>
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <ul class="cifras" aria-label="Pulso en cifras">
+          <li><span class="cifras__num" data-total-clases>35</span><span class="cifras__txt">clases grupales a la semana</span></li>
+          <li><span class="cifras__num">6</span><span class="cifras__txt">disciplinas, de movilidad a HIIT</span></li>
+          <li><span class="cifras__num">7</span><span class="cifras__txt">días abiertos, también domingo</span></li>
+          <li><span class="cifras__num">06:30</span><span class="cifras__txt">abrimos de lunes a viernes</span></li>
+        </ul>
+      </div>
+    </section>
+
+    <div class="franja" aria-hidden="true">
+      <p class="franja__texto">Funcional <span>✱</span> Spinning <span>✱</span> Yoga <span>✱</span> Boxeo <span>✱</span> HIIT <span>✱</span> Movilidad <span>✱</span> Sala de musculación <span>✱</span> Funcional <span>✱</span> Spinning</p>
+    </div>
+
+    <!-- ============ PLANES ============ -->
+    <section class="seccion seccion--clara" id="planes" aria-labelledby="planes-titulo">
+      <div class="contenedor">
+        <header class="seccion__cab">
+          <p class="cejilla"><span class="cejilla__num">01</span>Planes</p>
+          <h2 id="planes-titulo">Elige cómo quieres entrenar</h2>
+          <p class="seccion__bajada">Todos los planes incluyen evaluación física al ingresar, casillero durante tu visita y duchas con agua caliente. Si pagas por semestre o año, el valor mensual baja.</p>
+        </header>
+
+        <fieldset class="conmutador" id="conmutador-periodo">
+          <legend class="conmutador__leyenda">Modalidad de pago</legend>
+          <div class="conmutador__opciones">
+            <input type="radio" name="periodo" id="periodo-mensual" value="mensual" checked>
+            <label for="periodo-mensual">Mensual</label>
+            <input type="radio" name="periodo" id="periodo-semestral" value="semestral">
+            <label for="periodo-semestral">Semestral <span class="conmutador__dcto">−10%</span></label>
+            <input type="radio" name="periodo" id="periodo-anual" value="anual">
+            <label for="periodo-anual">Anual <span class="conmutador__dcto">−20%</span></label>
+          </div>
+        </fieldset>
+        <p class="solo-lectores" id="precios-anuncio" aria-live="polite"></p>
+
+        <div class="planes">
+          <article class="plan" data-plan="libre" aria-labelledby="plan-libre-t">
+            <p class="plan__etiqueta">Sala</p>
+            <h3 class="plan__nombre" id="plan-libre-t">Libre</h3>
+            <p class="plan__desc">Sala de musculación en todo el horario. Para quien ya tiene rutina o quiere armarla con un entrenador.</p>
+            <p class="plan__precio"><span class="plan__monto" data-monto>$27.990</span><span class="plan__unidad">/mes</span></p>
+            <p class="plan__nota" data-nota>Pagas mes a mes. Sin matrícula.</p>
+            <ul class="plan__lista">
+              <li>Sala de musculación todos los días</li>
+              <li>Rutina inicial guiada</li>
+              <li class="no">Sin clases grupales</li>
+            </ul>
+            <a class="btn btn--tinta" href="#prueba" data-plan-interes="libre">Pedir clase de prueba</a>
+          </article>
+
+          <article class="plan" data-plan="clases" aria-labelledby="plan-clases-t">
+            <p class="plan__etiqueta">Grupal</p>
+            <h3 class="plan__nombre" id="plan-clases-t">Clases</h3>
+            <p class="plan__desc">Todas las clases grupales que quieras, con reserva en recepción hasta 48 horas antes.</p>
+            <p class="plan__precio"><span class="plan__monto" data-monto>$32.990</span><span class="plan__unidad">/mes</span></p>
+            <p class="plan__nota" data-nota>Pagas mes a mes. Sin matrícula.</p>
+            <ul class="plan__lista">
+              <li>Clases grupales ilimitadas</li>
+              <li>Las seis disciplinas</li>
+              <li class="no">Sin sala de musculación</li>
+            </ul>
+            <a class="btn btn--tinta" href="#prueba" data-plan-interes="clases">Pedir clase de prueba</a>
+          </article>
+
+          <article class="plan plan--destacado" data-plan="full" aria-labelledby="plan-full-t">
+            <p class="plan__etiqueta plan__etiqueta--lima">Todo incluido</p>
+            <h3 class="plan__nombre" id="plan-full-t">Full</h3>
+            <p class="plan__desc">Sala y clases sin límite, reserva con más anticipación y dos invitaciones al mes para entrenar acompañado.</p>
+            <p class="plan__precio"><span class="plan__monto" data-monto>$41.990</span><span class="plan__unidad">/mes</span></p>
+            <p class="plan__nota" data-nota>Pagas mes a mes. Sin matrícula.</p>
+            <ul class="plan__lista">
+              <li>Sala + clases ilimitadas</li>
+              <li>Evaluación cada 3 meses</li>
+              <li>2 invitaciones al mes</li>
+            </ul>
+            <a class="btn btn--lima" href="#prueba" data-plan-interes="full">Pedir clase de prueba</a>
+          </article>
+
+          <article class="plan" data-plan="estudiante" aria-labelledby="plan-estudiante-t">
+            <p class="plan__etiqueta">Credencial vigente</p>
+            <h3 class="plan__nombre" id="plan-estudiante-t">Estudiante</h3>
+            <p class="plan__desc">Sala de lunes a viernes hasta las 17:00 y sábados, más ocho clases grupales al mes.</p>
+            <p class="plan__precio"><span class="plan__monto" data-monto>$22.990</span><span class="plan__unidad">/mes</span></p>
+            <p class="plan__nota" data-nota>Pagas mes a mes. Sin matrícula.</p>
+            <ul class="plan__lista">
+              <li>Sala en horario valle</li>
+              <li>8 clases grupales al mes</li>
+              <li>Para estudiantes con credencial</li>
+            </ul>
+            <a class="btn btn--tinta" href="#prueba" data-plan-interes="estudiante">Pedir clase de prueba</a>
+          </article>
+        </div>
+
+        <div class="comparar">
+          <h3 class="comparar__titulo" id="comparar-titulo">Compara los planes en detalle</h3>
+          <table class="tabla-planes" role="table" aria-labelledby="comparar-titulo">
+            <caption class="solo-lectores">Comparación de los planes Libre, Clases, Full y Estudiante. Los precios cambian según la modalidad de pago elegida.</caption>
+            <thead role="rowgroup">
+              <tr role="row">
+                <th scope="col" role="columnheader"><span class="solo-lectores">Característica</span></th>
+                <th scope="col" role="columnheader">Libre</th>
+                <th scope="col" role="columnheader">Clases</th>
+                <th scope="col" role="columnheader" class="col-destacada">Full</th>
+                <th scope="col" role="columnheader">Estudiante</th>
+              </tr>
+            </thead>
+            <tbody role="rowgroup">
+              <tr role="row" class="fila-precio">
+                <th scope="row" role="rowheader">Valor mensual <span class="tabla-planes__periodo" data-periodo-texto>(pago mensual)</span></th>
+                <td role="cell" data-plan-col="Libre" data-precio-tabla="libre">$27.990</td>
+                <td role="cell" data-plan-col="Clases" data-precio-tabla="clases">$32.990</td>
+                <td role="cell" data-plan-col="Full" data-precio-tabla="full" class="col-destacada">$41.990</td>
+                <td role="cell" data-plan-col="Estudiante" data-precio-tabla="estudiante">$22.990</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader">Sala de musculación</th>
+                <td role="cell" data-plan-col="Libre"><span class="si" aria-hidden="true">●</span> Todo el horario</td>
+                <td role="cell" data-plan-col="Clases"><span class="no-inc" aria-hidden="true">○</span> No incluye</td>
+                <td role="cell" data-plan-col="Full" class="col-destacada"><span class="si" aria-hidden="true">●</span> Todo el horario</td>
+                <td role="cell" data-plan-col="Estudiante"><span class="si" aria-hidden="true">●</span> L a V hasta 17:00 y sábado</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader">Clases grupales</th>
+                <td role="cell" data-plan-col="Libre"><span class="no-inc" aria-hidden="true">○</span> No incluye</td>
+                <td role="cell" data-plan-col="Clases"><span class="si" aria-hidden="true">●</span> Ilimitadas</td>
+                <td role="cell" data-plan-col="Full" class="col-destacada"><span class="si" aria-hidden="true">●</span> Ilimitadas</td>
+                <td role="cell" data-plan-col="Estudiante"><span class="si" aria-hidden="true">●</span> 8 al mes</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader">Reserva de clases</th>
+                <td role="cell" data-plan-col="Libre">—</td>
+                <td role="cell" data-plan-col="Clases">Hasta 48 h antes</td>
+                <td role="cell" data-plan-col="Full" class="col-destacada">Hasta 72 h antes</td>
+                <td role="cell" data-plan-col="Estudiante">Hasta 24 h antes</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader">Evaluación física</th>
+                <td role="cell" data-plan-col="Libre">Al ingresar</td>
+                <td role="cell" data-plan-col="Clases">Al ingresar</td>
+                <td role="cell" data-plan-col="Full" class="col-destacada">Al ingresar y cada 3 meses</td>
+                <td role="cell" data-plan-col="Estudiante">Al ingresar</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader">Invitaciones para acompañantes</th>
+                <td role="cell" data-plan-col="Libre"><span class="no-inc" aria-hidden="true">○</span> No incluye</td>
+                <td role="cell" data-plan-col="Clases"><span class="no-inc" aria-hidden="true">○</span> No incluye</td>
+                <td role="cell" data-plan-col="Full" class="col-destacada"><span class="si" aria-hidden="true">●</span> 2 al mes</td>
+                <td role="cell" data-plan-col="Estudiante"><span class="no-inc" aria-hidden="true">○</span> No incluye</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader">Congelar el plan (semestral o anual)</th>
+                <td role="cell" data-plan-col="Libre">Hasta 15 días</td>
+                <td role="cell" data-plan-col="Clases">Hasta 15 días</td>
+                <td role="cell" data-plan-col="Full" class="col-destacada">Hasta 30 días</td>
+                <td role="cell" data-plan-col="Estudiante">Hasta 15 días</td>
+              </tr>
+              <tr role="row">
+                <th scope="row" role="rowheader">Requisito</th>
+                <td role="cell" data-plan-col="Libre">—</td>
+                <td role="cell" data-plan-col="Clases">—</td>
+                <td role="cell" data-plan-col="Full" class="col-destacada">—</td>
+                <td role="cell" data-plan-col="Estudiante">Credencial de estudiante vigente</td>
+              </tr>
+            </tbody>
+          </table>
+          <p class="comparar__nota">Precios de ejemplo en pesos chilenos, IVA incluido. En semestral y anual se paga el período completo por adelantado.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ DISCIPLINAS ============ -->
+    <section class="seccion seccion--oscura seccion--diagonal" id="disciplinas" aria-labelledby="disciplinas-titulo">
+      <div class="contenedor">
+        <header class="seccion__cab">
+          <p class="cejilla cejilla--lima"><span class="cejilla__num">02</span>Disciplinas</p>
+          <h2 id="disciplinas-titulo">Seis maneras de moverte</h2>
+          <p class="seccion__bajada">Grupos chicos, música a volumen razonable y un entrenador que corrige. Cada clase tiene variantes para quien recién empieza y para quien quiere más.</p>
+        </header>
+
+        <ul class="disciplinas" id="lista-disciplinas">
+          <li class="disciplina" data-disc="funcional">
+            <svg class="disciplina__icono" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <path d="M22 24a10 10 0 0 1 20 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+              <path d="M16 38c0-9 7-15 16-15s16 6 16 15-6 16-16 16-16-7-16-16z" fill="currentColor"/>
+              <rect x="20" y="52" width="24" height="5" rx="2.5" fill="currentColor"/>
+              <circle cx="26" cy="36" r="4" fill="#0E0F12" opacity=".35"/>
+            </svg>
+            <h3 class="disciplina__nombre">Funcional</h3>
+            <p class="disciplina__desc">Circuitos con kettlebells, cajones, bandas y peso corporal. Entrenamos los patrones básicos —empujar, tirar, sentadilla y bisagra de cadera— para que la fuerza te sirva fuera del gimnasio.</p>
+            <dl class="disciplina__datos">
+              <div><dt>Duración</dt><dd>50 min</dd></div>
+              <div><dt>Intensidad</dt><dd><span class="intensidad" data-nivel="4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="intensidad__txt">Alta · 4 de 5</span></dd></div>
+              <div><dt>Cupos</dt><dd>14 por clase</dd></div>
+            </dl>
+            <button class="enlace-flecha" type="button" data-ver-horario="funcional">Ver horarios de Funcional</button>
+          </li>
+          <li class="disciplina" data-disc="spinning">
+            <svg class="disciplina__icono" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <circle cx="32" cy="32" r="22" fill="none" stroke="currentColor" stroke-width="5"/>
+              <circle cx="32" cy="32" r="6" fill="currentColor"/>
+              <path d="M32 10v44M10 32h44M16.5 16.5l31 31M47.5 16.5l-31 31" stroke="currentColor" stroke-width="2.5" opacity=".6"/>
+            </svg>
+            <h3 class="disciplina__nombre">Spinning</h3>
+            <p class="disciplina__desc">Bicicleta estática al ritmo de la música, con subidas, sprints y tramos de cadencia. Tú manejas la resistencia, así que la misma clase sirve para cualquier nivel.</p>
+            <dl class="disciplina__datos">
+              <div><dt>Duración</dt><dd>45 min</dd></div>
+              <div><dt>Intensidad</dt><dd><span class="intensidad" data-nivel="4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="intensidad__txt">Alta · 4 de 5</span></dd></div>
+              <div><dt>Cupos</dt><dd>18 bicicletas</dd></div>
+            </dl>
+            <button class="enlace-flecha" type="button" data-ver-horario="spinning">Ver horarios de Spinning</button>
+          </li>
+          <li class="disciplina" data-disc="yoga">
+            <svg class="disciplina__icono" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <circle cx="32" cy="13" r="6" fill="currentColor"/>
+              <path d="M32 22v16M14 30l18 4 18-4M18 52c4-8 9-12 14-12s10 4 14 12" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M8 56h48" stroke="currentColor" stroke-width="3" stroke-linecap="round" opacity=".6"/>
+            </svg>
+            <h3 class="disciplina__nombre">Yoga</h3>
+            <p class="disciplina__desc">Secuencias de vinyasa suave con foco en respiración, equilibrio y fuerza del centro del cuerpo. Cerramos siempre con diez minutos de relajación guiada.</p>
+            <dl class="disciplina__datos">
+              <div><dt>Duración</dt><dd>60 min</dd></div>
+              <div><dt>Intensidad</dt><dd><span class="intensidad" data-nivel="2" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="intensidad__txt">Suave · 2 de 5</span></dd></div>
+              <div><dt>Cupos</dt><dd>16 mats</dd></div>
+            </dl>
+            <button class="enlace-flecha" type="button" data-ver-horario="yoga">Ver horarios de Yoga</button>
+          </li>
+          <li class="disciplina" data-disc="boxeo">
+            <svg class="disciplina__icono" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <path d="M18 30c0-11 7-19 18-19 9 0 15 6 15 15v8c0 7-5 12-12 12H26c-5 0-8-3-8-8z" fill="currentColor"/>
+              <path d="M18 34c-5 0-8 3-8 7s3 7 8 7" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+              <rect x="22" y="46" width="26" height="10" rx="3" fill="currentColor" opacity=".65"/>
+              <path d="M30 22c3-3 8-3 11 0" fill="none" stroke="#0E0F12" stroke-width="3" stroke-linecap="round" opacity=".35"/>
+            </svg>
+            <h3 class="disciplina__nombre">Boxeo</h3>
+            <p class="disciplina__desc">Técnica de golpes, desplazamientos y trabajo en saco y manoplas, sin contacto entre alumnos. Hay guantes de préstamo; trae tus vendas o cómpralas en recepción.</p>
+            <dl class="disciplina__datos">
+              <div><dt>Duración</dt><dd>60 min</dd></div>
+              <div><dt>Intensidad</dt><dd><span class="intensidad" data-nivel="4" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="intensidad__txt">Alta · 4 de 5</span></dd></div>
+              <div><dt>Cupos</dt><dd>12 por clase</dd></div>
+            </dl>
+            <button class="enlace-flecha" type="button" data-ver-horario="boxeo">Ver horarios de Boxeo</button>
+          </li>
+          <li class="disciplina" data-disc="hiit">
+            <svg class="disciplina__icono" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <circle cx="32" cy="36" r="20" fill="none" stroke="currentColor" stroke-width="5"/>
+              <rect x="27" y="6" width="10" height="7" rx="2" fill="currentColor"/>
+              <path d="M35 22 26 38h8l-4 12 10-17h-8z" fill="currentColor"/>
+            </svg>
+            <h3 class="disciplina__nombre">HIIT</h3>
+            <p class="disciplina__desc">Intervalos cortos de alta intensidad: bloques de trabajo y pausa cronometrados. Cada ejercicio tiene una variante de bajo impacto, sin saltos, por si la necesitas.</p>
+            <dl class="disciplina__datos">
+              <div><dt>Duración</dt><dd>30 min</dd></div>
+              <div><dt>Intensidad</dt><dd><span class="intensidad" data-nivel="5" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="intensidad__txt">Muy alta · 5 de 5</span></dd></div>
+              <div><dt>Cupos</dt><dd>14 por clase</dd></div>
+            </dl>
+            <button class="enlace-flecha" type="button" data-ver-horario="hiit">Ver horarios de HIIT</button>
+          </li>
+          <li class="disciplina" data-disc="movilidad">
+            <svg class="disciplina__icono" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+              <path d="M14 40a18 18 0 1 1 36 0" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+              <path d="M44 34l6 7 7-6" fill="none" stroke="currentColor" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+              <circle cx="32" cy="40" r="7" fill="currentColor"/>
+              <path d="M32 40 20 54" stroke="currentColor" stroke-width="5" stroke-linecap="round"/>
+            </svg>
+            <h3 class="disciplina__nombre">Movilidad</h3>
+            <p class="disciplina__desc">Rango articular, control y estiramiento activo para caderas, columna y hombros. Buen complemento para la sala o para volver a entrenar después de una pausa larga.</p>
+            <dl class="disciplina__datos">
+              <div><dt>Duración</dt><dd>40 min</dd></div>
+              <div><dt>Intensidad</dt><dd><span class="intensidad" data-nivel="1" aria-hidden="true"><i></i><i></i><i></i><i></i><i></i></span><span class="intensidad__txt">Baja · 1 de 5</span></dd></div>
+              <div><dt>Cupos</dt><dd>16 por clase</dd></div>
+            </dl>
+            <button class="enlace-flecha" type="button" data-ver-horario="movilidad">Ver horarios de Movilidad</button>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ EQUIPO ============ -->
+    <section class="seccion seccion--lima" id="equipo" aria-labelledby="equipo-titulo">
+      <div class="contenedor">
+        <header class="seccion__cab seccion__cab--fila">
+          <div>
+            <p class="cejilla cejilla--tinta"><span class="cejilla__num">03</span>Equipo</p>
+            <h2 id="equipo-titulo">Quiénes te van a entrenar</h2>
+          </div>
+          <p class="seccion__bajada">Cuatro entrenadores que reparten las clases de la semana y se turnan en la sala de musculación. Si tienes una molestia o una meta concreta, cuéntales al empezar.</p>
+        </header>
+
+        <ul class="equipo">
+          <li class="entrenador">
+            <div class="entrenador__foto"><img src="assets/img/entrenadora-fernanda.svg" alt="Retrato ilustrado de Fernanda: mujer de piel morena con cola de caballo alta y polera coral, sobre fondo coral con una kettlebell." width="400" height="480" loading="lazy"></div>
+            <div class="entrenador__cuerpo">
+              <h3 class="entrenador__nombre">Fernanda Ríos</h3>
+              <p class="entrenador__rol">Funcional y HIIT</p>
+              <p class="entrenador__bio">Prioriza la técnica antes de sumar carga y explica cada ejercicio en una frase. Lleva las clases de la mañana y los HIIT de mediodía.</p>
+              <ul class="etiquetas" aria-label="Disciplinas de Fernanda">
+                <li>Funcional</li><li>HIIT</li>
+              </ul>
+            </div>
+          </li>
+          <li class="entrenador">
+            <div class="entrenador__foto"><img src="assets/img/entrenador-matias.svg" alt="Retrato ilustrado de Matías: hombre de pelo corto y barba, con polera negra, sobre fondo grafito con franjas lima y un guante de boxeo." width="400" height="480" loading="lazy"></div>
+            <div class="entrenador__cuerpo">
+              <h3 class="entrenador__nombre">Matías Cárcamo</h3>
+              <p class="entrenador__rol">Boxeo y sala de musculación</p>
+              <p class="entrenador__bio">Arma cada clase como una pelea por rounds: técnica, combinaciones y un cierre de acondicionamiento. En las tardes ajusta rutinas en la sala.</p>
+              <ul class="etiquetas" aria-label="Disciplinas de Matías">
+                <li>Boxeo</li><li>Sala</li>
+              </ul>
+            </div>
+          </li>
+          <li class="entrenador">
+            <div class="entrenador__foto"><img src="assets/img/entrenadora-catalina.svg" alt="Retrato ilustrado de Catalina: mujer de pelo largo oscuro y polera blanca, sobre fondo blanco con un círculo coral y un mat de yoga enrollado." width="400" height="480" loading="lazy"></div>
+            <div class="entrenador__cuerpo">
+              <h3 class="entrenador__nombre">Catalina Pizarro</h3>
+              <p class="entrenador__rol">Yoga y movilidad</p>
+              <p class="entrenador__bio">Propone clases lentas y precisas, con indicaciones claras de respiración. Si llegas con una molestia, te ofrece una variante antes de que la pidas.</p>
+              <ul class="etiquetas" aria-label="Disciplinas de Catalina">
+                <li>Yoga</li><li>Movilidad</li>
+              </ul>
+            </div>
+          </li>
+          <li class="entrenador">
+            <div class="entrenador__foto"><img src="assets/img/entrenador-tomas.svg" alt="Retrato ilustrado de Tomás: hombre de piel oscura con pelo crespo y cintillo coral, polera lima, sobre fondo negro con una rueda de bicicleta." width="400" height="480" loading="lazy"></div>
+            <div class="entrenador__cuerpo">
+              <h3 class="entrenador__nombre">Tomás Ulloa</h3>
+              <p class="entrenador__rol">Spinning y HIIT</p>
+              <p class="entrenador__bio">Prepara la música de cada clase ordenada por intensidad, así sabes qué viene. Lleva el spinning temprano y los HIIT de la tarde.</p>
+              <ul class="etiquetas" aria-label="Disciplinas de Tomás">
+                <li>Spinning</li><li>HIIT</li>
+              </ul>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- ============ HORARIOS ============ -->
+    <section class="seccion seccion--clara" id="horarios" aria-labelledby="horarios-titulo">
+      <div class="contenedor">
+        <header class="seccion__cab">
+          <p class="cejilla"><span class="cejilla__num">04</span>Horarios</p>
+          <h2 id="horarios-titulo">La semana en Pulso</h2>
+          <p class="seccion__bajada">Filtra por día o por disciplina. Tu selección queda guardada en la dirección de la página, así que puedes compartirla o volver a ella.</p>
+        </header>
+
+        <div class="filtros" role="group" aria-label="Filtros de horario">
+          <fieldset class="chips" id="filtro-dia">
+            <legend class="chips__leyenda">Día</legend>
+            <div class="chips__opciones">
+              <input type="radio" name="dia" id="dia-todos" value="todos" checked><label for="dia-todos">Toda la semana</label>
+              <input type="radio" name="dia" id="dia-lun" value="lun"><label for="dia-lun"><abbr title="Lunes">Lun</abbr></label>
+              <input type="radio" name="dia" id="dia-mar" value="mar"><label for="dia-mar"><abbr title="Martes">Mar</abbr></label>
+              <input type="radio" name="dia" id="dia-mie" value="mie"><label for="dia-mie"><abbr title="Miércoles">Mié</abbr></label>
+              <input type="radio" name="dia" id="dia-jue" value="jue"><label for="dia-jue"><abbr title="Jueves">Jue</abbr></label>
+              <input type="radio" name="dia" id="dia-vie" value="vie"><label for="dia-vie"><abbr title="Viernes">Vie</abbr></label>
+              <input type="radio" name="dia" id="dia-sab" value="sab"><label for="dia-sab"><abbr title="Sábado">Sáb</abbr></label>
+              <input type="radio" name="dia" id="dia-dom" value="dom"><label for="dia-dom"><abbr title="Domingo">Dom</abbr></label>
+            </div>
+          </fieldset>
+          <fieldset class="chips" id="filtro-actividad">
+            <legend class="chips__leyenda">Actividad</legend>
+            <div class="chips__opciones">
+              <input type="radio" name="actividad" id="act-todas" value="todas" checked><label for="act-todas">Todas</label>
+              <input type="radio" name="actividad" id="act-funcional" value="funcional"><label for="act-funcional"><span class="punto punto--funcional" aria-hidden="true"></span>Funcional</label>
+              <input type="radio" name="actividad" id="act-spinning" value="spinning"><label for="act-spinning"><span class="punto punto--spinning" aria-hidden="true"></span>Spinning</label>
+              <input type="radio" name="actividad" id="act-yoga" value="yoga"><label for="act-yoga"><span class="punto punto--yoga" aria-hidden="true"></span>Yoga</label>
+              <input type="radio" name="actividad" id="act-boxeo" value="boxeo"><label for="act-boxeo"><span class="punto punto--boxeo" aria-hidden="true"></span>Boxeo</label>
+              <input type="radio" name="actividad" id="act-hiit" value="hiit"><label for="act-hiit"><span class="punto punto--hiit" aria-hidden="true"></span>HIIT</label>
+              <input type="radio" name="actividad" id="act-movilidad" value="movilidad"><label for="act-movilidad"><span class="punto punto--movilidad" aria-hidden="true"></span>Movilidad</label>
+            </div>
+          </fieldset>
+          <div class="filtros__pie">
+            <p class="filtros__resumen" id="agenda-resumen" aria-live="polite">35 clases en toda la semana.</p>
+            <button class="btn-texto" type="button" id="limpiar-filtros" hidden>Quitar filtros</button>
+          </div>
+        </div>
+
+        <div class="agenda" id="agenda" data-vista="semana">
+          <noscript><p class="agenda__noscript">Para ver y filtrar los horarios necesitas activar JavaScript. Abrimos de lunes a viernes de 06:30 a 22:30, sábado de 08:00 a 20:00 y domingo de 09:00 a 14:00.</p></noscript>
+        </div>
+        <p class="agenda__nota">La sala de musculación está abierta en todo el horario del gimnasio, con un entrenador de turno. Las clases empiezan puntuales: llega cinco minutos antes.</p>
+      </div>
+    </section>
+
+    <!-- ============ CLASE DE PRUEBA ============ -->
+    <section class="seccion seccion--oscura seccion--diagonal-inv" id="prueba" aria-labelledby="prueba-titulo">
+      <div class="contenedor prueba">
+        <div class="prueba__intro">
+          <p class="cejilla cejilla--lima"><span class="cejilla__num">05</span>Clase de prueba</p>
+          <h2 id="prueba-titulo">Ven a probar una clase</h2>
+          <p class="seccion__bajada">Elige disciplina, día y horario. Solo te mostramos clases que existen en la agenda de ese día y que todavía no han empezado.</p>
+          <ol class="pasos">
+            <li><span class="pasos__num">1</span>Elige disciplina y fecha (dentro de los próximos 30 días).</li>
+            <li><span class="pasos__num">2</span>Escoge un horario disponible.</li>
+            <li><span class="pasos__num">3</span>Revisa tu solicitud en «Tus solicitudes». Puedes anularla cuando quieras.</li>
+          </ol>
+          <div class="aviso-demo">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><circle cx="12" cy="12" r="10" fill="none" stroke="currentColor" stroke-width="2"/><path d="M12 7v6m0 3.5v.5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"/></svg>
+            <p>Este formulario es una demostración. Lo que escribas se guarda <strong>solo en este navegador</strong> y no se envía a nadie.</p>
+          </div>
+        </div>
+
+        <div class="prueba__panel">
+          <form class="formulario" id="form-prueba" novalidate aria-labelledby="form-prueba-titulo">
+            <h3 class="formulario__titulo" id="form-prueba-titulo">Tus datos y tu clase</h3>
+            <p class="formulario__req">Todos los campos son obligatorios salvo los marcados como opcionales.</p>
+
+            <div class="resumen-errores" id="resumen-errores" tabindex="-1" hidden>
+              <h4 class="resumen-errores__titulo">Revisa estos campos antes de continuar:</h4>
+              <ul id="resumen-errores-lista"></ul>
+            </div>
+
+            <div class="campo">
+              <label for="f-nombre">Nombre y apellido</label>
+              <input id="f-nombre" name="nombre" type="text" autocomplete="name" maxlength="80" aria-describedby="f-nombre-error">
+              <p class="campo__error" id="f-nombre-error"></p>
+            </div>
+
+            <div class="campo-fila">
+              <div class="campo">
+                <label for="f-correo">Correo electrónico</label>
+                <input id="f-correo" name="correo" type="email" autocomplete="email" inputmode="email" maxlength="120" aria-describedby="f-correo-error">
+                <p class="campo__error" id="f-correo-error"></p>
+              </div>
+              <div class="campo">
+                <label for="f-telefono">Teléfono</label>
+                <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" inputmode="tel" maxlength="20" placeholder="+56 9 1234 5678" aria-describedby="f-telefono-ayuda f-telefono-error">
+                <p class="campo__ayuda" id="f-telefono-ayuda">Celular o fijo chileno, con o sin +56.</p>
+                <p class="campo__error" id="f-telefono-error"></p>
+              </div>
+            </div>
+
+            <div class="campo-fila">
+              <div class="campo">
+                <label for="f-disciplina">Disciplina</label>
+                <select id="f-disciplina" name="disciplina" aria-describedby="f-disciplina-error">
+                  <option value="">Elige una disciplina</option>
+                  <option value="funcional">Funcional</option>
+                  <option value="spinning">Spinning</option>
+                  <option value="yoga">Yoga</option>
+                  <option value="boxeo">Boxeo</option>
+                  <option value="hiit">HIIT</option>
+                  <option value="movilidad">Movilidad</option>
+                </select>
+                <p class="campo__error" id="f-disciplina-error"></p>
+              </div>
+              <div class="campo">
+                <label for="f-fecha">Fecha</label>
+                <input id="f-fecha" name="fecha" type="date" aria-describedby="f-fecha-ayuda f-fecha-error">
+                <p class="campo__ayuda" id="f-fecha-ayuda">Desde hoy y hasta 30 días más.</p>
+                <p class="campo__error" id="f-fecha-error"></p>
+              </div>
+            </div>
+
+            <div class="campo">
+              <label for="f-horario">Clase y horario</label>
+              <select id="f-horario" name="horario" aria-describedby="f-horario-ayuda f-horario-error" disabled>
+                <option value="">Primero elige disciplina y fecha</option>
+              </select>
+              <p class="campo__ayuda" id="f-horario-ayuda" aria-live="polite">Se llena según la disciplina y la fecha que elijas.</p>
+              <div class="sugerencias" id="sugerencias-fechas" hidden></div>
+              <p class="campo__error" id="f-horario-error"></p>
+            </div>
+
+            <fieldset class="campo campo--grupo" id="f-nivel" aria-describedby="f-nivel-error">
+              <legend>¿Cómo describirías tu nivel?</legend>
+              <div class="opciones-nivel">
+                <label class="opcion"><input type="radio" name="nivel" value="inicial"><span><strong>Recién empiezo</strong><small>Poco o nada de entrenamiento reciente</small></span></label>
+                <label class="opcion"><input type="radio" name="nivel" value="intermedio"><span><strong>Entreno a veces</strong><small>Una o dos veces por semana</small></span></label>
+                <label class="opcion"><input type="radio" name="nivel" value="avanzado"><span><strong>Entreno seguido</strong><small>Tres o más veces por semana</small></span></label>
+              </div>
+              <p class="campo__error" id="f-nivel-error"></p>
+            </fieldset>
+
+            <div class="campo-fila">
+              <div class="campo">
+                <label for="f-plan">Plan que te interesa <span class="opcional">(opcional)</span></label>
+                <select id="f-plan" name="plan">
+                  <option value="">Aún no sé</option>
+                  <option value="libre">Libre</option>
+                  <option value="clases">Clases</option>
+                  <option value="full">Full</option>
+                  <option value="estudiante">Estudiante</option>
+                </select>
+              </div>
+              <div class="campo">
+                <label for="f-comentario">Algo que debamos saber <span class="opcional">(opcional)</span></label>
+                <input id="f-comentario" name="comentario" type="text" maxlength="140" placeholder="Por ejemplo: molestia en la rodilla">
+              </div>
+            </div>
+
+            <div class="campo campo--check">
+              <input id="f-acepto" name="acepto" type="checkbox" aria-describedby="f-acepto-error">
+              <label for="f-acepto">Entiendo que Pulso es un negocio ficticio y que esta solicitud de demostración se guarda solo en este navegador.</label>
+              <p class="campo__error" id="f-acepto-error"></p>
+            </div>
+
+            <button class="btn btn--lima btn--grande btn--bloque" type="submit" id="f-enviar">
+              <span class="btn__texto">Guardar solicitud de prueba</span>
+            </button>
+          </form>
+
+          <div class="confirmacion" id="confirmacion" hidden>
+            <svg class="confirmacion__icono" viewBox="0 0 64 64" aria-hidden="true" focusable="false"><circle cx="32" cy="32" r="30" fill="#C6F432"/><path d="M19 33l9 9 17-19" fill="none" stroke="#0E0F12" stroke-width="5.5" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <h3 class="confirmacion__titulo" id="confirmacion-titulo" tabindex="-1">Solicitud guardada en este navegador</h3>
+            <p class="confirmacion__detalle" id="confirmacion-detalle"></p>
+            <p class="confirmacion__aviso"><strong>No se envió a nadie.</strong> Pulso es un gimnasio ficticio y este formulario forma parte de una demostración: no hay recepción que la reciba ni correo de confirmación. Puedes revisarla o anularla en «Tus solicitudes».</p>
+            <div class="confirmacion__acciones">
+              <a class="btn btn--lima" href="#mis-solicitudes">Ver tus solicitudes</a>
+              <button class="btn btn--contorno-claro" type="button" id="otra-solicitud">Hacer otra solicitud</button>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="contenedor">
+        <section class="solicitudes" id="mis-solicitudes" aria-labelledby="solicitudes-titulo">
+          <div class="solicitudes__cab">
+            <h3 class="solicitudes__titulo" id="solicitudes-titulo" tabindex="-1">Tus solicitudes</h3>
+            <p class="solicitudes__sub">Guardadas en este navegador. Nadie más las ve.</p>
+          </div>
+          <p class="solicitudes__almacen" id="aviso-almacen" hidden>Tu navegador no permite guardar datos locales: verás tus solicitudes mientras no recargues la página.</p>
+          <p class="solicitudes__estado" id="solicitudes-estado" aria-live="polite"></p>
+          <ul class="solicitudes__lista" id="solicitudes-lista"></ul>
+          <div class="solicitudes__vacio" id="solicitudes-vacio">
+            <svg viewBox="0 0 120 60" aria-hidden="true" focusable="false"><path d="M0 34h34l7-16 10 32 9-26 6 10h54" fill="none" stroke="currentColor" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <p>Aún no tienes solicitudes guardadas. Cuando pidas una clase de prueba, aparecerá aquí.</p>
+          </div>
+        </section>
+      </div>
+    </section>
+
+    <!-- ============ PREGUNTAS ============ -->
+    <section class="seccion seccion--clara" id="preguntas" aria-labelledby="preguntas-titulo">
+      <div class="contenedor preguntas">
+        <header class="seccion__cab">
+          <p class="cejilla"><span class="cejilla__num">06</span>Preguntas</p>
+          <h2 id="preguntas-titulo">Antes de venir</h2>
+          <p class="seccion__bajada">Lo que más se pregunta en recepción. Recuerda: es un gimnasio ficticio y estas respuestas son de ejemplo.</p>
+        </header>
+        <div class="acordeon">
+          <details>
+            <summary>¿La clase de prueba tiene costo?</summary>
+            <div class="acordeon__cuerpo"><p>No. Cada persona puede tomar una clase de prueba gratis, en cualquier disciplina. Si quieres usar la sala de musculación ese mismo día, también puedes.</p></div>
+          </details>
+          <details>
+            <summary>¿Qué tengo que llevar?</summary>
+            <div class="acordeon__cuerpo"><p>Ropa cómoda, zapatillas limpias, una toalla chica y una botella para agua (hay dispensador). Para yoga y movilidad prestamos mat; para boxeo, guantes. Las vendas son personales.</p></div>
+          </details>
+          <details>
+            <summary>Nunca he entrenado. ¿Me va a costar seguir la clase?</summary>
+            <div class="acordeon__cuerpo"><p>Todas las clases tienen variantes. Avísale al entrenador al empezar y te dará una versión más simple de cada ejercicio. Si dudas por dónde partir, Movilidad y Yoga son buenas puertas de entrada.</p></div>
+          </details>
+          <details>
+            <summary>¿Cómo se reservan las clases si ya soy socio?</summary>
+            <div class="acordeon__cuerpo"><p>En recepción o por teléfono, con la anticipación que permite tu plan: 24 horas en Estudiante, 48 en Clases y 72 en Full. Si no puedes ir, libera tu cupo para que lo use otra persona.</p></div>
+          </details>
+          <details>
+            <summary>¿Puedo congelar mi plan?</summary>
+            <div class="acordeon__cuerpo"><p>Los planes semestrales y anuales se pueden congelar una vez por período: hasta 15 días, o hasta 30 en el plan Full. Los planes mensuales no se congelan, pero tampoco tienen permanencia.</p></div>
+          </details>
+          <details>
+            <summary>¿Qué necesito para el plan Estudiante?</summary>
+            <div class="acordeon__cuerpo"><p>Una credencial de estudiante vigente (de enseñanza media, técnico profesional o universitaria). La revisamos al inscribirte y luego al renovar.</p></div>
+          </details>
+          <details>
+            <summary>¿Hay duchas, casilleros y bicicletero?</summary>
+            <div class="acordeon__cuerpo"><p>Sí: camarines con duchas, casilleros para usar durante tu visita (trae tu candado) y bicicletero techado en la entrada.</p></div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ UBICACIÓN ============ -->
+    <section class="seccion seccion--oscura" id="ubicacion" aria-labelledby="ubicacion-titulo">
+      <div class="contenedor ubicacion">
+        <div class="ubicacion__texto">
+          <p class="cejilla cejilla--lima"><span class="cejilla__num">07</span>Dónde estamos</p>
+          <h2 id="ubicacion-titulo">En pleno Ñuñoa</h2>
+          <address class="ubicacion__dir">
+            Calle Tilo Morado 2471, Ñuñoa<br>
+            Región Metropolitana<br>
+            <a href="tel:+56948213370">+56 9 4821 3370</a><br>
+            <a href="mailto:hola@pulso.example">hola@pulso.example</a>
+          </address>
+          <h3 class="ubicacion__sub">Horario</h3>
+          <dl class="horario">
+            <div><dt>Lunes a viernes</dt><dd>06:30 – 22:30</dd></div>
+            <div><dt>Sábado</dt><dd>08:00 – 20:00</dd></div>
+            <div><dt>Domingo</dt><dd>09:00 – 14:00</dd></div>
+          </dl>
+          <p class="ubicacion__nota" id="estado-abierto" aria-live="polite"></p>
+        </div>
+        <figure class="ubicacion__mapa">
+          <svg viewBox="0 0 600 420" role="img" aria-labelledby="mapa-t">
+            <title id="mapa-t">Mapa ilustrativo, no a escala: Pulso está en Calle Tilo Morado, frente a una plaza de barrio.</title>
+            <rect width="600" height="420" fill="#1A1C22"/>
+            <g transform="rotate(-12 300 210)">
+              <g stroke="#2C2F38" stroke-width="22">
+                <line x1="-100" y1="70" x2="700" y2="70"/>
+                <line x1="-100" y1="210" x2="700" y2="210"/>
+                <line x1="-100" y1="350" x2="700" y2="350"/>
+                <line x1="80" y1="-100" x2="80" y2="520"/>
+                <line x1="260" y1="-100" x2="260" y2="520"/>
+                <line x1="440" y1="-100" x2="440" y2="520"/>
+              </g>
+              <g stroke="#3A3E49" stroke-width="40">
+                <line x1="-100" y1="140" x2="700" y2="140"/>
+              </g>
+              <rect x="280" y="226" width="140" height="106" rx="10" fill="#26402B"/>
+              <g fill="#335A39"><circle cx="310" cy="256" r="12"/><circle cx="350" cy="292" r="16"/><circle cx="392" cy="250" r="10"/><circle cx="384" cy="306" r="9"/></g>
+              <text x="60" y="134" fill="#8B909C" font-size="13" font-family="Archivo, sans-serif" letter-spacing="2">CALLE TILO MORADO</text>
+              <text x="296" y="346" fill="#8B909C" font-size="11" font-family="Archivo, sans-serif" letter-spacing="1.5" transform="translate(0 -6)">PLAZA</text>
+            </g>
+            <g transform="translate(318 150)">
+              <circle class="mapa-onda" r="46" fill="none" stroke="#C6F432" stroke-width="3" opacity=".5"/>
+              <circle r="26" fill="none" stroke="#C6F432" stroke-width="3" opacity=".8"/>
+              <path d="M0 -48c-17 0-30 13-30 29 0 22 30 45 30 45s30-23 30-45c0-16-13-29-30-29z" fill="#FF5A36" stroke="#0E0F12" stroke-width="3"/>
+              <path d="M-14 -20h7l3-8 5 15 4-10 2 3h7" fill="none" stroke="#0E0F12" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+            </g>
+            <g font-family="Archivo, sans-serif">
+              <rect x="352" y="92" width="118" height="34" rx="6" fill="#C6F432"/>
+              <text x="364" y="115" fill="#0E0F12" font-size="15" font-weight="700">Pulso · 2471</text>
+            </g>
+          </svg>
+          <figcaption>Mapa ilustrativo. La dirección es inventada.</figcaption>
+        </figure>
+      </div>
+    </section>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor pie__in">
+      <div class="pie__marca">
+        <p class="pie__logo">Pulso<span>.</span></p>
+        <p class="pie__lema">Gimnasio de barrio en Ñuñoa. Sala de musculación y clases grupales.</p>
+      </div>
+      <nav class="pie__nav" aria-label="Pie de página">
+        <ul>
+          <li><a href="#planes">Planes</a></li>
+          <li><a href="#horarios">Horarios</a></li>
+          <li><a href="#prueba">Clase de prueba</a></li>
+          <li><a href="#preguntas">Preguntas</a></li>
+        </ul>
+      </nav>
+      <div class="pie__aviso">
+        <p><strong>Negocio ficticio · Sitio de demostración creado por Estudio Norte.</strong> Pulso, sus entrenadores, precios, horarios y dirección son inventados. Los formularios no envían datos: todo queda en tu navegador.</p>
+        <p class="pie__creditos">Tipografías Archivo y Archivo Black (SIL Open Font License 1.1). Ilustraciones SVG originales.</p>
+        <p><a class="pie__portafolio" href="../../index.html">Ver portafolio de Estudio Norte</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="app.js" defer></script>
+</body>
+</html>

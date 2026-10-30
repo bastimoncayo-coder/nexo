@@ -1,0 +1,13 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1080 1080">
+  <!-- Nexo: una «N» hecha de dos trazos unidos por la ruta naranja, con nodos en los extremos (nexo = conexión). -->
+  <rect width="1080" height="1080" fill="#12162B"/>
+  <g fill="none" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M330 760V320" stroke="#F5F6FA" stroke-width="96"/>
+    <path d="M750 760V320" stroke="#F5F6FA" stroke-width="96"/>
+    <path d="M330 320L750 760" stroke="#FF6B2C" stroke-width="96"/>
+  </g>
+  <circle cx="330" cy="320" r="44" fill="#FF6B2C"/>
+  <circle cx="750" cy="760" r="44" fill="#FF6B2C"/>
+  <circle cx="330" cy="320" r="17" fill="#12162B"/>
+  <circle cx="750" cy="760" r="17" fill="#12162B"/>
+</svg>

@@ -1,0 +1,57 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 500" width="400" height="500">
+  <!-- Retrato gráfico ficticio: Nico. Ilustración original para Distrito Barber (demo de Estudio Norte). -->
+  <defs>
+    <pattern id="reticula" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0 L0 0 0 24" fill="none" stroke="#111111" stroke-opacity=".12" stroke-width="1.5"/>
+    </pattern>
+    <pattern id="barbita" width="5" height="5" patternUnits="userSpaceOnUse">
+      <circle cx="2.5" cy="2.5" r="1.1" fill="#2B1D14" fill-opacity=".6"/>
+    </pattern>
+    <radialGradient id="luz" cx=".35" cy=".3" r=".8">
+      <stop offset="0" stop-color="#FFFFFF" stop-opacity=".22"/>
+      <stop offset="1" stop-color="#FFFFFF" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="400" height="500" fill="#F2EFE8"/>
+  <rect width="400" height="500" fill="url(#reticula)"/>
+  <circle cx="200" cy="236" r="152" fill="#F5C518"/>
+  <!-- polera -->
+  <path d="M28 500 C36 420 104 384 168 378 L232 378 C296 384 364 420 372 500Z" fill="#111111"/>
+  <path d="M170 380 C178 400 222 400 230 380" fill="none" stroke="#F2EFE8" stroke-width="4"/>
+  <rect x="264" y="436" width="40" height="34" rx="2" fill="none" stroke="#F5C518" stroke-width="3"/>
+  <!-- cuello -->
+  <path d="M168 300 L168 374 C182 392 218 392 232 374 L232 300Z" fill="#C8936A"/>
+  <!-- orejas -->
+  <ellipse cx="118" cy="242" rx="15" ry="24" fill="#E2B48C"/>
+  <ellipse cx="282" cy="242" rx="15" ry="24" fill="#C8936A"/>
+  <!-- cabeza -->
+  <ellipse cx="200" cy="230" rx="82" ry="100" fill="#E2B48C"/>
+  <path d="M206 130 C252 134 282 174 282 230 C282 290 248 330 200 330 C230 298 240 262 238 228 C236 188 226 154 206 130Z" fill="#C8936A"/>
+  <ellipse cx="200" cy="230" rx="82" ry="100" fill="url(#luz)"/>
+  <!-- barba de pocos días -->
+  <path d="M126 258 C132 310 166 332 200 332 C234 332 268 310 274 258 C264 290 242 306 224 306 C214 300 186 300 176 306 C158 306 136 290 126 258Z" fill="url(#barbita)"/>
+  <!-- rulos -->
+  <g fill="#2B1D14">
+    <path d="M118 214 C112 150 150 112 202 112 C254 112 292 150 282 214 C276 184 262 166 240 160 C214 154 182 154 160 160 C138 166 124 184 118 214Z"/>
+    <circle cx="128" cy="182" r="18"/><circle cx="138" cy="154" r="20"/><circle cx="158" cy="132" r="22"/>
+    <circle cx="186" cy="116" r="22"/><circle cx="214" cy="114" r="22"/><circle cx="242" cy="124" r="22"/>
+    <circle cx="264" cy="146" r="20"/><circle cx="276" cy="174" r="18"/><circle cx="152" cy="166" r="16"/>
+    <circle cx="178" cy="150" r="18"/><circle cx="206" cy="144" r="18"/><circle cx="232" cy="150" r="18"/>
+    <circle cx="254" cy="168" r="15"/><circle cx="170" cy="170" r="11"/><circle cx="198" cy="166" r="12"/>
+    <circle cx="226" cy="170" r="11"/>
+  </g>
+  <g fill="none" stroke="#6B5140" stroke-width="3" stroke-linecap="round">
+    <path d="M150 126 a10 10 0 0 1 14 -4"/><path d="M180 110 a10 10 0 0 1 14 -2"/><path d="M208 108 a10 10 0 0 1 14 0"/>
+    <path d="M236 118 a10 10 0 0 1 12 4"/><path d="M132 148 a10 10 0 0 1 12 -6"/><path d="M200 138 a9 9 0 0 1 12 0"/>
+    <path d="M172 144 a9 9 0 0 1 12 -2"/><path d="M226 144 a9 9 0 0 1 12 2"/><path d="M258 140 a9 9 0 0 1 10 6"/>
+  </g>
+  <!-- cejas -->
+  <path d="M156 204 L188 200 M212 200 L244 204" stroke="#2B1D14" stroke-width="7" stroke-linecap="round"/>
+  <!-- ojos -->
+  <ellipse cx="172" cy="226" rx="7" ry="5.5" fill="#111111"/>
+  <ellipse cx="228" cy="226" rx="7" ry="5.5" fill="#111111"/>
+  <!-- nariz -->
+  <path d="M202 232 L195 266 C199 270 206 270 211 266" fill="none" stroke="#9A6744" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <!-- sonrisa -->
+  <path d="M178 290 Q200 306 222 290" fill="none" stroke="#6B3527" stroke-width="5" stroke-linecap="round"/>
+</svg>

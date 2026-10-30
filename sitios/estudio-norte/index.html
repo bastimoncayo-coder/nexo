@@ -1,0 +1,927 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Estudio Norte · Contenido, diseño y web para pymes (marca ficticia)</title>
+  <meta name="description" content="Estudio Norte es una agencia ficticia de demostración con base en Santiago: estrategia y producción de contenido, diseño de identidad y desarrollo de sitios web para pymes.">
+  <meta name="robots" content="noindex">
+  <meta name="theme-color" content="#12162B">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+  <link rel="stylesheet" href="alex.css">
+  <script>document.documentElement.classList.add('js');</script>
+  <script src="app.js" defer></script>
+  <script src="alex.js" data-brief="#brief" defer></script>
+</head>
+<body>
+  <a class="skip-link" href="#contenido">Saltar al contenido</a>
+
+  <div class="fiction-bar" role="note" aria-label="Aviso de marca ficticia">
+    <p>
+      <svg class="fiction-bar__icon" viewBox="0 0 16 16" aria-hidden="true" focusable="false"><path d="M8 1 10 8 8 15 6 8Z" fill="currentColor"/><circle cx="8" cy="8" r="1.4" fill="#12162B"/></svg>
+      <strong>Marca ficticia</strong>
+      <span class="fiction-bar__sep" aria-hidden="true">·</span>
+      Estudio Norte es una agencia de demostración: no presta servicios ni recibe encargos reales.
+    </p>
+  </div>
+
+  <header class="site-header" id="inicio">
+    <div class="wrap site-header__inner">
+      <a class="brand" href="#contenido" aria-label="Estudio Norte, ir al inicio del contenido">
+        <svg class="brand__mark" viewBox="0 0 40 40" aria-hidden="true" focusable="false">
+          <circle cx="20" cy="20" r="18" fill="none" stroke="currentColor" stroke-width="2"/>
+          <path d="M20 4 25 20H15Z" fill="#FF6B2C"/>
+          <path d="M15 20h10l-5 16Z" fill="currentColor"/>
+          <circle cx="20" cy="20" r="2.2" fill="#F5F6FA"/>
+        </svg>
+        <span class="brand__name">Estudio<br>Norte</span>
+      </a>
+
+      <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="menu-principal">
+        <span class="nav-toggle__bars" aria-hidden="true"><span></span><span></span></span>
+        <span class="nav-toggle__label">Menú</span>
+      </button>
+
+      <nav class="site-nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="#estudio">Estudio</a></li>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#app-gestion">App de gestión</a></li>
+          <li><a href="#brief">Brief</a></li>
+          <li class="site-nav__cta"><a class="btn btn--accent btn--sm" href="../../contratar.html?origen=web-agencia">Contrátanos</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+
+    <!-- HERO -->
+    <section class="hero" aria-labelledby="hero-title">
+      <div class="wrap hero__grid">
+        <div class="hero__copy">
+          <p class="eyebrow"><span class="coord">33°27′ S · 70°40′ O</span> Santiago, Chile</p>
+          <h1 class="hero__title" id="hero-title">
+            Contenido, diseño y web <span class="hero__title-accent">con rumbo.</span>
+          </h1>
+          <p class="hero__lead">
+            Somos un estudio pequeño que acompaña a pymes en lo que más se posterga: qué publicar, cómo verse
+            y dónde recibir a sus clientes en internet. Estrategia y producción de contenido para redes,
+            identidad visual y sitios web que se pueden usar desde el primer día.
+          </p>
+          <div class="hero__actions">
+            <a class="btn btn--accent" href="#brief">Preparar un brief
+              <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            </a>
+            <a class="btn btn--ghost" href="#portafolio">Ver proyectos de demostración</a>
+          </div>
+          <div class="hero__notice">
+            <p><strong>Antes de seguir:</strong> Estudio Norte, sus proyectos y sus precios son de demostración.
+              No hay clientes, premios ni cifras reales en este sitio, y nada de lo que escribas sale de tu navegador.</p>
+          </div>
+        </div>
+
+        <figure class="hero__art">
+          <svg class="compass" viewBox="0 0 560 560" role="img" aria-labelledby="compass-title">
+            <title id="compass-title">Brújula gráfica de Estudio Norte: una aguja naranja apunta al norte sobre una retícula de coordenadas, rodeada por las palabras estrategia, contenido, diseño, desarrollo web y medición.</title>
+            <defs>
+              <radialGradient id="hero-glow" cx="50%" cy="46%" r="62%">
+                <stop offset="0" stop-color="#262C52"/>
+                <stop offset=".7" stop-color="#151A33"/>
+                <stop offset="1" stop-color="#12162B"/>
+              </radialGradient>
+              <linearGradient id="hero-aurora" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0" stop-color="#3DDC97" stop-opacity="0"/>
+                <stop offset=".45" stop-color="#3DDC97" stop-opacity=".55"/>
+                <stop offset="1" stop-color="#3DDC97" stop-opacity="0"/>
+              </linearGradient>
+              <linearGradient id="hero-needle" x1="0" y1="0" x2="0" y2="1">
+                <stop offset="0" stop-color="#FF8C55"/>
+                <stop offset="1" stop-color="#FF6B2C"/>
+              </linearGradient>
+              <pattern id="hero-dots" width="8" height="8" patternUnits="userSpaceOnUse">
+                <circle cx="1" cy="1" r=".7" fill="#F5F6FA" opacity=".09"/>
+              </pattern>
+              <filter id="hero-blur" x="-20%" y="-20%" width="140%" height="140%"><feGaussianBlur stdDeviation="14"/></filter>
+              <path id="hero-ring" d="M280 280m-236 0a236 236 0 1 1 472 0a236 236 0 1 1-472 0"/>
+            </defs>
+            <path d="M48 0H560V496L496 560H0V48Z" fill="url(#hero-glow)"/>
+            <path d="M48 0H560V496L496 560H0V48Z" fill="url(#hero-dots)"/>
+            <g stroke="#F5F6FA" stroke-opacity=".07" stroke-width="1">
+              <path d="M0 70H560M0 140H560M0 210H560M0 350H560M0 420H560M0 490H560M70 0V560M140 0V560M210 0V560M350 0V560M420 0V560M490 0V560"/>
+            </g>
+            <g stroke="#F5F6FA" stroke-opacity=".22" stroke-dasharray="4 6">
+              <path d="M0 280H560M280 0V560"/>
+            </g>
+            <path d="M-20 420C120 300 300 180 600 160" fill="none" stroke="url(#hero-aurora)" stroke-width="46" filter="url(#hero-blur)"/>
+            <path d="M-20 420C120 300 300 180 600 160" fill="none" stroke="#3DDC97" stroke-opacity=".7" stroke-width="1.5"/>
+            <g class="compass__ring">
+              <text font-family="Bricolage Grotesque, sans-serif" font-weight="700" font-size="13" letter-spacing="5.2" fill="#F5F6FA" fill-opacity=".72">
+                <textPath href="#hero-ring">ESTRATEGIA · CONTENIDO · DISEÑO · DESARROLLO WEB · MEDICIÓN · ESTRATEGIA · CONTENIDO · DISEÑO ·</textPath>
+              </text>
+            </g>
+            <circle cx="280" cy="280" r="212" fill="none" stroke="#F5F6FA" stroke-opacity=".35"/>
+            <circle cx="280" cy="280" r="198" fill="none" stroke="#F5F6FA" stroke-opacity=".55" stroke-width="10" stroke-dasharray="1.2 16.08"/>
+            <circle cx="280" cy="280" r="196" fill="none" stroke="#F5F6FA" stroke-width="18" stroke-dasharray="3 304.88" stroke-dashoffset="1.5"/>
+            <circle cx="280" cy="280" r="150" fill="none" stroke="#FF6B2C" stroke-opacity=".8" stroke-dasharray="2 7"/>
+            <circle cx="280" cy="280" r="96" fill="#12162B" fill-opacity=".55" stroke="#F5F6FA" stroke-opacity=".18"/>
+            <g font-family="Bricolage Grotesque, sans-serif" font-weight="800" text-anchor="middle">
+              <text x="280" y="128" font-size="30" fill="#FF6B2C">N</text>
+              <text x="447" y="291" font-size="20" fill="#F5F6FA" fill-opacity=".8">E</text>
+              <text x="280" y="456" font-size="20" fill="#F5F6FA" fill-opacity=".8">S</text>
+              <text x="113" y="291" font-size="20" fill="#F5F6FA" fill-opacity=".8">O</text>
+            </g>
+            <g class="compass__needle">
+              <path d="M280 146 300 280H260Z" fill="url(#hero-needle)"/>
+              <path d="M280 146 280 280H260Z" fill="#12162B" fill-opacity=".18"/>
+              <path d="M260 280H300L280 414Z" fill="#F5F6FA" fill-opacity=".9"/>
+              <path d="M280 280H300L280 414Z" fill="#12162B" fill-opacity=".22"/>
+              <circle cx="280" cy="280" r="11" fill="#12162B" stroke="#F5F6FA" stroke-width="3"/>
+            </g>
+            <g font-family="Inter, sans-serif" font-size="11" fill="#F5F6FA" fill-opacity=".72" letter-spacing="1">
+              <text x="24" y="540">33°27′ S</text>
+              <text x="24" y="522">LAT</text>
+              <text x="470" y="40">70°40′ O</text>
+              <text x="470" y="22">LON</text>
+            </g>
+            <path d="M440 470h70v8h-70z" fill="#FF6B2C"/>
+            <path d="M24 24h46v46" fill="none" stroke="#3DDC97" stroke-width="3"/>
+          </svg>
+          <figcaption class="hero__caption">Fig. 01 — Brújula del estudio. Ilustración SVG original.</figcaption>
+        </figure>
+      </div>
+
+      <div class="ticker" aria-hidden="true">
+        <div class="ticker__track">
+          <span>Estrategia de contenido</span><span>Calendario editorial</span><span>Redacción</span><span>Producción</span><span>Identidad visual</span><span>Piezas gráficas</span><span>Sitios web</span><span>Landing pages</span><span>Reservas y catálogos</span>
+          <span>Estrategia de contenido</span><span>Calendario editorial</span><span>Redacción</span><span>Producción</span><span>Identidad visual</span><span>Piezas gráficas</span><span>Sitios web</span><span>Landing pages</span><span>Reservas y catálogos</span>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESTUDIO -->
+    <section class="section studio" id="estudio" aria-labelledby="estudio-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="section-head__title" id="estudio-title">Qué hacemos y para quién</h2>
+        </header>
+
+        <div class="studio__grid">
+          <div class="studio__statement">
+            <p class="statement">
+              Ordenamos la presencia digital de negocios que atienden personas: el local que necesita
+              llenar mesas un martes, la barbería que pierde horas por mensajes sin responder,
+              la corredora que quiere mostrar su cartera sin planillas.
+            </p>
+            <p>
+              Trabajamos con un equipo chico y un método simple: entender el negocio, proponer algo concreto,
+              producir, revisar contigo y medir. Sin jerga y sin paquetes inflados.
+            </p>
+          </div>
+
+          <ul class="audience" aria-label="Para quién trabajamos">
+            <li class="audience__item">
+              <span class="audience__n" aria-hidden="true">A</span>
+              <h3>Gastronomía y locales de barrio</h3>
+              <p>Restaurantes, cafeterías y picadas que necesitan carta clara, reservas y redes con ritmo.</p>
+            </li>
+            <li class="audience__item">
+              <span class="audience__n" aria-hidden="true">B</span>
+              <h3>Servicios con hora agendada</h3>
+              <p>Barberías, centros de estética, consultas y gimnasios donde la agenda es el negocio.</p>
+            </li>
+            <li class="audience__item">
+              <span class="audience__n" aria-hidden="true">C</span>
+              <h3>Catálogos y comercio local</h3>
+              <p>Inmobiliarias, tiendas y emprendimientos que deben mostrar muchas opciones sin perder a nadie.</p>
+            </li>
+          </ul>
+        </div>
+
+        <aside class="fiction-card" aria-label="Sobre esta marca">
+          <svg viewBox="0 0 48 48" aria-hidden="true" focusable="false"><circle cx="24" cy="24" r="21" fill="none" stroke="currentColor" stroke-width="2" stroke-dasharray="3 4"/><path d="M24 9 28 24H20Z" fill="#FF6B2C"/><path d="M20 24h8l-4 15Z" fill="currentColor"/></svg>
+          <div>
+            <h3>Un estudio de demostración, dicho sin rodeos</h3>
+            <p>Estudio Norte es una marca ficticia y provisional creada para mostrar un portafolio de trabajo.
+              Los negocios del portafolio no existen, los precios son referenciales y el formulario de brief
+              no envía datos a ninguna parte.</p>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SERVICIOS -->
+    <section class="section services" id="servicios" aria-labelledby="servicios-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="section-head__title" id="servicios-title">Tres frentes, un mismo rumbo</h2>
+          <p class="section-head__lead">Puedes tomar un servicio o combinarlos. Cada uno parte con un diagnóstico corto para no cotizar a ciegas.</p>
+        </header>
+
+        <div class="services__grid">
+          <article class="service" aria-labelledby="srv-contenido">
+            <div class="service__top">
+              <svg class="service__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect x="6" y="10" width="52" height="46" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M6 22h52M18 6v10M46 6v10" stroke="currentColor" stroke-width="2.5"/>
+                <rect x="14" y="30" width="10" height="8" fill="#FF6B2C"/><rect x="27" y="30" width="10" height="8" fill="currentColor" opacity=".25"/><rect x="40" y="30" width="10" height="8" fill="currentColor" opacity=".25"/><rect x="14" y="42" width="10" height="8" fill="currentColor" opacity=".25"/><rect x="27" y="42" width="10" height="8" fill="#3DDC97"/>
+              </svg>
+              <p class="service__kicker">Contenido</p>
+            </div>
+            <h3 id="srv-contenido">Redes con plan, no con apuro</h3>
+            <p>Definimos qué decir, cuándo y en qué formato, y lo producimos contigo para que publicar deje de ser una tarea de último minuto.</p>
+            <ul class="checklist">
+              <li><strong>Estrategia:</strong> objetivos, pilares de contenido, formatos y frecuencia realista.</li>
+              <li><strong>Calendario editorial</strong> mensual con fechas, piezas y responsables.</li>
+              <li><strong>Redacción</strong> de publicaciones, historias y textos breves con tu tono.</li>
+              <li><strong>Producción:</strong> sesiones de foto y video corto, edición y adaptación por red.</li>
+            </ul>
+            <dl class="price-list">
+              <div><dt>Plan mensual de contenido</dt><dd>desde <data class="clp" value="290000">$290.000</data> <span>/ mes</span></dd></div>
+              <div><dt>Sesión de producción (media jornada)</dt><dd>desde <data class="clp" value="180000">$180.000</data></dd></div>
+            </dl>
+            <a class="service__hire" href="../../contratar.html?plan=contenido&amp;origen=web-agencia">Contratar el plan de contenido <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service service--dark" aria-labelledby="srv-diseno">
+            <div class="service__top">
+              <svg class="service__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <circle cx="24" cy="26" r="16" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M30 34h26v22H30z" fill="#FF6B2C"/>
+                <path d="M8 56 24 26l16 30Z" fill="none" stroke="#3DDC97" stroke-width="2.5" stroke-linejoin="round"/>
+              </svg>
+              <p class="service__kicker">Diseño</p>
+            </div>
+            <h3 id="srv-diseno">Una identidad que se reconoce de lejos</h3>
+            <p>Construimos un sistema visual que funcione en un letrero, en una historia de Instagram y en la carta impresa.</p>
+            <ul class="checklist">
+              <li><strong>Identidad:</strong> logotipo, paleta, tipografías y reglas de uso en un manual breve.</li>
+              <li><strong>Piezas gráficas:</strong> plantillas para redes, cartas, flyers, señalética y presentaciones.</li>
+              <li><strong>Archivos listos</strong> para imprenta y para editar sin depender de nosotros.</li>
+              <li><strong>Dos rondas de ajustes</strong> incluidas en cada entrega.</li>
+            </ul>
+            <dl class="price-list">
+              <div><dt>Identidad visual básica</dt><dd>desde <data class="clp" value="450000">$450.000</data></dd></div>
+              <div><dt>Pack de 10 piezas gráficas</dt><dd>desde <data class="clp" value="160000">$160.000</data></dd></div>
+            </dl>
+            <a class="service__hire" href="../../contratar.html?plan=identidad&amp;origen=web-agencia">Contratar identidad visual <span aria-hidden="true">→</span></a>
+          </article>
+
+          <article class="service" aria-labelledby="srv-web">
+            <div class="service__top">
+              <svg class="service__icon" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+                <rect x="6" y="10" width="52" height="40" rx="3" fill="none" stroke="currentColor" stroke-width="2.5"/>
+                <path d="M6 20h52" stroke="currentColor" stroke-width="2.5"/>
+                <circle cx="12" cy="15" r="1.6" fill="#FF6B2C"/><circle cx="18" cy="15" r="1.6" fill="currentColor"/>
+                <path d="M14 28h20M14 34h14" stroke="currentColor" stroke-width="2.5"/>
+                <rect x="38" y="27" width="13" height="16" fill="#3DDC97"/>
+                <path d="M24 56h16" stroke="currentColor" stroke-width="2.5"/>
+              </svg>
+              <p class="service__kicker">Desarrollo web</p>
+            </div>
+            <h3 id="srv-web">Sitios rápidos que hacen su trabajo</h3>
+            <p>Webs livianas, accesibles y fáciles de mantener, pensadas para que el cliente reserve, consulte o compre sin fricción.</p>
+            <ul class="checklist">
+              <li><strong>Landing page</strong> para una campaña, apertura o servicio puntual.</li>
+              <li><strong>Sitio institucional</strong> con secciones, contacto y textos optimizados para buscadores.</li>
+              <li><strong>Reservas y catálogos:</strong> agenda de horas, carta digital o catálogo con filtros y favoritos.</li>
+              <li><strong>Entrega documentada</strong> y capacitación de una hora para tu equipo.</li>
+            </ul>
+            <dl class="price-list">
+              <div><dt>Landing page</dt><dd>desde <data class="clp" value="390000">$390.000</data></dd></div>
+              <div><dt>Sitio institucional</dt><dd>desde <data class="clp" value="890000">$890.000</data></dd></div>
+              <div><dt>Sitio con reservas o catálogo</dt><dd>desde <data class="clp" value="1290000">$1.290.000</data></dd></div>
+            </dl>
+            <a class="service__hire" href="../../contratar.html?plan=web&amp;origen=web-agencia">Contratar una web <span aria-hidden="true">→</span></a>
+          </article>
+        </div>
+        <p class="services__note"><span class="tag tag--warn">Precios de ejemplo</span> Valores referenciales en pesos chilenos, IVA no incluido, creados solo para esta demostración. No constituyen una oferta.</p>
+      </div>
+    </section>
+
+    <!-- PROCESO -->
+    <section class="section process" id="proceso" aria-labelledby="proceso-title">
+      <div class="wrap">
+        <header class="section-head section-head--light">
+          <h2 class="section-head__title" id="proceso-title">Seis paradas, ningún desvío</h2>
+          <p class="section-head__lead">Siempre sabes en qué etapa está tu proyecto, qué recibes al cerrarla y qué necesitamos de ti.</p>
+        </header>
+
+        <ol class="route">
+          <li class="route__step">
+            <span class="route__coord" aria-hidden="true">N1</span>
+            <h3>Diagnóstico</h3>
+            <p>Conversamos sobre tu negocio, revisamos tus canales actuales y lo que hace la competencia cercana.</p>
+            <p class="route__out"><span>Recibes</span> un resumen de hallazgos y prioridades.</p>
+          </li>
+          <li class="route__step">
+            <span class="route__coord" aria-hidden="true">N2</span>
+            <h3>Propuesta</h3>
+            <p>Planteamos el alcance, las piezas, el calendario de trabajo y el costo, todo por escrito.</p>
+            <p class="route__out"><span>Recibes</span> una propuesta con plazos y entregables.</p>
+          </li>
+          <li class="route__step">
+            <span class="route__coord" aria-hidden="true">N3</span>
+            <h3>Producción</h3>
+            <p>Diseñamos, escribimos, fotografiamos o programamos según lo acordado, con avances semanales.</p>
+            <p class="route__out"><span>Recibes</span> avances visibles en el tablero del proyecto.</p>
+          </li>
+          <li class="route__step">
+            <span class="route__coord" aria-hidden="true">N4</span>
+            <h3>Revisión y aprobación</h3>
+            <p>Revisas cada pieza, comentas sobre ella y apruebas. Nada se publica sin tu visto bueno.</p>
+            <p class="route__out"><span>Recibes</span> versiones finales aprobadas por ti.</p>
+          </li>
+          <li class="route__step">
+            <span class="route__coord" aria-hidden="true">N5</span>
+            <h3>Publicación y entrega</h3>
+            <p>Programamos publicaciones, subimos el sitio o te entregamos los archivos ordenados.</p>
+            <p class="route__out"><span>Recibes</span> todo lo producido, con accesos y archivos fuente.</p>
+          </li>
+          <li class="route__step">
+            <span class="route__coord" aria-hidden="true">N6</span>
+            <h3>Medición</h3>
+            <p>Miramos qué funcionó con los datos de tus propias plataformas y ajustamos el siguiente ciclo.</p>
+            <p class="route__out"><span>Recibes</span> un informe breve con aprendizajes y próximos pasos.</p>
+          </li>
+        </ol>
+      </div>
+    </section>
+
+    <!-- PORTAFOLIO -->
+    <section class="section portfolio" id="portafolio" aria-labelledby="portafolio-title">
+      <div class="wrap">
+        <header class="section-head">
+          <h2 class="section-head__title" id="portafolio-title">Cinco demostraciones navegables</h2>
+          <p class="section-head__lead">Cada proyecto es un negocio ficticio construido para mostrar cómo resolvemos un problema concreto. Ábrelos y pruébalos: funcionan en tu navegador.</p>
+        </header>
+
+        <ul class="cases">
+          <li class="case case--wide">
+            <article aria-labelledby="case-brasa">
+              <div class="case__art">
+                <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Composición de Brasa Sur: una carta impresa inclinada sobre un fondo de brasas naranjas y parrilla oscura.">
+                  <defs>
+                    <radialGradient id="bs-ember" cx="72%" cy="70%" r="62%">
+                      <stop offset="0" stop-color="#FFB15C"/><stop offset=".3" stop-color="#F0652A"/><stop offset=".65" stop-color="#7A2414"/><stop offset="1" stop-color="#1F120E"/>
+                    </radialGradient>
+                    <pattern id="bs-grain" width="6" height="6" patternUnits="userSpaceOnUse"><circle cx="1" cy="1" r=".6" fill="#fff" opacity=".07"/></pattern>
+                  </defs>
+                  <rect width="400" height="250" fill="#1F120E"/>
+                  <circle cx="300" cy="190" r="150" fill="url(#bs-ember)"/>
+                  <g stroke="#1F120E" stroke-width="7" opacity=".85"><path d="M170 120H400M170 146H400M170 172H400M170 198H400M170 224H400"/></g>
+                  <rect width="400" height="250" fill="url(#bs-grain)"/>
+                  <g transform="translate(40 30) rotate(-5)">
+                    <rect width="150" height="196" rx="3" fill="#F4E9DA"/>
+                    <text x="16" y="36" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="22" fill="#2A1712">Carta</text>
+                    <path d="M16 46h118" stroke="#C4502A" stroke-width="2"/>
+                    <g fill="#2A1712" opacity=".75"><rect x="16" y="62" width="74" height="6" rx="2"/><rect x="16" y="90" width="88" height="6" rx="2"/><rect x="16" y="118" width="64" height="6" rx="2"/><rect x="16" y="146" width="80" height="6" rx="2"/></g>
+                    <g fill="#2A1712" opacity=".35"><rect x="16" y="73" width="98" height="4" rx="2"/><rect x="16" y="101" width="84" height="4" rx="2"/><rect x="16" y="129" width="92" height="4" rx="2"/><rect x="16" y="157" width="70" height="4" rx="2"/></g>
+                    <g fill="#C4502A"><rect x="112" y="62" width="22" height="6" rx="2"/><rect x="112" y="90" width="22" height="6" rx="2"/><rect x="112" y="118" width="22" height="6" rx="2"/><rect x="112" y="146" width="22" height="6" rx="2"/></g>
+                    <rect x="16" y="172" width="60" height="14" rx="7" fill="#2A1712"/>
+                  </g>
+                  <g transform="translate(226 34)">
+                    <rect width="138" height="54" rx="6" fill="#F4E9DA" opacity=".95"/>
+                    <text x="12" y="22" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#2A1712">Reserva · 4 personas</text>
+                    <text x="12" y="40" font-family="Inter, sans-serif" font-size="11" fill="#7A2414">vie 20:30 · Terraza</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="case__body">
+                <p class="case__meta"><span class="tag">Demostración</span> Restaurante · negocio ficticio</p>
+                <h3 id="case-brasa">Brasa Sur</h3>
+                <p>Un restaurante de cocina a las brasas que necesitaba que su carta se leyera bien en el celular y que las reservas dejaran de llegar por mensaje directo.</p>
+                <ul class="case__solved" aria-label="Qué se resolvió">
+                  <li>Carta digital por categorías</li><li>Reservas con validación</li><li>Horarios y ubicación</li>
+                </ul>
+                <a class="case__link" href="../brasa-sur/index.html">Ver demo de Brasa Sur <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </li>
+
+          <li class="case">
+            <article aria-labelledby="case-barber">
+              <div class="case__art">
+                <svg viewBox="0 0 400 250" role="img" aria-label="Composición de Distrito Barber: un poste de barbería a rayas junto a una grilla de horas con una hora seleccionada.">
+                  <defs>
+                    <pattern id="db-stripes" width="28" height="28" patternUnits="userSpaceOnUse" patternTransform="rotate(35)">
+                      <rect width="28" height="28" fill="#F1EDE4"/><rect width="9" height="28" fill="#C23B2E"/><rect x="14" width="9" height="28" fill="#1D3A6E"/>
+                    </pattern>
+                    <linearGradient id="db-bg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#11302A"/><stop offset="1" stop-color="#0A1C18"/></linearGradient>
+                    <linearGradient id="db-shine" x1="0" x2="1"><stop offset="0" stop-color="#fff" stop-opacity="0"/><stop offset=".45" stop-color="#fff" stop-opacity=".45"/><stop offset="1" stop-color="#000" stop-opacity=".25"/></linearGradient>
+                  </defs>
+                  <rect width="400" height="250" fill="url(#db-bg)"/>
+                  <rect x="44" y="24" width="56" height="202" rx="28" fill="url(#db-stripes)"/>
+                  <rect x="44" y="24" width="56" height="202" rx="28" fill="url(#db-shine)"/>
+                  <rect x="38" y="14" width="68" height="16" rx="8" fill="#C9A44C"/><rect x="38" y="220" width="68" height="16" rx="8" fill="#C9A44C"/>
+                  <text x="140" y="52" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="16" fill="#F1EDE4" letter-spacing="2">MAR 03</text>
+                  <g font-family="Inter, sans-serif" font-size="12" font-weight="600">
+                    <g fill="none" stroke="#F1EDE4" stroke-opacity=".35">
+                      <rect x="140" y="70" width="68" height="34" rx="6"/><rect x="216" y="70" width="68" height="34" rx="6"/><rect x="292" y="70" width="68" height="34" rx="6"/>
+                      <rect x="140" y="112" width="68" height="34" rx="6"/><rect x="292" y="112" width="68" height="34" rx="6"/>
+                      <rect x="140" y="154" width="68" height="34" rx="6"/><rect x="216" y="154" width="68" height="34" rx="6"/><rect x="292" y="154" width="68" height="34" rx="6"/>
+                    </g>
+                    <rect x="216" y="112" width="68" height="34" rx="6" fill="#C9A44C"/>
+                    <g fill="#F1EDE4" fill-opacity=".8" text-anchor="middle">
+                      <text x="174" y="92">10:00</text><text x="250" y="92">11:00</text><text x="326" y="92">12:30</text>
+                      <text x="174" y="134">16:00</text><text x="326" y="134">19:00</text>
+                      <text x="174" y="176">17:30</text><text x="250" y="176">18:00</text><text x="326" y="176">19:30</text>
+                    </g>
+                    <text x="250" y="134" text-anchor="middle" fill="#0A1C18">18:30</text>
+                  </g>
+                  <rect x="140" y="202" width="220" height="24" rx="12" fill="#F1EDE4"/>
+                  <text x="250" y="218" text-anchor="middle" font-family="Inter, sans-serif" font-size="11" font-weight="600" fill="#0A1C18">Corte + barba · 45 min</text>
+                </svg>
+              </div>
+              <div class="case__body">
+                <p class="case__meta"><span class="tag">Demostración</span> Barbería · negocio ficticio</p>
+                <h3 id="case-barber">Distrito Barber</h3>
+                <p>Una barbería de barrio que perdía horas entre llamadas y mensajes. Ahora el cliente elige servicio, barbero y hora en un solo recorrido.</p>
+                <ul class="case__solved" aria-label="Qué se resolvió">
+                  <li>Servicios y precios</li><li>Agenda de horas</li><li>Confirmación local</li>
+                </ul>
+                <a class="case__link" href="../distrito-barber/index.html">Ver demo de Distrito Barber <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </li>
+
+          <li class="case">
+            <article aria-labelledby="case-habita">
+              <div class="case__art">
+                <svg viewBox="0 0 400 250" role="img" aria-label="Composición de Habita Sur: siluetas de casas y edificios con filtros de búsqueda y un corazón de favorito.">
+                  <defs>
+                    <linearGradient id="hs-sky" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#DCE7EA"/><stop offset="1" stop-color="#F3EEE4"/></linearGradient>
+                  </defs>
+                  <rect width="400" height="250" fill="url(#hs-sky)"/>
+                  <circle cx="320" cy="64" r="34" fill="#F2C9A4"/>
+                  <path d="M0 196C80 176 150 186 220 172S340 160 400 168V250H0Z" fill="#C9D6CF"/>
+                  <g>
+                    <path d="M40 210V140l44-34 44 34v70Z" fill="#2E5266"/><rect x="72" y="166" width="24" height="44" fill="#F3EEE4"/><rect x="54" y="140" width="16" height="16" fill="#F3EEE4" opacity=".85"/><rect x="98" y="140" width="16" height="16" fill="#F3EEE4" opacity=".85"/>
+                    <rect x="140" y="96" width="70" height="114" fill="#C8693F"/>
+                    <g fill="#F3EEE4" opacity=".9"><rect x="152" y="108" width="14" height="14"/><rect x="184" y="108" width="14" height="14"/><rect x="152" y="134" width="14" height="14"/><rect x="184" y="134" width="14" height="14"/><rect x="152" y="160" width="14" height="14"/><rect x="184" y="160" width="14" height="14"/></g>
+                    <path d="M222 210v-58l36-26 36 26v58Z" fill="#6E8B74"/><rect x="248" y="172" width="20" height="38" fill="#F3EEE4"/>
+                  </g>
+                  <rect x="0" y="208" width="400" height="42" fill="#2E5266"/>
+                  <g font-family="Inter, sans-serif" font-size="11" font-weight="600">
+                    <rect x="16" y="219" width="74" height="22" rx="11" fill="#F3EEE4"/><text x="53" y="234" text-anchor="middle" fill="#2E5266">Ñuñoa</text>
+                    <rect x="98" y="219" width="70" height="22" rx="11" fill="#F3EEE4"/><text x="133" y="234" text-anchor="middle" fill="#2E5266">2 dorm.</text>
+                    <rect x="176" y="219" width="78" height="22" rx="11" fill="#C8693F"/><text x="215" y="234" text-anchor="middle" fill="#fff">Arriendo</text>
+                  </g>
+                  <g transform="translate(300 116)">
+                    <rect width="84" height="70" rx="8" fill="#fff"/>
+                    <path d="M42 54 26 38a9 9 0 0 1 16-11 9 9 0 0 1 16 11Z" fill="#E4572E"/>
+                  </g>
+                </svg>
+              </div>
+              <div class="case__body">
+                <p class="case__meta"><span class="tag">Demostración</span> Inmobiliaria · negocio ficticio</p>
+                <h3 id="case-habita">Habita Sur</h3>
+                <p>Una corredora con muchas propiedades y poco orden. Armamos un catálogo que se filtra en segundos y recuerda lo que te gustó.</p>
+                <ul class="case__solved" aria-label="Qué se resolvió">
+                  <li>Catálogo con filtros</li><li>Favoritos guardados</li><li>Ficha y contacto por propiedad</li>
+                </ul>
+                <a class="case__link" href="../habita-sur/index.html">Ver demo de Habita Sur <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </li>
+
+          <li class="case">
+            <article aria-labelledby="case-pulso">
+              <div class="case__art">
+                <svg viewBox="0 0 400 250" role="img" aria-label="Composición de Pulso: una línea de pulso verde lima cruza una grilla semanal de clases sobre fondo negro.">
+                  <defs>
+                    <linearGradient id="pl-fade" x1="0" x2="1"><stop offset="0" stop-color="#C6F432" stop-opacity="0"/><stop offset=".25" stop-color="#C6F432"/><stop offset="1" stop-color="#C6F432"/></linearGradient>
+                    <filter id="pl-glow" x="-10%" y="-50%" width="120%" height="200%"><feGaussianBlur stdDeviation="5"/></filter>
+                  </defs>
+                  <rect width="400" height="250" fill="#0C0C10"/>
+                  <g font-family="Inter, sans-serif" font-size="10" font-weight="600">
+                    <g fill="#1C1C24">
+                      <rect x="20" y="132" width="84" height="40" rx="4"/><rect x="112" y="132" width="84" height="40" rx="4"/><rect x="204" y="132" width="84" height="40" rx="4"/><rect x="296" y="132" width="84" height="40" rx="4"/>
+                      <rect x="20" y="180" width="84" height="40" rx="4"/><rect x="204" y="180" width="84" height="40" rx="4"/><rect x="296" y="180" width="84" height="40" rx="4"/>
+                    </g>
+                    <rect x="112" y="180" width="84" height="40" rx="4" fill="#C6F432"/>
+                    <g fill="#A9A9B8"><text x="30" y="149">07:00</text><text x="122" y="149">07:00</text><text x="214" y="149">12:30</text><text x="306" y="149">18:00</text><text x="30" y="197">19:00</text><text x="214" y="197">19:30</text><text x="306" y="197">20:00</text></g>
+                    <g fill="#F2F2F5"><text x="30" y="163">Funcional</text><text x="122" y="163">Spinning</text><text x="214" y="163">Movilidad</text><text x="306" y="163">HIIT</text><text x="30" y="211">Fuerza</text><text x="214" y="211">Box</text><text x="306" y="211">Yoga</text></g>
+                    <text x="122" y="197" fill="#0C0C10">19:00</text><text x="122" y="211" fill="#0C0C10">HIIT · 6 cupos</text>
+                  </g>
+                  <text x="20" y="48" font-family="Bricolage Grotesque, sans-serif" font-weight="800" font-size="30" fill="#F2F2F5" letter-spacing="1">PULSO</text>
+                  <path d="M0 96H120l14-30 18 58 16-44 10 16H400" fill="none" stroke="#C6F432" stroke-width="7" opacity=".45" filter="url(#pl-glow)"/>
+                  <path d="M0 96H120l14-30 18 58 16-44 10 16H400" fill="none" stroke="url(#pl-fade)" stroke-width="3" stroke-linejoin="round"/>
+                </svg>
+              </div>
+              <div class="case__body">
+                <p class="case__meta"><span class="tag">Demostración</span> Gimnasio · negocio ficticio</p>
+                <h3 id="case-pulso">Pulso</h3>
+                <p>Un gimnasio de barrio con clases grupales llenas un día y vacías al siguiente. La solución: horarios claros, planes comparables y cupos visibles.</p>
+                <ul class="case__solved" aria-label="Qué se resolvió">
+                  <li>Horario semanal de clases</li><li>Planes y precios</li><li>Reserva de clase</li>
+                </ul>
+                <a class="case__link" href="../pulso/index.html">Ver demo de Pulso <span aria-hidden="true">→</span></a>
+              </div>
+            </article>
+          </li>
+
+          <li class="case case--self">
+            <article aria-labelledby="case-norte">
+              <div class="case__art">
+                <svg viewBox="0 0 400 250" preserveAspectRatio="xMidYMid slice" role="img" aria-label="Composición de Estudio Norte: una brújula pequeña junto a un formulario por pasos con tres etapas completadas.">
+                  <rect width="400" height="250" fill="#F5F6FA"/>
+                  <path d="M0 0H220L180 250H0Z" fill="#12162B"/>
+                  <g stroke="#F5F6FA" stroke-opacity=".12"><path d="M0 50H200M0 100H192M0 150H184M0 200H176M50 0V250M100 0V250M150 0V250"/></g>
+                  <circle cx="96" cy="125" r="62" fill="none" stroke="#F5F6FA" stroke-opacity=".6" stroke-width="6" stroke-dasharray="1 7.66"/>
+                  <circle cx="96" cy="125" r="48" fill="none" stroke="#FF6B2C" stroke-dasharray="2 4"/>
+                  <path d="M96 70 106 125H86Z" fill="#FF6B2C"/><path d="M86 125h20l-10 55Z" fill="#F5F6FA"/>
+                  <circle cx="96" cy="125" r="5" fill="#12162B" stroke="#F5F6FA" stroke-width="2"/>
+                  <g font-family="Inter, sans-serif" font-size="11" font-weight="600">
+                    <g transform="translate(232 40)">
+                      <circle cx="10" cy="10" r="10" fill="#0F6B45"/><path d="m5 10 3.5 3.5L15 7" fill="none" stroke="#fff" stroke-width="2"/>
+                      <text x="28" y="14" fill="#12162B">Negocio</text>
+                      <circle cx="10" cy="44" r="10" fill="#0F6B45"/><path d="m5 44 3.5 3.5L15 41" fill="none" stroke="#fff" stroke-width="2"/>
+                      <text x="28" y="48" fill="#12162B">Objetivos</text>
+                      <circle cx="10" cy="78" r="10" fill="#0F6B45"/><path d="m5 78 3.5 3.5L15 75" fill="none" stroke="#fff" stroke-width="2"/>
+                      <text x="28" y="82" fill="#12162B">Público y tono</text>
+                      <circle cx="10" cy="112" r="10" fill="#FF6B2C"/>
+                      <text x="28" y="116" fill="#12162B">Plazo</text>
+                      <circle cx="10" cy="146" r="9" fill="none" stroke="#12162B" stroke-opacity=".4" stroke-width="2"/>
+                      <text x="28" y="150" fill="#12162B" fill-opacity=".6">Contacto</text>
+                      <path d="M10 20v14M10 54v14M10 88v14M10 122v14" stroke="#12162B" stroke-opacity=".3" stroke-width="2"/>
+                    </g>
+                    <rect x="232" y="206" width="128" height="26" rx="13" fill="#12162B"/>
+                    <text x="296" y="223" text-anchor="middle" fill="#F5F6FA">Descargar brief</text>
+                  </g>
+                </svg>
+              </div>
+              <div class="case__body">
+                <p class="case__meta"><span class="tag">Demostración</span> Agencia · marca ficticia</p>
+                <h3 id="case-norte">Estudio Norte (este sitio)</h3>
+                <p>La web de la propia agencia: presentación, servicios con precios de ejemplo y un formulario por pasos que arma un brief listo para descargar.</p>
+                <ul class="case__solved" aria-label="Qué se resolvió">
+                  <li>Brief por pasos</li><li>Borrador automático</li><li>Descarga y copia del brief</li>
+                </ul>
+                <a class="case__link" href="./index.html">Estás aquí · volver al inicio <span aria-hidden="true">↑</span></a>
+              </div>
+            </article>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <!-- APP DE GESTIÓN -->
+    <section class="section appdemo" id="app-gestion" aria-labelledby="app-title">
+      <div class="wrap appdemo__grid">
+        <div class="appdemo__copy">
+          <h2 class="appdemo__title" id="app-title">La app que ordena cada proyecto</h2>
+          <p class="appdemo__lead">Una aplicación de gestión de contenido, también de demostración, que muestra cómo se coordina el trabajo entre el estudio y sus clientes ficticios.</p>
+          <ul class="modules">
+            <li><strong>Clientes</strong><span>Fichas con datos de contacto, marca y canales.</span></li>
+            <li><strong>Calendario editorial</strong><span>Publicaciones por día, red y estado.</span></li>
+            <li><strong>Tablero de producción</strong><span>Piezas que avanzan de idea a publicada.</span></li>
+            <li><strong>Revisión y aprobación</strong><span>Comentarios y visto bueno, con una vista de cliente de demostración.</span></li>
+            <li><strong>Biblioteca</strong><span>Textos, imágenes y recursos reutilizables.</span></li>
+            <li><strong>Exportación</strong><span>Calendarios y reportes para compartir fuera de la app.</span></li>
+          </ul>
+          <a class="btn btn--aurora" href="../../index.html#app">Abrir la demostración de la app
+            <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </a>
+          <p class="appdemo__fine">Funciona con datos de ejemplo. No hay cuentas reales ni información de clientes.</p>
+        </div>
+
+        <div class="appdemo__visual" aria-hidden="true">
+        <div class="board">
+          <div class="board__bar"><span></span><span></span><span></span><p>Tablero · Noviembre</p></div>
+          <div class="board__cols">
+            <div class="board__col">
+              <p class="board__head">Idea <b>2</b></p>
+              <div class="board__card"><i class="dot dot--o"></i>Carrusel carta de verano<small>Brasa Sur</small></div>
+              <div class="board__card"><i class="dot dot--g"></i>Reel antes y después<small>Distrito Barber</small></div>
+            </div>
+            <div class="board__col">
+              <p class="board__head">En producción <b>2</b></p>
+              <div class="board__card"><i class="dot dot--g"></i>Ficha depto. Ñuñoa<small>Habita Sur</small><em class="bar"><span style="width:60%"></span></em></div>
+              <div class="board__card"><i class="dot dot--o"></i>Horario clases diciembre<small>Pulso</small><em class="bar"><span style="width:35%"></span></em></div>
+            </div>
+            <div class="board__col">
+              <p class="board__head">En revisión <b>2</b></p>
+              <div class="board__card board__card--hl"><i class="dot dot--o"></i>Historia: nueva parrilla<small>Brasa Sur · esperando aprobación</small></div>
+              <div class="board__card"><i class="dot dot--g"></i>Post horario de verano<small>Pulso · 2 comentarios</small></div>
+            </div>
+          </div>
+          <div class="board__cal">
+            <p class="board__head">Calendario editorial · semana 46</p>
+            <div class="board__week">
+              <span>Lu<i class="dot dot--o"></i></span><span>Ma</span><span>Mi<i class="dot dot--g"></i><i class="dot dot--o"></i></span><span>Ju</span><span>Vi<i class="dot dot--g"></i></span><span>Sá<i class="dot dot--o"></i></span><span>Do</span>
+            </div>
+          </div>
+        </div>
+        <div class="approve">
+          <p class="approve__tag">Vista de cliente · demostración</p>
+          <p class="approve__title">Historia: nueva parrilla</p>
+          <div class="approve__thumb"></div>
+          <div class="approve__btns"><span class="approve__ok">Aprobar</span><span>Pedir cambios</span></div>
+        </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- BRIEF -->
+    <section class="section brief" id="brief" aria-labelledby="brief-title">
+      <div class="wrap brief__grid">
+        <div class="brief__intro">
+          <h2 class="section-head__title" id="brief-title">Prepara tu brief en cinco pasos</h2>
+          <p>Un brief es el punto de partida de cualquier proyecto: qué necesitas, para quién y en qué plazo. Respóndelo con calma; puedes salir y volver.</p>
+          <div class="privacy-note">
+            <svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><rect x="4" y="10" width="16" height="11" rx="2" fill="none" stroke="currentColor" stroke-width="2"/><path d="M8 10V7a4 4 0 0 1 8 0v3" fill="none" stroke="currentColor" stroke-width="2"/></svg>
+            <p><strong>No se envía nada.</strong> El brief se arma y se guarda solo en este navegador. Al final podrás descargarlo o copiarlo para compartirlo tú.</p>
+          </div>
+          <p class="draft-status" id="draft-status" role="status" aria-live="polite"></p>
+          <button class="btn btn--text" type="button" id="btn-clear-draft">
+            <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 6h12M8 6V4h4v2m-6 0 1 10h6l1-10" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+            Borrar borrador
+          </button>
+        </div>
+
+        <div class="brief__panel">
+          <noscript><p class="noscript">Para armar el brief por pasos, guardar el borrador y descargarlo necesitas activar JavaScript.</p></noscript>
+
+          <ol class="stepper" id="stepper" aria-label="Pasos del brief">
+            <li><button type="button" data-goto="1"><span>1</span><em>Negocio</em></button></li>
+            <li><button type="button" data-goto="2"><span>2</span><em>Objetivos</em></button></li>
+            <li><button type="button" data-goto="3"><span>3</span><em>Público y tono</em></button></li>
+            <li><button type="button" data-goto="4"><span>4</span><em>Plazo</em></button></li>
+            <li><button type="button" data-goto="5"><span>5</span><em>Contacto</em></button></li>
+          </ol>
+
+          <form id="brief-form" novalidate>
+            <div class="error-summary" id="error-summary" tabindex="-1" hidden>
+              <h3>Revisa estos campos antes de continuar</h3>
+              <ul></ul>
+            </div>
+
+            <!-- Paso 1 -->
+            <section class="step" data-step="1" aria-labelledby="step1-title">
+              <h3 class="step__title" id="step1-title" tabindex="-1"><span class="step__n">Paso 1 de 5</span> Tu negocio</h3>
+              <div class="field">
+                <label for="f-negocio">Nombre del negocio</label>
+                <input id="f-negocio" name="negocio" type="text" autocomplete="organization" maxlength="80" aria-describedby="err-negocio" required>
+                <p class="field__error" id="err-negocio" hidden></p>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-rubro">Rubro</label>
+                  <select id="f-rubro" name="rubro" aria-describedby="err-rubro" required>
+                    <option value="">Elige una opción</option>
+                    <option>Gastronomía</option>
+                    <option>Belleza y cuidado personal</option>
+                    <option>Deporte y bienestar</option>
+                    <option>Inmobiliaria</option>
+                    <option>Comercio minorista</option>
+                    <option>Salud</option>
+                    <option>Educación</option>
+                    <option>Servicios profesionales</option>
+                    <option>Turismo</option>
+                    <option value="Otro">Otro</option>
+                  </select>
+                  <p class="field__error" id="err-rubro" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-comuna">Comuna</label>
+                  <input id="f-comuna" name="comuna" type="text" list="comunas" autocomplete="address-level2" maxlength="40" aria-describedby="hint-comuna err-comuna" required>
+                  <datalist id="comunas"></datalist>
+                  <p class="field__hint" id="hint-comuna">Escribe y elige de la lista, o indica otra comuna de Chile.</p>
+                  <p class="field__error" id="err-comuna" hidden></p>
+                </div>
+              </div>
+              <div class="field" id="wrap-rubro-otro" hidden>
+                <label for="f-rubro-otro">¿Cuál es tu rubro?</label>
+                <input id="f-rubro-otro" name="rubroOtro" type="text" maxlength="60" aria-describedby="err-rubro-otro">
+                <p class="field__error" id="err-rubro-otro" hidden></p>
+              </div>
+            </section>
+
+            <!-- Paso 2 -->
+            <section class="step" data-step="2" aria-labelledby="step2-title">
+              <h3 class="step__title" id="step2-title" tabindex="-1"><span class="step__n">Paso 2 de 5</span> Objetivos y servicios</h3>
+              <fieldset class="field choice-group" id="g-objetivos" aria-describedby="hint-objetivos err-objetivos">
+                <legend>¿Qué quieres lograr?</legend>
+                <p class="field__hint" id="hint-objetivos">Marca todos los que apliquen.</p>
+                <div class="chips">
+                  <label class="chip"><input type="checkbox" name="objetivos" value="Darse a conocer en el barrio o la comuna"><span>Darse a conocer</span></label>
+                  <label class="chip"><input type="checkbox" name="objetivos" value="Recibir más reservas o citas"><span>Más reservas o citas</span></label>
+                  <label class="chip"><input type="checkbox" name="objetivos" value="Mostrar un catálogo o vender en línea"><span>Mostrar catálogo o vender</span></label>
+                  <label class="chip"><input type="checkbox" name="objetivos" value="Ordenar y dar ritmo a las redes sociales"><span>Ordenar las redes</span></label>
+                  <label class="chip"><input type="checkbox" name="objetivos" value="Renovar la identidad visual"><span>Renovar la imagen</span></label>
+                  <label class="chip"><input type="checkbox" name="objetivos" value="Lanzar un producto, servicio o local nuevo"><span>Lanzar algo nuevo</span></label>
+                  <label class="chip"><input type="checkbox" name="objetivos" value="Fidelizar a los clientes actuales"><span>Fidelizar clientes</span></label>
+                </div>
+                <p class="field__error" id="err-objetivos" hidden></p>
+              </fieldset>
+              <div class="field">
+                <label for="f-objetivo-otro">Otro objetivo <span class="optional">(opcional)</span></label>
+                <input id="f-objetivo-otro" name="objetivoOtro" type="text" maxlength="120" aria-describedby="err-objetivo-otro">
+                <p class="field__error" id="err-objetivo-otro" hidden></p>
+              </div>
+              <fieldset class="field choice-group" id="g-servicios" aria-describedby="err-servicios">
+                <legend>Servicios de interés</legend>
+                <div class="service-picks">
+                  <div>
+                    <p class="service-picks__title">Contenido</p>
+                    <label class="check"><input type="checkbox" name="servicios" value="Estrategia de contenido"><span>Estrategia</span></label>
+                    <label class="check"><input type="checkbox" name="servicios" value="Calendario editorial"><span>Calendario editorial</span></label>
+                    <label class="check"><input type="checkbox" name="servicios" value="Redacción"><span>Redacción</span></label>
+                    <label class="check"><input type="checkbox" name="servicios" value="Producción de foto y video"><span>Producción de foto y video</span></label>
+                  </div>
+                  <div>
+                    <p class="service-picks__title">Diseño</p>
+                    <label class="check"><input type="checkbox" name="servicios" value="Identidad visual"><span>Identidad visual</span></label>
+                    <label class="check"><input type="checkbox" name="servicios" value="Piezas gráficas"><span>Piezas gráficas</span></label>
+                  </div>
+                  <div>
+                    <p class="service-picks__title">Desarrollo web</p>
+                    <label class="check"><input type="checkbox" name="servicios" value="Landing page"><span>Landing page</span></label>
+                    <label class="check"><input type="checkbox" name="servicios" value="Sitio institucional"><span>Sitio institucional</span></label>
+                    <label class="check"><input type="checkbox" name="servicios" value="Reservas o catálogo en línea"><span>Reservas o catálogo</span></label>
+                  </div>
+                </div>
+                <p class="field__error" id="err-servicios" hidden></p>
+              </fieldset>
+            </section>
+
+            <!-- Paso 3 -->
+            <section class="step" data-step="3" aria-labelledby="step3-title">
+              <h3 class="step__title" id="step3-title" tabindex="-1"><span class="step__n">Paso 3 de 5</span> Público y tono</h3>
+              <div class="field">
+                <label for="f-publico">¿A quién le hablas?</label>
+                <textarea id="f-publico" name="publico" rows="4" maxlength="600" aria-describedby="hint-publico count-publico err-publico" required></textarea>
+                <p class="field__hint" id="hint-publico">Edad aproximada, dónde viven o trabajan, qué buscan y qué los hace elegirte. Mínimo 20 caracteres.</p>
+                <p class="field__count" id="count-publico" aria-live="off">0 / 600</p>
+                <p class="field__error" id="err-publico" hidden></p>
+              </div>
+              <fieldset class="field choice-group" id="g-tono" aria-describedby="err-tono">
+                <legend>Tono de la marca</legend>
+                <div class="tones">
+                  <label class="tone"><input type="radio" name="tono" value="Cercano"><span><b>Cercano</b><small>Como un vecino que conoce tu nombre.</small></span></label>
+                  <label class="tone"><input type="radio" name="tono" value="Profesional"><span><b>Profesional</b><small>Claro, preciso y confiable.</small></span></label>
+                  <label class="tone"><input type="radio" name="tono" value="Enérgico"><span><b>Enérgico</b><small>Directo, con ritmo y entusiasmo.</small></span></label>
+                  <label class="tone"><input type="radio" name="tono" value="Sobrio y elegante"><span><b>Sobrio</b><small>Pocas palabras, cuidadas.</small></span></label>
+                  <label class="tone"><input type="radio" name="tono" value="Lúdico"><span><b>Lúdico</b><small>Con humor y guiños.</small></span></label>
+                </div>
+                <p class="field__error" id="err-tono" hidden></p>
+              </fieldset>
+              <div class="field">
+                <label for="f-tono-notas">Notas sobre el tono <span class="optional">(opcional)</span></label>
+                <input id="f-tono-notas" name="tonoNotas" type="text" maxlength="160" aria-describedby="hint-tono-notas err-tono-notas">
+                <p class="field__hint" id="hint-tono-notas">Por ejemplo: tuteamos, evitamos anglicismos.</p>
+                <p class="field__error" id="err-tono-notas" hidden></p>
+              </div>
+            </section>
+
+            <!-- Paso 4 -->
+            <section class="step" data-step="4" aria-labelledby="step4-title">
+              <h3 class="step__title" id="step4-title" tabindex="-1"><span class="step__n">Paso 4 de 5</span> Referencias, plazo y presupuesto</h3>
+              <div class="field">
+                <label for="f-referencias">Referencias <span class="optional">(opcional)</span></label>
+                <textarea id="f-referencias" name="referencias" rows="4" maxlength="1000" aria-describedby="hint-referencias count-referencias err-referencias"></textarea>
+                <p class="field__hint" id="hint-referencias">Marcas, cuentas o sitios que te gustan y por qué. Puedes pegar direcciones web: se guardan como texto y no se abren.</p>
+                <p class="field__count" id="count-referencias" aria-live="off">0 / 1000</p>
+                <p class="field__error" id="err-referencias" hidden></p>
+              </div>
+              <div class="field field--narrow">
+                <label for="f-plazo">Plazo deseado</label>
+                <input id="f-plazo" name="plazo" type="text" inputmode="numeric" placeholder="dd-mm-aaaa" maxlength="10" autocomplete="off" aria-describedby="hint-plazo plazo-preview err-plazo" required>
+                <p class="field__hint" id="hint-plazo">Formato dd-mm-aaaa. Debe ser hoy o una fecha futura.</p>
+                <p class="field__preview" id="plazo-preview" aria-live="polite"></p>
+                <p class="field__error" id="err-plazo" hidden></p>
+              </div>
+              <fieldset class="field choice-group" id="g-presupuesto" aria-describedby="hint-presupuesto err-presupuesto">
+                <legend>Presupuesto aproximado</legend>
+                <p class="field__hint" id="hint-presupuesto">En pesos chilenos, para todo el proyecto.</p>
+                <div class="budget">
+                  <label class="budget__opt"><input type="radio" name="presupuesto" value="hasta-500"><span data-range="0-500000">Hasta $500.000</span></label>
+                  <label class="budget__opt"><input type="radio" name="presupuesto" value="500-1000"><span data-range="500000-1000000">$500.000 a $1.000.000</span></label>
+                  <label class="budget__opt"><input type="radio" name="presupuesto" value="1000-2500"><span data-range="1000000-2500000">$1.000.000 a $2.500.000</span></label>
+                  <label class="budget__opt"><input type="radio" name="presupuesto" value="2500-5000"><span data-range="2500000-5000000">$2.500.000 a $5.000.000</span></label>
+                  <label class="budget__opt"><input type="radio" name="presupuesto" value="mas-5000"><span data-range="5000000-">Más de $5.000.000</span></label>
+                  <label class="budget__opt"><input type="radio" name="presupuesto" value="sin-definir"><span>Aún no lo sé</span></label>
+                </div>
+                <p class="field__error" id="err-presupuesto" hidden></p>
+              </fieldset>
+            </section>
+
+            <!-- Paso 5 -->
+            <section class="step" data-step="5" aria-labelledby="step5-title">
+              <h3 class="step__title" id="step5-title" tabindex="-1"><span class="step__n">Paso 5 de 5</span> Contacto</h3>
+              <p class="step__note">Estos datos solo aparecen en el brief que descargues o copies. No se envían a nadie.</p>
+              <div class="field">
+                <label for="f-nombre">Tu nombre</label>
+                <input id="f-nombre" name="nombre" type="text" autocomplete="name" maxlength="60" aria-describedby="err-nombre" required>
+                <p class="field__error" id="err-nombre" hidden></p>
+              </div>
+              <div class="field-row">
+                <div class="field">
+                  <label for="f-correo">Correo</label>
+                  <input id="f-correo" name="correo" type="email" autocomplete="email" maxlength="120" aria-describedby="hint-correo err-correo" required>
+                  <p class="field__hint" id="hint-correo">Por ejemplo: hola@tunegocio.example</p>
+                  <p class="field__error" id="err-correo" hidden></p>
+                </div>
+                <div class="field">
+                  <label for="f-telefono">Teléfono <span class="optional">(opcional)</span></label>
+                  <input id="f-telefono" name="telefono" type="tel" autocomplete="tel" maxlength="20" aria-describedby="hint-telefono err-telefono">
+                  <p class="field__hint" id="hint-telefono">Celular o fijo chileno: +56 9 1234 5678</p>
+                  <p class="field__error" id="err-telefono" hidden></p>
+                </div>
+              </div>
+            </section>
+
+            <div class="form-nav">
+              <button class="btn btn--ghost" type="button" id="btn-prev">
+                <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M16 10H5m4-4-4 4 4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Anterior
+              </button>
+              <button class="btn btn--accent" type="submit" id="btn-next">Siguiente
+                <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M4 10h11m-4-4 4 4-4 4" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              </button>
+            </div>
+          </form>
+
+          <section class="result" id="brief-result" aria-labelledby="result-title" hidden>
+            <div class="result__ok" role="status">
+              <svg viewBox="0 0 32 32" aria-hidden="true" focusable="false"><circle cx="16" cy="16" r="15" fill="#0F6B45"/><path d="m9 16 5 5 9-10" fill="none" stroke="#fff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/></svg>
+              <div>
+                <h3 id="result-title" tabindex="-1">Tu brief está listo</h3>
+                <p>Se guardó solo en este navegador y <strong>no se envió a nadie</strong>. Descárgalo o cópialo para compartirlo cuando quieras.</p>
+              </div>
+            </div>
+
+            <div class="result__actions">
+              <button class="btn btn--accent" type="button" id="btn-download-md">
+                <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M10 3v10m-4-4 4 4 4-4M4 16h12" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+                Descargar brief (.md)
+              </button>
+              <button class="btn btn--ghost" type="button" id="btn-download-txt">Descargar como .txt</button>
+              <button class="btn btn--ghost" type="button" id="btn-copy">
+                <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><rect x="7" y="7" width="10" height="10" rx="1.5" fill="none" stroke="currentColor" stroke-width="1.8"/><path d="M13 7V4.5A1.5 1.5 0 0 0 11.5 3h-7A1.5 1.5 0 0 0 3 4.5v7A1.5 1.5 0 0 0 4.5 13H7" fill="none" stroke="currentColor" stroke-width="1.8"/></svg>
+                Copiar brief
+              </button>
+            </div>
+            <p class="result__msg" id="result-msg" role="status" aria-live="polite"></p>
+
+            <div class="manual-copy" id="manual-copy" hidden>
+              <label for="manual-copy-text">Texto del brief para copiar manualmente</label>
+              <textarea id="manual-copy-text" rows="8" readonly></textarea>
+            </div>
+
+            <article class="brief-doc" id="brief-preview" aria-label="Vista previa del brief"></article>
+
+            <div class="result__footer">
+              <button class="btn btn--text" type="button" id="btn-edit">
+                <svg viewBox="0 0 20 20" aria-hidden="true" focusable="false"><path d="M13.5 3.5 16.5 6.5 7 16H4v-3Z" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round"/></svg>
+                Editar respuestas
+              </button>
+            </div>
+          </section>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="wrap site-footer__grid">
+      <div class="site-footer__brand">
+        <p class="site-footer__logo">Estudio Norte</p>
+        <p>Contenido, diseño y web para pymes. Santiago, Chile.</p>
+        <p class="site-footer__fiction"><strong>Marca ficticia y provisional.</strong> Sitio de demostración: no hay clientes, testimonios ni resultados reales, y los precios son de ejemplo.</p>
+      </div>
+      <nav class="site-footer__nav" aria-label="Pie de página">
+        <ul>
+          <li><a href="#servicios">Servicios</a></li>
+          <li><a href="#proceso">Proceso</a></li>
+          <li><a href="#portafolio">Portafolio</a></li>
+          <li><a href="#app-gestion">App de gestión</a></li>
+          <li><a href="#brief">Preparar un brief</a></li>
+        </ul>
+      </nav>
+      <div class="site-footer__meta">
+        <p>Correo de ejemplo: <span class="mono">hola@estudionorte.example</span></p>
+        <p>Teléfono de ejemplo: <span class="mono">+56 9 4821 3307</span></p>
+        <p>Tipografía Bricolage Grotesque (SIL Open Font License 1.1). Ilustraciones SVG originales.</p>
+        <p><a class="site-footer__back" href="../../index.html">Ver portafolio de Estudio Norte</a></p>
+      </div>
+    </div>
+  </footer>
+
+  <dialog class="confirm" id="confirm-clear" aria-labelledby="confirm-title" aria-describedby="confirm-desc">
+    <form method="dialog" class="confirm__inner">
+      <h2 id="confirm-title">¿Borrar el borrador?</h2>
+      <p id="confirm-desc">Se eliminarán todas las respuestas del brief guardadas en este navegador. No se puede deshacer.</p>
+      <div class="confirm__actions">
+        <button class="btn btn--ghost" value="cancel" type="submit" autofocus>Cancelar</button>
+        <button class="btn btn--danger" value="confirm" type="submit">Sí, borrar borrador</button>
+      </div>
+    </form>
+  </dialog>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 480" width="400" height="480">
+  <!-- Retrato ilustrado original · Pulso (gimnasio ficticio) · Estudio Norte -->
+  <defs>
+    <linearGradient id="fondo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#FFFFFF"/>
+      <stop offset="1" stop-color="#ECEDE6"/>
+    </linearGradient>
+    <linearGradient id="piel" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0" stop-color="#F6D3B5"/>
+      <stop offset="1" stop-color="#E2B28F"/>
+    </linearGradient>
+    <linearGradient id="pelo" x1="0" y1="0" x2="0" y2="1">
+      <stop offset="0" stop-color="#3B2519"/>
+      <stop offset="1" stop-color="#22140D"/>
+    </linearGradient>
+    <clipPath id="cabeza"><ellipse cx="200" cy="202" rx="62" ry="76"/></clipPath>
+    <filter id="grano"><feTurbulence type="fractalNoise" baseFrequency=".9" numOctaves="2" stitchTiles="stitch"/><feColorMatrix values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .45 0"/></filter>
+  </defs>
+  <rect width="400" height="480" fill="url(#fondo)"/>
+  <circle cx="214" cy="200" r="150" fill="#FF5A36"/>
+  <circle cx="214" cy="200" r="150" fill="none" stroke="#0E0F12" stroke-width="2" stroke-dasharray="2 10" opacity=".35" transform="rotate(10 214 200)"/>
+  <path d="M0 420 C 80 380, 140 450, 220 410 S 340 380, 400 410 V480 H0 Z" fill="#C6F432"/>
+
+  <!-- pelo largo (detrás) -->
+  <path d="M130 200 C 120 120, 170 100, 204 104 C 250 108, 282 140, 272 210 C 266 260, 290 320, 300 360 L 104 360 C 116 320, 136 270, 130 200 Z" fill="url(#pelo)"/>
+  <!-- cuello y torso -->
+  <path d="M176 262 h48 v62 c-10 12 -38 12 -48 0 z" fill="#DDAA86"/>
+  <path d="M52 480 C 60 384, 124 334, 200 330 C 276 334, 340 384, 348 480 Z" fill="#FFFFFF"/>
+  <path d="M52 480 C 60 384, 124 334, 200 330 C 276 334, 340 384, 348 480 Z" fill="none" stroke="#0E0F12" stroke-width="3"/>
+  <path d="M164 336 C 180 362, 220 362, 236 336" fill="none" stroke="#0E0F12" stroke-width="3"/>
+  <!-- mechones al frente -->
+  <path d="M136 220 C 128 290, 120 330, 112 380 C 140 380, 150 330, 152 280 Z" fill="url(#pelo)"/>
+  <path d="M264 220 C 272 290, 284 330, 292 380 C 262 380, 252 330, 250 280 Z" fill="url(#pelo)"/>
+  <!-- cabeza -->
+  <ellipse cx="200" cy="202" rx="62" ry="76" fill="url(#piel)"/>
+  <g clip-path="url(#cabeza)">
+    <rect x="214" y="110" width="80" height="190" fill="#C9906B" opacity=".2"/>
+  </g>
+  <!-- raya al medio -->
+  <path d="M138 214 C 132 150, 160 120, 200 120 C 240 120, 268 150, 262 214 C 254 170, 232 150, 204 132 C 180 150, 152 168, 138 214 Z" fill="url(#pelo)"/>
+  <!-- rostro (ojos cerrados, calma) -->
+  <path d="M166 186 q14 -6 26 -1 M210 185 q12 -5 26 1" fill="none" stroke="#3B2519" stroke-width="4" stroke-linecap="round"/>
+  <path d="M168 206 q10 7 20 0 M214 206 q10 7 20 0" fill="none" stroke="#3B2519" stroke-width="4" stroke-linecap="round"/>
+  <path d="M202 210 q-5 16 -1 24 q6 3 11 0" fill="none" stroke="#C9906B" stroke-width="4" stroke-linecap="round" stroke-linejoin="round"/>
+  <path d="M186 250 q15 10 30 0" fill="none" stroke="#B5523C" stroke-width="5" stroke-linecap="round"/>
+  <ellipse cx="168" cy="232" rx="12" ry="7" fill="#F08B74" opacity=".3"/>
+  <ellipse cx="234" cy="232" rx="12" ry="7" fill="#F08B74" opacity=".3"/>
+  <circle cx="139" cy="232" r="4" fill="#FF5A36"/>
+
+  <!-- mat enrollado -->
+  <g transform="translate(316 412) rotate(-8)">
+    <rect x="-56" y="-22" width="96" height="44" rx="22" fill="#9C8CFF"/>
+    <ellipse cx="40" cy="0" rx="14" ry="22" fill="#7F6CF0"/>
+    <path d="M40 -12 a10 12 0 1 1 -1 0" fill="none" stroke="#FFFFFF" stroke-width="3" opacity=".7"/>
+    <rect x="-30" y="-24" width="10" height="48" fill="#0E0F12"/>
+  </g>
+  <rect width="400" height="480" filter="url(#grano)" opacity=".1"/>
+</svg>

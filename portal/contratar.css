@@ -1,0 +1,75 @@
+/* «Contrátanos»: un tarifario impreso y un formulario en tres partes. Se apoya en portal.css. */
+.contratar { max-width: var(--ancho); margin: 0 auto; padding: clamp(2rem, 5vw, 4rem) var(--margen) clamp(3rem, 7vw, 5rem); display: grid; grid-template-columns: minmax(0, 1fr); gap: 2rem clamp(2rem, 5vw, 5rem); }
+.contratar__cabeza { grid-column: 1 / -1; }
+.contratar__cabeza > p { color: var(--tinta-suave); max-width: 72ch; margin: 0; font-size: 1.02rem; }
+.contratar__demo { padding: .75rem 1rem; border: 1.5px solid var(--tinta); background: var(--superficie); font-size: .96rem !important; }
+.contratar__demo strong { color: var(--tinta); }
+
+.contratar__form { display: grid; gap: 2.25rem; outline: none; }
+fieldset { border: 0; margin: 0; padding: 0; min-width: 0; }
+legend { display: flex; align-items: center; gap: .65rem; padding: 0; margin-bottom: 1rem; font-weight: 800; font-stretch: 85%; font-size: clamp(1.4rem, 1.1rem + 1vw, 1.8rem); line-height: 1.1; }
+.paso { display: inline-grid; place-items: center; width: 2rem; height: 2rem; border: 2px solid var(--tinta); font-size: 1rem; font-stretch: 100%; flex: none; }
+
+/* Tarifario: filas con línea de puntos hasta el precio, como una lista de precios impresa */
+.tarifa:first-of-type { border-top: 2px solid var(--tinta); }
+.tarifario[aria-invalid="true"] .tarifa:first-of-type { border-top-color: #B42318; }
+.tarifa { position: relative; display: grid; grid-template-columns: 1.5rem minmax(0, 1fr) auto; gap: .2rem .85rem; align-items: baseline; padding: .95rem .5rem .95rem .25rem; border-bottom: 1px solid var(--linea); cursor: pointer; }
+.tarifa:hover { background: var(--superficie); }
+.tarifa input { width: 1.15rem; height: 1.15rem; margin: 0; accent-color: var(--ruta-texto); align-self: center; }
+.tarifa__nombre { font-weight: 700; font-size: 1.08rem; display: grid; }
+.tarifa__nombre small { font-weight: 400; font-size: .92rem; color: var(--tinta-suave); }
+.tarifa__precio { font-weight: 750; font-variant-numeric: tabular-nums; text-align: right; white-space: nowrap; display: grid; }
+.tarifa__precio small { font-weight: 400; font-size: .85rem; color: var(--tinta-suave); }
+.tarifa:has(input:checked) { background: var(--superficie); box-shadow: inset 0 0 0 2px var(--ruta); }
+.tarifa:has(input:checked) .tarifa__nombre { color: var(--tinta); }
+.tarifa:has(input:focus-visible) { outline: 3px solid var(--ruta); outline-offset: -3px; }
+@media (max-width: 520px) {
+  .tarifa { grid-template-columns: 1.5rem minmax(0, 1fr); }
+  .tarifa__precio { grid-column: 2; text-align: left; display: block; }
+  .tarifa__precio small { display: inline; margin-left: .3rem; }
+}
+
+.grupo { display: grid; gap: 1rem; }
+.campo { display: grid; gap: .3rem; }
+.campo label { font-weight: 650; }
+.opcional { font-weight: 400; color: var(--tinta-suave); }
+.campo input, .campo select, .campo textarea { width: 100%; min-height: 48px; padding: .6rem .8rem; border: 1.5px solid #B9BFCD; border-radius: 8px; background: var(--superficie); font: inherit; color: inherit; }
+.campo textarea { resize: vertical; min-height: 7rem; }
+.campo input:hover, .campo select:hover, .campo textarea:hover { border-color: #8E95A8; }
+.campo input:focus-visible, .campo select:focus-visible, .campo textarea:focus-visible { outline-offset: 0; border-color: var(--tinta); }
+.campo [aria-invalid="true"] { border-color: #B42318; }
+.campo__ayuda { margin: 0; font-size: .9rem; color: var(--tinta-suave); }
+.campo__error { margin: 0; color: #B42318; font-size: .92rem; font-weight: 650; }
+.campos-dos { display: grid; gap: 1rem; }
+@media (min-width: 640px) { .campos-dos { grid-template-columns: repeat(2, minmax(0, 1fr)); } }
+.resumen-error { padding: .9rem 1rem; border: 2px solid #B42318; background: #FEF0EE; color: #B42318; outline: none; }
+.resumen-error:focus-visible { outline: 3px solid var(--ruta); }
+.resumen-error p { margin: 0; font-weight: 700; }
+.resumen-error ul { margin: .4rem 0 0; padding-left: 1.1rem; }
+.resumen-error a { color: #B42318; }
+
+.contratar__enviar { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem 1.25rem; padding-top: 1.25rem; border-top: 2px solid var(--tinta); }
+.contratar__enviar p { margin: 0; color: var(--tinta-suave); font-size: .95rem; }
+
+.contratar__lateral h2 { font-weight: 800; font-stretch: 85%; font-size: 1.5rem; margin: 1.5rem 0 .75rem; }
+.contratar__foto { margin: 0; }
+.contratar__foto img { display: block; width: 100%; aspect-ratio: 4 / 3; object-fit: cover; object-position: 25% 50%; background: var(--carta-2); }
+.pasos-despues { margin: 0; padding-left: 1.3rem; display: grid; gap: .6rem; }
+.pasos-despues li::marker { font-weight: 800; color: var(--ruta-texto); }
+.pasos-despues strong { display: block; }
+.contratar__nota { margin: 1.25rem 0 0; padding-top: 1rem; border-top: 1px solid var(--linea); color: var(--tinta-suave); font-size: .96rem; }
+
+.confirmacion { grid-column: 1 / -1; max-width: 46rem; outline: none; padding: 2rem 0; border-top: 2px solid var(--tinta); }
+.confirmacion h2 { font-weight: 800; font-stretch: 80%; font-size: clamp(2rem, 1.2rem + 3vw, 3rem); line-height: 1; margin: 0 0 1rem; }
+.confirmacion p { color: var(--tinta-suave); max-width: 56ch; }
+.confirmacion__codigo { font-size: 1.05rem; }
+.confirmacion__codigo strong { display: block; margin-top: .2rem; font-size: 1.8rem; font-weight: 800; color: var(--tinta); letter-spacing: .04em; font-variant-numeric: tabular-nums; }
+.confirmacion__acciones { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; margin-top: 1.5rem; }
+
+@media (min-width: 1000px) {
+  .contratar { grid-template-columns: minmax(0, 7fr) minmax(0, 4fr); }
+  .contratar__lateral { position: sticky; top: 1.5rem; align-self: start; }
+}
+.contratar__foto figcaption { margin-top: .5rem; font-size: .85rem; color: var(--tinta-suave); }
+.contratar__foto img { border-radius: 6px; }
+.confirmacion__resumen { white-space: pre-wrap; font: inherit; font-size: .98rem; padding: 1rem 1.1rem; margin: 1rem 0 0; background: var(--superficie); border: 1.5px solid var(--linea); border-radius: 8px; color: var(--tinta); }

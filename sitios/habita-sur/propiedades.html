@@ -1,0 +1,182 @@
+<!doctype html>
+<html lang="es-CL">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Propiedades · Habita Sur (sitio de demostración)</title>
+  <meta name="description" content="Catálogo de propiedades de ejemplo de Habita Sur, corredora ficticia: casas, departamentos, parcelas y oficinas en el sur de Chile. No son ofertas reales.">
+  <meta name="theme-color" content="#1F4A4A">
+  <link rel="icon" href="assets/img/favicon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <a class="saltar" href="#contenido">Saltar al contenido</a>
+  <header class="cabecera">
+    <p class="aviso-demo"><strong>Negocio ficticio · Sitio de demostración creado por Estudio Norte.</strong> <span class="largo">Todas las propiedades son ejemplos ficticios: no son ofertas reales.</span><span class="corto">Propiedades de ejemplo, no reales.</span></p>
+    <div class="contenedor barra">
+      <a class="marca" href="index.html">
+        <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="8" fill="#1F4A4A"/><path d="M9 20.5 20 11l11 9.5" fill="none" stroke="#FAFAF7" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 18.5V26h14v-7.5" fill="none" stroke="#FAFAF7" stroke-width="2.2"/><path d="M8 30.5c3-2 5-2 8 0s5 2 8 0 5-2 8 0" fill="none" stroke="#D9A274" stroke-width="2.2" stroke-linecap="round"/></svg>
+        <span class="marca__nombre">Habita <em>Sur</em></span>
+      </a>
+      <nav class="nav" id="menu-principal" aria-label="Principal">
+        <ul>
+          <li><a href="propiedades.html" aria-current="page">Propiedades</a></li>
+          <li><a href="index.html#publicar">Publicar con nosotros</a></li>
+          <li><a href="index.html#oficina">La oficina</a></li>
+          <li><a href="consultas.html">Mis consultas</a></li>
+        </ul>
+      </nav>
+      <a class="enlace-fav" href="propiedades.html?favoritos=1" data-fav-enlace aria-label="Mis favoritos">
+        <svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.7" stroke-linejoin="round" aria-hidden="true" focusable="false"><path d="M12 20s-7-4.4-7-10a4 4 0 0 1 7-2.6A4 4 0 0 1 19 10c0 5.6-7 10-7 10z"/></svg>
+        <span class="enlace-fav__texto">Favoritos</span>
+        <span class="contador" data-fav-contador>0</span>
+      </a>
+      <button class="boton-menu" type="button" aria-expanded="false" aria-controls="menu-principal" data-menu-boton><span class="boton-menu__lineas" aria-hidden="true"></span>Menú</button>
+    </div>
+  </header>
+
+  <main id="contenido" tabindex="-1">
+    <div class="cabeza-pagina">
+      <div class="contenedor">
+        <p class="antetitulo">Catálogo de ejemplo</p>
+        <h1>Propiedades en el sur de Chile</h1>
+        <p>Casas, departamentos, parcelas y oficinas en venta y arriendo. Todas son propiedades ficticias creadas para esta demostración: ninguna es una oferta real.</p>
+      </div>
+    </div>
+
+    <div class="contenedor catalogo">
+      <aside aria-labelledby="titulo-filtros">
+        <button class="boton boton--claro filtros-toggle" type="button" aria-expanded="false" aria-controls="panel-filtros" data-filtros-toggle>
+          <svg class="icono" viewBox="0 0 24 24" width="20" height="20" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" aria-hidden="true" focusable="false"><path d="M4 6h16M7 12h10M10 18h4"/></svg>
+          <span data-filtros-toggle-texto>Filtros</span>
+        </button>
+        <div class="filtros" id="panel-filtros">
+          <h2 id="titulo-filtros">Filtrar propiedades</h2>
+          <form id="form-filtros" action="propiedades.html" method="get">
+            <fieldset>
+              <legend>Operación</legend>
+              <div class="segmentado">
+                <label><input type="radio" name="operacion" value="" checked><span>Todas</span></label>
+                <label><input type="radio" name="operacion" value="venta"><span>Venta</span></label>
+                <label><input type="radio" name="operacion" value="arriendo"><span>Arriendo</span></label>
+              </div>
+            </fieldset>
+            <div class="campo">
+              <label for="f-tipo">Tipo de propiedad</label>
+              <select id="f-tipo" name="tipo">
+                <option value="">Todos los tipos</option>
+                <option value="casa">Casa</option>
+                <option value="departamento">Departamento</option>
+                <option value="terreno">Parcela o terreno</option>
+                <option value="comercial">Oficina o local</option>
+              </select>
+            </div>
+            <div class="campo">
+              <label for="f-comuna">Ubicación</label>
+              <select id="f-comuna" name="comuna">
+                <option value="">Todas las comunas</option>
+                <option value="concepcion">Concepción</option>
+                <option value="temuco">Temuco</option>
+                <option value="valdivia">Valdivia</option>
+                <option value="frutillar">Frutillar</option>
+                <option value="puerto-varas">Puerto Varas</option>
+                <option value="puerto-montt">Puerto Montt</option>
+              </select>
+            </div>
+            <fieldset>
+              <legend>Precio en pesos (CLP)</legend>
+              <p class="ayuda" id="ayuda-precio">En arriendos se compara el valor mensual.</p>
+              <div class="precio-rango">
+                <div class="campo">
+                  <label for="f-min">Mínimo</label>
+                  <input id="f-min" name="min" type="number" inputmode="numeric" min="0" step="10000" placeholder="Opcional" aria-describedby="ayuda-precio error-precio">
+                </div>
+                <div class="campo">
+                  <label for="f-max">Máximo</label>
+                  <input id="f-max" name="max" type="number" inputmode="numeric" min="0" step="10000" placeholder="Opcional" aria-describedby="ayuda-precio error-precio">
+                </div>
+              </div>
+              <p class="error" id="error-precio" hidden></p>
+            </fieldset>
+            <div class="campo">
+              <label for="f-dorm">Dormitorios</label>
+              <select id="f-dorm" name="dorm">
+                <option value="">Cualquier cantidad</option>
+                <option value="1">1 o más</option>
+                <option value="2">2 o más</option>
+                <option value="3">3 o más</option>
+                <option value="4">4 o más</option>
+              </select>
+            </div>
+            <label class="casilla"><input type="checkbox" name="favoritos" value="1" id="f-favoritos"> Solo mis favoritos (<span data-fav-contador>0</span>)</label>
+            <button class="boton boton--secundario" type="button" data-limpiar>Limpiar filtros</button>
+            <noscript><button class="boton" type="submit">Aplicar filtros</button></noscript>
+          </form>
+        </div>
+      </aside>
+
+      <section aria-labelledby="cuenta-resultados" class="resultados">
+        <div class="resultados__barra">
+          <h2 class="resultados__cuenta" id="cuenta-resultados" tabindex="-1">Propiedades</h2>
+          <div class="orden">
+            <label for="f-orden">Ordenar por</label>
+            <select id="f-orden" name="orden" form="form-filtros">
+              <option value="destacadas">Destacadas primero</option>
+              <option value="precio-asc">Precio: menor a mayor</option>
+              <option value="precio-desc">Precio: mayor a menor</option>
+              <option value="superficie-desc">Superficie: mayor a menor</option>
+              <option value="superficie-asc">Superficie: menor a mayor</option>
+            </select>
+          </div>
+        </div>
+        <ul class="chips" data-chips aria-label="Filtros activos"></ul>
+        <div class="grilla" data-resultados></div>
+        <div data-vacio hidden></div>
+        <p class="nota-uf">* Valor en UF solo referencial, calculado con una UF fija de $40.000 para esta demostración. En superficie se usan los m² construidos o, si no hay construcción, los m² de terreno.</p>
+        <noscript><p>Para ver y filtrar las propiedades activa JavaScript en tu navegador.</p></noscript>
+      </section>
+    </div>
+  </main>
+
+  <footer class="pie">
+    <div class="contenedor">
+      <div class="pie__grilla">
+        <div>
+          <a class="marca" href="index.html">
+            <svg viewBox="0 0 40 40" aria-hidden="true" focusable="false"><rect width="40" height="40" rx="8" fill="#FAFAF7"/><path d="M9 20.5 20 11l11 9.5" fill="none" stroke="#1F4A4A" stroke-width="2.6" stroke-linejoin="round" stroke-linecap="round"/><path d="M13 18.5V26h14v-7.5" fill="none" stroke="#1F4A4A" stroke-width="2.2"/><path d="M8 30.5c3-2 5-2 8 0s5 2 8 0 5-2 8 0" fill="none" stroke="#B8794B" stroke-width="2.2" stroke-linecap="round"/></svg>
+            <span class="marca__nombre">Habita <em>Sur</em></span>
+          </a>
+          <p>Corredora de propiedades ficticia con oficina en Puerto Varas. Este sitio es una demostración: propiedades, precios, direcciones y datos de contacto son inventados.</p>
+        </div>
+        <div>
+          <h2>Explorar</h2>
+          <ul>
+            <li><a href="propiedades.html">Todas las propiedades</a></li>
+            <li><a href="propiedades.html?operacion=venta">En venta</a></li>
+            <li><a href="propiedades.html?operacion=arriendo">En arriendo</a></li>
+            <li><a href="propiedades.html?favoritos=1">Mis favoritos</a></li>
+            <li><a href="consultas.html">Mis consultas</a></li>
+          </ul>
+        </div>
+        <div>
+          <h2>Oficina (ficticia)</h2>
+          <ul>
+            <li>Pasaje Las Tejuelas 214, Puerto Varas</li>
+            <li>+56 9 6123 4517</li>
+            <li>contacto@habitasur.example</li>
+          </ul>
+        </div>
+      </div>
+      <div class="pie__legal">
+        <p>Negocio ficticio · Sitio de demostración creado por Estudio Norte. Tipografías Manrope y DM Serif Display (SIL OFL 1.1). Ilustraciones SVG originales.</p>
+        <a class="pie__portafolio" href="../../index.html">Ver portafolio de Estudio Norte</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/escenas.js"></script>
+  <script src="js/datos.js"></script>
+  <script src="js/comun.js"></script>
+  <script src="js/catalogo.js"></script>
+</body>
+</html>
