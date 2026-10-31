@@ -1,0 +1,3 @@
+User-agent: *
+Allow: /
+Sitemap: https://bastimoncayo-coder.github.io/nexo/sitemap.xml
